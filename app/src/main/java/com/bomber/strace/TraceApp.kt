@@ -15,7 +15,7 @@ class TraceApp : Application() {
 
         val r = STrace.getInstance().initialize(
             Build.VERSION.SDK_INT,
-            filesDir.absolutePath + File.separator + "trace"
+            filesDir.absolutePath + File.separator + "trace" + File.separator + "my_trace.txt"
         )
 
         Log.d("TraceApp", "r = $r")
