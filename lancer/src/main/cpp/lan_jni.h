@@ -2,8 +2,8 @@
 // Created by YoungTr on 2022/6/18.
 //
 
-#ifndef STRACE_ST_JNI_H
-#define STRACE_ST_JNI_H
+#ifndef LANCER_LAN_JNI_H
+#define LANCER_LAN_JNI_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -12,7 +12,7 @@ extern "C" {
 #include <jni.h>
 
 #define ST_JNI_VERSION    JNI_VERSION_1_6
-#define ST_JNI_CLASS_NAME "com/bomber/strace/STrace"
+#define ST_JNI_CLASS_NAME "com/bomber/lancer/Lancer"
 
 extern int st_api_level;
 extern char *st_trace_file;
@@ -21,4 +21,4 @@ extern char *st_trace_file;
 }
 #endif
 
-#endif //STRACE_ST_JNI_H
+#endif //LANCER_LAN_JNI_H

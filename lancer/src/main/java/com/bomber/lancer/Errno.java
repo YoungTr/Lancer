@@ -20,7 +20,7 @@
 //
 
 // Created by caikelun on 2019-03-07.
-package com.bomber.strace;
+package com.bomber.lancer;
 
 
 @SuppressWarnings("WeakerAccess")
@@ -37,7 +37,7 @@ public final class Errno {
     public static final int CONTEXT_IS_NULL = -1;
 
     /**
-     * Load xCrash's native library failed.
+     * Load native library failed.
      */
     public static final int LOAD_LIBRARY_FAILED = -2;
 

@@ -1,4 +1,4 @@
-package com.bomber.strace;
+package com.bomber.lancer;
 
 import android.os.Trace;
 import android.util.Log;
@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
  * @author youngtr
  * @data 2022/6/18
  */
-public class STrace {
+public class Lancer {
 
     private static final String TAG = "STrace.Native";
 
@@ -20,20 +20,20 @@ public class STrace {
         try {
             System.loadLibrary("bomber-strace");
         } catch (Throwable e) {
-            Log.e(TAG, "NativeHandler System.loadLibrary failed", e);
+            Log.e(TAG, "Lancer System.loadLibrary failed", e);
             return Errno.LOAD_LIBRARY_FAILED;
         }
 
         try {
             int r = nativeInit(appLevel, traceFile);
             if (r != 0) {
-                Log.e(TAG, "STrace init failed");
+                Log.e(TAG, "Lancer init failed");
                 return Errno.INIT_LIBRARY_FAILED;
             }
             SystraceReflector.updateSystraceTags();
             return r;
         } catch (Throwable e) {
-            Log.e(TAG, "STrace init failed", e);
+            Log.e(TAG, "Lancer init failed", e);
             return Errno.INIT_LIBRARY_FAILED;
         }
     }
@@ -41,12 +41,12 @@ public class STrace {
     private native int nativeInit(int appLevel, String traceFile);
 
 
-    public static STrace getInstance() {
+    public static Lancer getInstance() {
         return Holder.INSTANCE;
     }
 
     private static class Holder {
-        private static final STrace INSTANCE = new STrace();
+        private static final Lancer INSTANCE = new Lancer();
     }
 
     private static final class SystraceReflector {

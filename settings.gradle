@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "sTrace"
+rootProject.name = "Lancer"
 include ':app'
-include ':strace'
+include ':lancer'

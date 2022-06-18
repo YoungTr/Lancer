@@ -2,8 +2,8 @@
 // Created by YoungTr on 2022/6/18.
 //
 
-#ifndef STRACE_ST_UTILS_H
-#define STRACE_ST_UTILS_H
+#ifndef LANCER_LAN_UTILS_H
+#define LANCER_LAN_UTILS_H
 
 #include <stddef.h>
 #include <sys/types.h>
@@ -45,4 +45,4 @@ uint64_t get_system_nanosecond();
 }
 #endif
 
-#endif //STRACE_ST_UTILS_H
+#endif //LANCER_LAN_UTILS_H

@@ -8,11 +8,11 @@
 #include <sys/time.h>
 #include <stdio.h>
 #include <sys/stat.h>
-#include "st_utils.h"
-#include "st_trace.h"
+#include "lan_utils.h"
+#include "lan_trace.h"
 #include "log.h"
 #include "xhook.h"
-#include "st_jni.h"
+#include "lan_jni.h"
 
 static uint64_t original_tags = -1;
 static uint64_t *atrace_enable_tags = NULL;
@@ -75,16 +75,16 @@ void enable_trace_tag() {
     void *handle;
 
     if (NULL == (handle = dlopen(NULL, RTLD_GLOBAL))) return;
-    if (NULL == (atrace_enable_tags = dlsym(handle, STRACE_LIB_CUTILS_ENABLETAGS))) {
-        LOGE("dl sym error: %s", STRACE_LIB_CUTILS_ENABLETAGS);
+    if (NULL == (atrace_enable_tags = dlsym(handle, LANCER_LIB_CUTILS_ENABLETAGS))) {
+        LOGE("dl sym error: %s", LANCER_LIB_CUTILS_ENABLETAGS);
         goto err;
     }
 
     original_tags = *atrace_enable_tags;
 
     *atrace_enable_tags = UINT64_MAX;
-    if (NULL == (atrace_maker_fd = dlsym(handle, STRACE_LIB_CUTILS_ATRACE_MAKER_FD))) {
-        LOGE("dl sym error: %s", STRACE_LIB_CUTILS_ATRACE_MAKER_FD);
+    if (NULL == (atrace_maker_fd = dlsym(handle, LANCER_LIB_CUTILS_ATRACE_MAKER_FD))) {
+        LOGE("dl sym error: %s", LANCER_LIB_CUTILS_ATRACE_MAKER_FD);
         goto err;
     }
 

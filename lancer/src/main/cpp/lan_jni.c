@@ -3,9 +3,9 @@
 //
 
 #include <string.h>
-#include "st_jni.h"
+#include "lan_jni.h"
 #include "log.h"
-#include "st_trace.h"
+#include "lan_trace.h"
 
 int st_api_level = 0;
 char *st_trace_file = NULL;
