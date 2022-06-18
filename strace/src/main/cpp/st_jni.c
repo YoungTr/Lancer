@@ -5,6 +5,7 @@
 #include <string.h>
 #include "st_jni.h"
 #include "log.h"
+#include "st_trace.h"
 
 int st_api_level = 0;
 char *st_trace_file = NULL;
@@ -14,6 +15,8 @@ static jint st_jni_init(JNIEnv *env, jobject this, jint app_level, jstring trace
     st_trace_file = strdup((*env)->GetStringUTFChars(env, trace_file, 0));
 
     LOGD("app_level: %d, trace_file: %s", st_api_level, st_trace_file);
+
+    enable_trace_tag();
 
     return 0;
 }

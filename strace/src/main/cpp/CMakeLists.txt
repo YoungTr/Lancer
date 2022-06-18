@@ -12,6 +12,7 @@ project(${PROJECT_NAME})
 
 
 file(GLOB STRACE_SRC
+        dl/*.c
         *.c)
 
 # Creates and names a library, sets it as either STATIC
@@ -40,6 +41,9 @@ find_library( # Sets the name of the path variable.
         # Specifies the name of the NDK library that
         # you want CMake to locate.
         log)
+
+target_include_directories(${PROJECT_NAME} PUBLIC
+        dl)
 
 # Specifies libraries CMake should link to your target library. You
 # can link multiple libraries, such as libraries you define in this
