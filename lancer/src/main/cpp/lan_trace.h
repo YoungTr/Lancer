@@ -16,10 +16,14 @@ extern "C" {
 #define LANCER_LIB_CUTILS_ENABLETAGS            "atrace_enabled_tags"
 #define LANCER_LIB_CUTILS_ATRACE_MAKER_FD       "atrace_marker_fd"
 
+extern int lan_api_level;
+extern char *lan_trace_dir;
 
-void enable_trace_tag();
+int lan_trace_init(const int app_level, const char *trace_dir);
 
-void disable_trace_tag();
+void lan_trace_enable();
+
+void lan_trace_disable();
 
 
 #ifdef __cplusplus

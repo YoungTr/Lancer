@@ -8,6 +8,7 @@
 #include <stddef.h>
 #include <sys/types.h>
 #include <ctype.h>
+#include <inttypes.h>
 #include <time.h>
 #include "string.h"
 
@@ -15,9 +16,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-#define ERRNO_SYS     ((0 != errno) ? errno : 1004)
-#define ERRNO_INVAL    1002
 
 #define UTIL_MIN(a,b) ({         \
             __typeof__ (a) _a = (a); \
@@ -40,6 +38,8 @@ char *util_trim(char *start);
 void util_get_thread_name(pid_t tid, char *buf, size_t len);
 
 uint64_t get_system_nanosecond();
+
+int util_mkdirs(const char *dir);
 
 #ifdef __cplusplus
 }

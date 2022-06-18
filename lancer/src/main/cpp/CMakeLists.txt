@@ -6,7 +6,7 @@
 cmake_minimum_required(VERSION 3.18.1)
 
 # Declares and names the project.
-set(PROJECT_NAME "bomber-strace")
+set(PROJECT_NAME "lancer")
 
 project(${PROJECT_NAME})
 

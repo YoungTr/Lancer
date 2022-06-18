@@ -13,24 +13,25 @@ import java.lang.reflect.Method;
  */
 public class Lancer {
 
-    private static final String TAG = "STrace.Native";
+    private static final String TAG = "Lancer.NativeHandler";
 
 
-    public int initialize(int appLevel, String traceFile) {
+    public int initialize(int appLevel, String traceDir) {
         try {
-            System.loadLibrary("bomber-strace");
+            System.loadLibrary("lancer");
         } catch (Throwable e) {
             Log.e(TAG, "Lancer System.loadLibrary failed", e);
             return Errno.LOAD_LIBRARY_FAILED;
         }
 
         try {
-            int r = nativeInit(appLevel, traceFile);
+            int r = nativeInit(appLevel, traceDir);
             if (r != 0) {
                 Log.e(TAG, "Lancer init failed");
                 return Errno.INIT_LIBRARY_FAILED;
             }
             SystraceReflector.updateSystraceTags();
+            Log.i(TAG, "Lancer init: " + r);
             return r;
         } catch (Throwable e) {
             Log.e(TAG, "Lancer init failed", e);
@@ -38,7 +39,19 @@ public class Lancer {
         }
     }
 
+    public void start() {
+        enableLancer();
+    }
+
+    public void stop() {
+        disableLancer();
+    }
+
     private native int nativeInit(int appLevel, String traceFile);
+
+    private native void enableLancer();
+
+    private native void disableLancer();
 
 
     public static Lancer getInstance() {

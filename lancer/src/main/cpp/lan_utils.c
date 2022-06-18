@@ -7,19 +7,21 @@
 #include <errno.h>
 #include <string.h>
 #include <stdio.h>
+#include <sys/stat.h>
 #include "lan_utils.h"
+#include "lan_errno.h"
 
 int util_read_file_line(const char *path, char *buf, size_t len) {
     int fd;
     int r = 0;
 
     if (0 > (fd = TEMP_FAILURE_RETRY(open(path, O_RDONLY | O_CLOEXEC)))) {
-        r = ERRNO_SYS;
+        r = LANCER_ERRNO_SYS;
         goto end;
     }
 
     if (NULL == util_gets(buf, len, fd)) {
-        r = ERRNO_SYS;
+        r = LANCER_ERRNO_SYS;
         goto end;
     }
 
@@ -36,7 +38,7 @@ int util_get_process_thread_name(const char *path, char *buf, size_t len) {
     if (0 != (r = util_read_file_line(path, tmp, sizeof(tmp)))) return r;
 
     data = util_trim(tmp);
-    if (0 == (data_len = strlen(data))) return ERRNO_SYS;
+    if (0 == (data_len = strlen(data))) return LANCER_ERRNO_SYS;
     cpy_len = UTIL_MIN(len - 1, data_len);
     memcpy(buf, data, cpy_len);
     buf[cpy_len] = '\0';
@@ -93,6 +95,40 @@ uint64_t get_system_nanosecond() {
     struct timespec ts;
     clock_gettime(CLOCK_MONOTONIC, &ts);
     return (uint64_t) ts.tv_sec * 1000 * 1000 * 1000 + (uint64_t) ts.tv_nsec;
+}
+
+int util_mkdirs(const char *dir)
+{
+    size_t  len;
+    char    buf[PATH_MAX];
+    char   *p;
+
+    //check or try create dir directly
+    errno = 0;
+    if(0 == mkdir(dir, S_IRWXU) || EEXIST == errno) return 0;
+
+    //try create dir recursively...
+
+    len = strlen(dir);
+    if(0 == len) return LANCER_ERRNO_INVAL;
+    if('/' != dir[0]) return LANCER_ERRNO_INVAL;
+
+    memcpy(buf, dir, len + 1);
+    if(buf[len - 1] == '/') buf[len - 1] = '\0';
+
+    for(p = buf + 1; *p; p++)
+    {
+        if(*p == '/')
+        {
+            *p = '\0';
+            errno = 0;
+            if(0 != mkdir(buf, S_IRWXU) && EEXIST != errno) return errno;
+            *p = '/';
+        }
+    }
+    errno = 0;
+    if(0 != mkdir(buf, S_IRWXU) && EEXIST != errno) return errno;
+    return 0;
 }
 
 
