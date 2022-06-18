@@ -14,11 +14,9 @@ extern "C" {
 #define STRACE_LIB_CUTILS_ATRACE_MAKER_FD       "atrace_marker_fd"
 
 
-
-
-
-
 void enable_trace_tag();
+
+void disable_trace_tag();
 
 
 #ifdef __cplusplus
