@@ -27,22 +27,20 @@ static int need_write_systrace(int fd, size_t count) {
 }
 
 void write_trace(const void *buf, size_t count) {
+
+    double sec = (double )get_system_nanosecond() / 1000000000;
     const char *trace = buf;
-    gettimeofday(&tv, NULL);
-    double f = tv.tv_sec;
     char content[1024];
     char thread[256];
     int len;
     util_get_thread_name(gettid(), thread, sizeof(thread));
     switch (trace[0]) {
         case 'B':
-            len = snprintf(content, sizeof(content),
-                           "%s-%d [000] ...1 %.6f: tracing_mark_write: %s\n", thread, gettid(), f,
-                           trace);
+            len = snprintf(content, sizeof(content),"%s-%d [000] ...1 %.6f: tracing_mark_write: %s\n", thread, gettid(), sec, trace);
             write(trace_fd, content, len);
             break;
         case 'E':
-            len = snprintf(content, sizeof(content),"%s-%d [000] ...1 %.6f: tracing_mark_write: E\n", thread, gettid(), f);
+            len = snprintf(content, sizeof(content),"%s-%d [000] ...1 %.6f: tracing_mark_write: E\n", thread, gettid(), sec);
             write(trace_fd, content, len);
             break;
         default:

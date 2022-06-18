@@ -8,6 +8,7 @@
 #include <stddef.h>
 #include <sys/types.h>
 #include <ctype.h>
+#include <time.h>
 #include "string.h"
 
 
@@ -38,7 +39,7 @@ char *util_trim(char *start);
 
 void util_get_thread_name(pid_t tid, char *buf, size_t len);
 
-
+uint64_t get_system_nanosecond();
 
 #ifdef __cplusplus
 }

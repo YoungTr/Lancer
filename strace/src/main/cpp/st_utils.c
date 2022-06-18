@@ -89,5 +89,11 @@ char *util_trim(char *start) {
     return start;
 }
 
+uint64_t get_system_nanosecond() {
+    struct timespec ts;
+    clock_gettime(CLOCK_MONOTONIC, &ts);
+    return (uint64_t) ts.tv_sec * 1000 * 1000 * 1000 + (uint64_t) ts.tv_nsec;
+}
+
 
 
