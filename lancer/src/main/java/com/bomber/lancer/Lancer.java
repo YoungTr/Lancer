@@ -16,7 +16,7 @@ public class Lancer {
     private static final String TAG = "Lancer.NativeHandler";
 
 
-    public int initialize(int appLevel, String traceDir) {
+    public int initialize(int appLevel, String traceDir, boolean debug) {
         try {
             System.loadLibrary("lancer");
         } catch (Throwable e) {
@@ -25,12 +25,11 @@ public class Lancer {
         }
 
         try {
-            int r = nativeInit(appLevel, traceDir);
+            int r = nativeInit(appLevel, traceDir, debug ? 1 : 0);
             if (r != 0) {
                 Log.e(TAG, "Lancer init failed");
                 return Errno.INIT_LIBRARY_FAILED;
             }
-            SystraceReflector.updateSystraceTags();
             Log.i(TAG, "Lancer init: " + r);
             return r;
         } catch (Throwable e) {
@@ -41,13 +40,14 @@ public class Lancer {
 
     public void start() {
         enableLancer();
+        SystraceReflector.updateSystraceTags();
     }
 
     public void stop() {
         disableLancer();
     }
 
-    private native int nativeInit(int appLevel, String traceFile);
+    private native int nativeInit(int appLevel, String traceFile, int debug);
 
     private native void enableLancer();
 

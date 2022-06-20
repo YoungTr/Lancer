@@ -23,7 +23,8 @@ class LancerApp : Application() {
     private fun installLancer() {
         val r = Lancer.getInstance().initialize(
             Build.VERSION.SDK_INT,
-            filesDir.absolutePath + File.separator + "trace"
+            filesDir.absolutePath + File.separator + "trace",
+            true
         )
         Log.d("TraceApp", "r = $r")
         Lancer.getInstance().start()

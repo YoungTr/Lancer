@@ -7,11 +7,10 @@
 #include "lan_jni.h"
 #include "lan_trace.h"
 
-static jint lan_jni_init(JNIEnv *env, jobject this, jint app_level, jstring trace_file) {
+static jint lan_jni_init(JNIEnv *env, jobject this, jint app_level, jstring trace_file, jint app_debug) {
     int r;
-    lan_api_level = app_level;
     const char *trace_dir = (*env)->GetStringUTFChars(env, trace_file, 0);
-    r = lan_trace_init(app_level, trace_dir);
+    r = lan_trace_init(app_level, trace_dir, app_debug);
     return r;
 }
 
@@ -26,7 +25,7 @@ static void lan_jni_disable_trace(JNIEnv *env, jobject this) {
 
 
 static const JNINativeMethod TRACE_METHODS[] = {
-        {"nativeInit",    "(ILjava/lang/String;)I", (void *) lan_jni_init},
+        {"nativeInit",    "(ILjava/lang/String;I)I", (void *) lan_jni_init},
         {"enableLancer",  "()V",                    (void *) lan_jni_enable_trace},
         {"disableLancer", "()V",                    (void *) lan_jni_disable_trace}
 };

@@ -17,9 +17,10 @@ extern "C" {
 #define LANCER_LIB_CUTILS_ATRACE_MAKER_FD       "atrace_marker_fd"
 
 extern int lan_api_level;
+extern int lan_app_debug;
 extern char *lan_trace_dir;
 
-int lan_trace_init(const int app_level, const char *trace_dir);
+int lan_trace_init(const int app_level, const char *trace_dir, const int app_debug);
 
 void lan_trace_enable();
 

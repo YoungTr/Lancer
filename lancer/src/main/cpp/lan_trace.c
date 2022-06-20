@@ -16,6 +16,7 @@
 #include "xhook.h"
 
 int lan_api_level = 0;
+int lan_app_debug = 0;
 char *lan_trace_dir = NULL;
 
 static uint64_t original_tags = -1;
@@ -55,6 +56,9 @@ void write_trace(const void *buf, size_t count) {
         default:
             return;
     }
+    if (lan_app_debug) {
+        LOGD("%s", trace);
+    }
 
 }
 
@@ -84,9 +88,10 @@ void hook_libc() {
     xhook_refresh(1);
 }
 
-int lan_trace_init(const int app_level, const char *trace_dir) {
+int lan_trace_init(const int app_level, const char *trace_dir, const int app_debug) {
     int r = -1;
     lan_api_level = app_level;
+    lan_app_debug = app_debug;
     lan_trace_dir = strdup(trace_dir);
 
     void *handle;
