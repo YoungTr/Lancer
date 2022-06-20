@@ -6,14 +6,11 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
     }
 }
-rootProject.name = "Lancer"
-include ':app'
-include ':lancer'
 
-includeBuild("./plugin")
+rootProject.name = "plugin"
+include ':tracePlugin'

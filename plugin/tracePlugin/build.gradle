@@ -1,0 +1,30 @@
+plugins {
+    id 'kotlin'
+    id("java-gradle-plugin")
+    id("maven-publish")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+dependencies {
+    implementation gradleApi()
+    implementation("com.android.tools.build:gradle:7.2.1")
+    compileOnly("commons-io:commons-io:2.6")
+    compileOnly("commons-codec:commons-codec:1.15")
+    compileOnly("org.ow2.asm:asm-commons:9.2")
+    compileOnly("org.ow2.asm:asm-tree:9.2")
+}
+
+
+gradlePlugin {
+    plugins {
+        tracePlugin {
+            // 在 app 模块需要通过 id 引用这个插件
+            id = 'tracePlugin'
+            // 实现这个插件的类的路径
+            implementationClass = 'com.bomber.strace.TracePlugin'
+        }
+    }
+}
