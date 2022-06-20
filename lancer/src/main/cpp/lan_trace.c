@@ -31,6 +31,8 @@ static int need_write_systrace(int fd, size_t count) {
     return (trace_installed && fd == *atrace_maker_fd && count > 0) ? 0 : 1;
 }
 
+// todo
+// 频繁的 UI 操作会影响性能，可以先保存到内存然后异常写入，或者使用 mmap
 void write_trace(const void *buf, size_t count) {
     double sec = (double) get_system_nanosecond() / 1000000000;
     const char *trace = buf;
@@ -135,5 +137,7 @@ void lan_trace_enable() {
 void lan_trace_disable() {
     if (NULL != atrace_enable_tags) {
         *atrace_enable_tags = original_tags;
+        close(trace_fd);
+        trace_fd = -1;
     }
 }
