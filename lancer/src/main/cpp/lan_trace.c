@@ -67,6 +67,7 @@ ssize_t (*original_write)(int fd, const void *const __pass_object_size0 buf, siz
 ssize_t my_write(int fd, const void *const buf, size_t count) {
     if (0 == need_write_systrace(fd, count)) {
         write_trace(buf, count);
+        return (ssize_t) count;
     }
     return original_write(fd, buf, count);
 }
@@ -77,6 +78,7 @@ ssize_t (*original_write_chk)(int fd, const void *const __pass_object_size0 buf,
 ssize_t my_write_chk(int fd, const void *const buf, size_t count, size_t buf_size) {
     if (0 == need_write_systrace(fd, count)) {
         write_trace(buf, count);
+        return (ssize_t) count;
     }
     return original_write(fd, buf, count);
 }
@@ -104,7 +106,6 @@ int lan_trace_init(const int app_level, const char *trace_dir, const int app_deb
     hook_libc();
 
     // mkdir
-    LOGD("trace dir: %s", trace_dir);
     if (0 != (r = util_mkdirs(trace_dir))) goto err;
 
     trace_installed = 1;
@@ -119,7 +120,7 @@ int lan_trace_init(const int app_level, const char *trace_dir, const int app_deb
 static void open_trace_file() {
     char file[256];
     uint64_t time = get_system_nanosecond();
-    snprintf(file, sizeof(file), "%s/%020"PRIu64"_%s", lan_trace_dir, time, "trace.txt");
+    snprintf(file, sizeof(file), "%s/%s_%020"PRIu64"_%s", lan_trace_dir, "lancer", time, "trace.txt");
     int fd = open(file, COMMON_OPEN_NEW_FILE_FLAGS, COMMON_OPEN_NEW_FILE_MODE);
     if (fd >= 0) {
         trace_fd = fd;
