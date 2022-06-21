@@ -21,7 +21,7 @@ abstract class TraceTransform : AsmClassVisitorFactory<TraceParams> {
 
         val ignoreClass = parameters.get().ignoreClass.get().toMutableList()
         // 类库本身不做插桩操作
-        ignoreClass.add("com.bomber.strace.core.SysTracer")
+        ignoreClass.add("com.bomber.lancer.core.SysTracer")
 
         val ignore = ignoreClass.filter { regex ->
             Pattern.matches(regex, classData.className)

@@ -1,4 +1,4 @@
-package com.bomber.strace.core;
+package com.bomber.lancer.core;
 
 import android.os.Trace;
 import android.util.Log;
