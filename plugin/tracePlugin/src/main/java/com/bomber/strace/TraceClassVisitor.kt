@@ -29,8 +29,8 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, private val className: String
                     mv.visitLdcInsn(className)
                     mv.visitLdcInsn(name)
                     mv.visitMethodInsn(
-                        INVOKESTATIC, "com/bomber/strace/core/SysTracer", "i",
-                        "(Ljava/lang/String;Ljava/lang/String;)V", false
+                        INVOKESTATIC, SYS_TRACE_CLASS, "i",
+                        SYS_TRACE_METHOD_DESC, false
                     )
                 }
 
@@ -39,8 +39,8 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, private val className: String
                     mv.visitLdcInsn(className)
                     mv.visitLdcInsn(name)
                     mv.visitMethodInsn(
-                        INVOKESTATIC, "com/bomber/strace/core/SysTracer", "o",
-                        "(Ljava/lang/String;Ljava/lang/String;)V", false
+                        INVOKESTATIC, SYS_TRACE_CLASS, "o",
+                        SYS_TRACE_METHOD_DESC, false
                     )
                 }
 
@@ -49,12 +49,17 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, private val className: String
                     mv.visitLdcInsn(className)
                     mv.visitLdcInsn(name)
                     mv.visitMethodInsn(
-                        INVOKESTATIC, "com/bomber/strace/core/SysTracer", "catchIn",
-                        "(Ljava/lang/String;Ljava/lang/String;)V", false
+                        INVOKESTATIC, SYS_TRACE_CLASS, "catchIn",
+                        SYS_TRACE_METHOD_DESC, false
                     )
                 }
             }
         return newMethodVisitor
+    }
+
+    companion object {
+        private const val SYS_TRACE_CLASS = "com/bomber/lancer/core/SysTracer"
+        private const val SYS_TRACE_METHOD_DESC = "(Ljava/lang/String;Ljava/lang/String;)V"
     }
 
 }
