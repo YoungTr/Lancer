@@ -5,9 +5,10 @@ import com.android.build.api.instrumentation.ClassContext
 import com.android.build.api.instrumentation.ClassData
 import com.android.build.api.instrumentation.InstrumentationParameters
 import org.objectweb.asm.ClassVisitor
+import java.util.regex.Pattern
 
 
-abstract class TraceTransform : AsmClassVisitorFactory<InstrumentationParameters.None> {
+abstract class TraceTransform : AsmClassVisitorFactory<TraceParams> {
     override fun createClassVisitor(
         classContext: ClassContext,
         nextClassVisitor: ClassVisitor
@@ -16,7 +17,22 @@ abstract class TraceTransform : AsmClassVisitorFactory<InstrumentationParameters
     }
 
     override fun isInstrumentable(classData: ClassData): Boolean {
-        // todo 暂时先以 com.bomber.strace 目录进行插桩测试
-        return (classData.className.contains("com.bomber.strace"))
+        val pkg = parameters.get().pkg.get()
+
+        val ignoreClass = parameters.get().ignoreClass.get().toMutableList()
+        // 类库本身不做插桩操作
+        ignoreClass.add("com.bomber.strace.core.SysTracer")
+
+        val ignore = ignoreClass.filter { regex ->
+            Pattern.matches(regex, classData.className)
+        }.toList()
+
+        // 未匹配到 ignore class，并且该 class 的前缀为需要插桩的模块
+        val isInstrumentable = ignore.isEmpty() && (classData.className.contains(pkg))
+
+        if (isInstrumentable) {
+            println("trace class=${classData.className}")
+        }
+        return isInstrumentable
     }
 }

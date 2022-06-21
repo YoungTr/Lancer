@@ -4,6 +4,16 @@ plugins {
     id 'tracePlugin'
 }
 
+trace {
+    pkg = "com.bomber.strace"
+    ignoreClass = [
+            "com.bomber.strace.*.bean.*",// ignore  bean 目录下的 javaBean 文件
+            "com.bomber.*.R",// ignore R 文件
+            "com.bomber.*.R\\\$.*",// ignore R 文件的内部类
+            "com.bomber.*.BuildConfig",// ignore BuildConfig 文件
+    ]
+}
+
 android {
     compileSdk 32
 
