@@ -32,4 +32,10 @@ public class SysTracer {
 
         Log.i("TAG", "SysTracer.o = " + sectionName);
     }
+
+    public static void catchIn(String className, String methodName) {
+        String sectionName = className + "." + methodName;
+        Trace.endSection();
+        Log.i("TAG", "SysTracer.catchIn = " + sectionName);
+    }
 }
