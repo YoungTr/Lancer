@@ -14,6 +14,7 @@
 #include "lan_errno.h"
 #include "log.h"
 #include "xhook.h"
+#include "lan_mmap.h"
 
 int lan_api_level = 0;
 int lan_app_debug = 0;
@@ -27,6 +28,8 @@ static int *atrace_maker_fd = NULL;
 static int trace_fd = -1;
 
 static int trace_installed = 0;
+
+static unsigned char *trace_buf = NULL;
 
 static int need_write_systrace(int fd, size_t count) {
     return (trace_installed && fd == *atrace_maker_fd && count > 0) ? 0 : 1;

@@ -24,7 +24,7 @@ class LancerApp : Application() {
         val r = Lancer.getInstance().initialize(
             Build.VERSION.SDK_INT,
             filesDir.absolutePath + File.separator + "trace",
-            true
+            false
         )
         Log.d("TraceApp", "r = $r")
         Lancer.getInstance().start()
