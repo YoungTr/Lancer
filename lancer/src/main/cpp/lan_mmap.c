@@ -3,7 +3,6 @@
 //
 
 #include "lan_mmap.h"
-#include "log.h"
 
 int lan_open_mmap_file(char *filepath, unsigned char **buffer) {
     if (NULL == filepath || 0 == strnlen(filepath, 128))
@@ -13,8 +12,24 @@ int lan_open_mmap_file(char *filepath, unsigned char **buffer) {
     unsigned char *p_map = NULL;
     int size = LAN_DATA_LENGTH;
     // open file
-    int fd = open(filepath, COMMON_OPEN_NEW_FILE_FLAGS, COMMON_OPEN_NEW_FILE_MODE);
+    int fd = open(filepath, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP);
     if (0 <= fd) {
+        FILE *file = fopen(filepath, "rb+");
+        if (NULL != file) {
+            fseek(file, 0, SEEK_END);
+            long fileSize = ftell(file);
+            if (fileSize < size) {
+                fseek(file, 0, SEEK_SET);
+                char zero_data[size];
+                memset(zero_data, 0, size);
+                size_t _size = fwrite(zero_data, sizeof(char), size, file);
+                fflush(file);
+                if (_size == size) {
+                    LOGD("copy data to mmap file success");
+                }
+            }
+            fclose(file);
+        }
         // open success, then mmap
         if (NULL == (p_map = mmap(0, size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0))) {
             LOGE("mmap failed.");

@@ -30,9 +30,30 @@ static int trace_fd = -1;
 static int trace_installed = 0;
 
 static unsigned char *trace_buf = NULL;
+static unsigned char *trace_buf_point = NULL;
+static unsigned long trace_buf_total = 0;
 
 static int need_write_systrace(int fd, size_t count) {
     return (trace_installed && fd == *atrace_maker_fd && count > 0) ? 0 : 1;
+}
+
+void write_trace2(const char *buf, size_t count) {
+    if (NULL != trace_buf) {
+        LOGD("write mmap");
+        trace_buf_total += count;
+        memcpy(trace_buf_point, buf, count);
+        LOGD("trace_buf_total: %lu", trace_buf_total);
+        trace_buf_point += count;
+        if (trace_buf_total >= 25000) {
+            LOGD("flash mmap");
+            write(trace_fd, trace_buf, trace_buf_total);
+            trace_buf_point = trace_buf;
+            trace_buf_total = 0;
+        }
+
+    } else {
+        write(trace_fd, buf, count);
+    }
 }
 
 // todo
@@ -41,20 +62,21 @@ void write_trace(const void *buf, size_t count) {
     double sec = (double) get_system_nanosecond() / 1000000000;
     const char *trace = buf;
     char content[1024];
-    char thread[256];
+//    char thread[256];
+    char *thread = "m.bomber.strace";
     int len;
-    util_get_thread_name(gettid(), thread, sizeof(thread));
+//    util_get_thread_name(gettid(), thread, sizeof(thread));
     switch (trace[0]) {
         case 'B':
             len = snprintf(content, sizeof(content),
                            "%s-%d [000] ...1 %.6f: tracing_mark_write: %s\n", thread, gettid(), sec,
                            trace);
-            write(trace_fd, content, len);
+            write_trace2(content, len);
             break;
         case 'E':
             len = snprintf(content, sizeof(content),
                            "%s-%d [000] ...1 %.6f: tracing_mark_write: E\n", thread, gettid(), sec);
-            write(trace_fd, content, len);
+            write_trace2(content, len);
             break;
         default:
             return;
@@ -111,6 +133,14 @@ int lan_trace_init(const int app_level, const char *trace_dir, const int app_deb
     // mkdir
     if (0 != (r = util_mkdirs(trace_dir))) goto err;
 
+    // mmap
+    char mmap_file[128];
+    snprintf(mmap_file, sizeof(mmap_file), "%s/lancer_trace.mmap", trace_dir);
+    LOGD("mmap_file: %s", mmap_file);
+    lan_open_mmap_file(mmap_file, &trace_buf);
+    trace_buf_point = trace_buf;
+
+
     trace_installed = 1;
     return 0;
 
@@ -127,6 +157,7 @@ static void open_trace_file() {
     int fd = open(file, COMMON_OPEN_NEW_FILE_FLAGS, COMMON_OPEN_NEW_FILE_MODE);
     if (fd >= 0) {
         trace_fd = fd;
+        trace_buf_total = 0;
         char *head = "TRACE:\n# tracer: nop\n#\n";
         write(fd, head, strlen(head));
     }
