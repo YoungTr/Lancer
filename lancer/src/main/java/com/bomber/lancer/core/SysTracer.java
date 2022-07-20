@@ -24,7 +24,6 @@ public class SysTracer {
         if (methodStack.size() <= maxSize) {
             methodStack.push(sectionName);
             Trace.beginSection(sectionName);
-            Log.i("TAG", "SysTracer.i = " + sectionName);
         }
     }
 
@@ -36,13 +35,11 @@ public class SysTracer {
         if (methodStack != null && methodStack.size() > 0) {
             methodStack.pop();
             Trace.endSection();
-            Log.i("TAG", "SysTracer.o = " + sectionName);
         }
     }
 
     public static void catchIn(String className, String methodName) {
         String sectionName = className + "." + methodName;
         Trace.endSection();
-        Log.i("TAG", "SysTracer.catchIn = " + sectionName);
     }
 }

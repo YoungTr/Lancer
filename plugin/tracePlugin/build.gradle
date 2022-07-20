@@ -1,7 +1,7 @@
 plugins {
     id 'kotlin'
     id("java-gradle-plugin")
-    id("maven-publish")
+    id 'com.vanniktech.maven.publish'
 }
 
 java {
