@@ -21,10 +21,11 @@ class LancerApp : Application() {
 
 
     private fun installLancer() {
+        val traceDir = externalCacheDir?.absolutePath + File.separator + "trace"
         val r = Lancer.getInstance().initialize(
             Build.VERSION.SDK_INT,
-            filesDir.absolutePath + File.separator + "trace",
-            true
+            traceDir,
+            BuildConfig.DEBUG
         )
         Log.d("TraceApp", "r = $r")
         Lancer.getInstance().start()
