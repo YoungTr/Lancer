@@ -6,5 +6,5 @@
 
 ### Todo List
 
-- [ ] 字节码插桩
-- [ ] write_trace IO 优化
+-  字节码插桩
+-  write_trace IO 优化
