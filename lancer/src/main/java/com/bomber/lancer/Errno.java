@@ -29,7 +29,7 @@ public final class Errno {
     /**
      * Initialization successful.
      */
-    public static final int OK = 0;
+    public static final int OK = 1;
 
     /**
      * The context parameter is null.

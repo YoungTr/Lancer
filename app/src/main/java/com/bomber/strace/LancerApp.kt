@@ -19,15 +19,8 @@ class LancerApp : Application() {
 
     }
 
-
     private fun installLancer() {
-        val traceDir = externalCacheDir?.absolutePath + File.separator + "trace"
-        val r = Lancer.getInstance().initialize(
-            Build.VERSION.SDK_INT,
-            traceDir,
-            BuildConfig.DEBUG
-        )
-        Log.d("TraceApp", "r = $r")
-        Lancer.getInstance().start()
+        val traceDir = (externalCacheDir?.absolutePath ?: filesDir.absolutePath) + File.separator + "atrace"
+        Lancer.getInstance().start(traceDir)
     }
 }

@@ -1,5 +1,7 @@
 package com.bomber.lancer;
 
+import static com.bomber.lancer.Errno.OK;
+
 import android.os.Trace;
 import android.util.Log;
 
@@ -15,43 +17,31 @@ public class Lancer {
 
     private static final String TAG = "Lancer.NativeHandler";
 
-
-    public int initialize(int appLevel, String traceDir, boolean debug) {
+    static {
         try {
             System.loadLibrary("lancer");
         } catch (Throwable e) {
             Log.e(TAG, "Lancer System.loadLibrary failed", e);
-            return Errno.LOAD_LIBRARY_FAILED;
-        }
-
-        try {
-            int r = nativeInit(appLevel, traceDir, debug ? 1 : 0);
-            if (r != 0) {
-                Log.e(TAG, "Lancer init failed");
-                return Errno.INIT_LIBRARY_FAILED;
-            }
-            Log.i(TAG, "Lancer init: " + r);
-            return r;
-        } catch (Throwable e) {
-            Log.e(TAG, "Lancer init failed", e);
-            return Errno.INIT_LIBRARY_FAILED;
         }
     }
 
-    public void start() {
-        enableLancer();
-        SystraceReflector.updateSystraceTags();
+
+    public void start(String traceDir) {
+        int r = startTrace(traceDir, 100000);
+        if (r == OK) {
+            SystraceReflector.updateSystraceTags();
+        }
     }
 
     public void stop() {
-        disableLancer();
+        stopTrace();
     }
 
-    private native int nativeInit(int appLevel, String traceFile, int debug);
+//    private native int nativeInit(int appLevel, String traceFile, int debug);
 
-    private native void enableLancer();
+    private native int startTrace(String traceDir, long bufferSize);
 
-    private native void disableLancer();
+    private native int stopTrace();
 
 
     public static Lancer getInstance() {

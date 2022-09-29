@@ -13,7 +13,11 @@ project(${PROJECT_NAME})
 
 file(GLOB STRACE_SRC
         xhook/*.c
-        *.c)
+        *.c
+        *.cpp
+        utils/*.cpp
+        trace/*.cpp
+        hook/*.cpp)
 
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
@@ -43,6 +47,9 @@ find_library( # Sets the name of the path variable.
         log)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
+        include
+        utils
+        hook
         xhook)
 
 # Specifies libraries CMake should link to your target library. You
