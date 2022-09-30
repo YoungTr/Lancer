@@ -6,6 +6,7 @@ import android.os.Build
 import android.util.Log
 import com.bomber.lancer.Lancer
 import java.io.File
+import java.lang.Thread.sleep
 
 /**
  * @author youngtr
@@ -17,6 +18,11 @@ class LancerApp : Application() {
         super.attachBaseContext(base)
         installLancer()
 
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        sleep(300)
     }
 
     private fun installLancer() {

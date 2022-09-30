@@ -33,7 +33,7 @@ static int need_write_systrace(int fd, size_t count) {
 }
 
 // todo
-// 频繁的 UI 操作会影响性能，可以先保存到内存然后异常写入
+// 频繁的 UI 操作会影响性能，可以先保存到内存然后异步写入
 void write_trace(const void *buf, size_t count) {
     double sec = (double) get_system_nanosecond() / 1000000000;
     const char *trace = buf;

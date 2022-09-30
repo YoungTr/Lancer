@@ -67,8 +67,17 @@ bool ATrace::IsATrace(int fd, size_t count) {
 }
 
 void ATrace::LogTrace(const void *buf, size_t count) {
-    const char *msg = static_cast<const char *>(buf);
-    LOGD("%s", msg);
+    const char *msg = (const char *) buf;
+    switch (msg[0]) {
+        case 'B':
+            LOGD("%s", msg);
+            break;
+        case 'E':
+            LOGD("E");
+            break;
+        default:
+            break;
+    }
 }
 
 
