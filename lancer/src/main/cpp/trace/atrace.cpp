@@ -2,15 +2,19 @@
 // Created by YoungTr on 2022/9/26.
 //
 
-#include <trace.h>
 #include <string>
 #include <dlfcn.h>
+#include <unistd.h>
 #include "atrace.h"
 #include "timers.h"
 #include "hook_bridge.h"
 #include "trace_provider.h"
-#include "../log.h"
+#include "trace.h"
+#include "../lan_utils.h"
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "UnusedParameter"
+#pragma ide diagnostic ignored "ConstantFunctionResult"
 namespace swan {
 namespace lancer {
 
@@ -40,7 +44,7 @@ int32_t ATrace::StarTrace() {
     atrace_started_ = true;
 //    ATRACE_BEGIN(("monotonic_time: " + std::to_string(systemTime(SYSTEM_TIME_MONOTONIC) / 1000000000.0)).c_str());
     int64_t cost_us = elapsedRealtimeMicros() - start;
-    LOGD("start trace cost us: %ld", cost_us);
+    LOGD("start trace cost us: %lld", cost_us);
     return OK;
 }
 
@@ -55,9 +59,12 @@ int32_t ATrace::StopTrace() {
         atrace_enable_tags_->store(tags);
     }
 
+    // clear thread map
+    thread_map_.clear();
+
     log_trace_cost_us_ = 0;
     int64_t cost_us = elapsedRealtimeMicros() - start;
-    LOGD("stop trace cost us: %ld", cost_us);
+    LOGD("stop trace cost us: %lld", cost_us);
 
     return OK;
 }
@@ -66,17 +73,35 @@ bool ATrace::IsATrace(int fd, size_t count) {
    return (atrace_maker_fd_ != nullptr && fd == *atrace_maker_fd_ && count > 0);
 }
 
+void ATrace::revolveTrace(const char *trace, bool begin) {
+    char tmp_buf[kAtraceMessageLen] = {0};
+    int pid = gettid();
+    std::string thread_name = GetThreadName(pid);
+    int len;
+    double sec = CurrentTime();
+    if (begin) {
+        len = snprintf(tmp_buf, sizeof(tmp_buf), "%s-%d [000] ...1 %.6f: tracing_mark_write: %s\n",
+                       thread_name.c_str(), gettid(), sec, trace);
+    } else {
+        len = snprintf(tmp_buf, sizeof(tmp_buf),
+                       "%s-%d [000] ...1 %.6f: tracing_mark_write: E\n", thread_name.c_str(),
+                       gettid(), sec);
+    }
+
+    LOGD("tmp_buf length: %d, content: %s", len, tmp_buf);
+}
+
 void ATrace::LogTrace(const void *buf, size_t count) {
     const char *msg = (const char *) buf;
     switch (msg[0]) {
         case 'B':
-            LOGD("%s", msg);
+            revolveTrace((const char *) buf, true);
             break;
         case 'E':
-            LOGD("E");
+            revolveTrace((const char *) buf, false);
             break;
         default:
-            break;
+            return;
     }
 }
 
@@ -114,6 +139,21 @@ int32_t ATrace::InstallAtraceProbe() {
     return INSTALL_ATRACE_FAILED;
 }
 
+std::string ATrace::GetThreadName(pid_t pid) {
+    auto iterator = thread_map_.find(pid);
+    std::string t_name;
+    if (iterator != thread_map_.end()) {
+        t_name = iterator->second;
+//        LOGD("find pid: %d, name: %s", iterator->first, t_name.c_str());
+    } else {
+        char thread[256];
+        util_get_thread_name(pid, thread, sizeof(thread));
+        t_name = std::string(thread);
+        thread_map_[pid] = t_name;
+//        LOGD("get pid: %d, name: %s", pid, t_name.c_str());
+    }
+    return t_name;
+}
 
 ATrace::ATrace() = default;
 ATrace::~ATrace() = default;
@@ -123,3 +163,5 @@ ATrace::~ATrace() = default;
 }
 
 
+
+#pragma clang diagnostic pop
