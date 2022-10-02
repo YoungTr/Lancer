@@ -25,6 +25,8 @@ static int32_t JNI_startTrace(JNIEnv *env, jobject thiz, jstring traceDir, jlong
         return ATRACE_LOCATION_INVALID;
     }
 
+    TraceProvider::Get().SetBufferSize(bufferSize);
+
     return ATrace::Get().StarTrace();
 }
 

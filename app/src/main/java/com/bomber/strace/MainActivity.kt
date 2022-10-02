@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import com.bomber.lancer.Lancer
 import com.bomber.strace.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         funA()
+
+        binding.sampleText.setOnClickListener {
+            Lancer.getInstance().stop()
+        }
 
         // Example of a call to a native method
         binding.sampleText.text = stringFromJNI()

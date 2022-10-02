@@ -11,6 +11,7 @@
 #include "trace_provider.h"
 #include "trace.h"
 #include "../lan_utils.h"
+#include "recoder.h"
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "UnusedParameter"
@@ -28,6 +29,10 @@ int32_t ATrace::StarTrace() {
 
     if (atrace_started_) {
         return OK;
+    }
+
+    if (!PostCreateTrace(TraceProvider::Get().GetBufferSize())) {
+        return START_WRITE_TRACE_FAILED;
     }
 
     int32_t result = InstallProbe();
@@ -59,6 +64,9 @@ int32_t ATrace::StopTrace() {
         atrace_enable_tags_->store(tags);
     }
 
+    PostFinishTrace();
+    atrace_started_ = false;
+
     // clear thread map
     thread_map_.clear();
 
@@ -88,7 +96,12 @@ void ATrace::revolveTrace(const char *trace, bool begin) {
                        gettid(), sec);
     }
 
-    LOGD("tmp_buf length: %d, content: %s", len, tmp_buf);
+//    LOGD("tmp_buf length: %d, content: %s", len, tmp_buf);
+    Logger::get().writeBytes(
+            EntryType::STRING_NAME,
+            0,
+            (const uint8_t *) tmp_buf,
+            len);
 }
 
 void ATrace::LogTrace(const void *buf, size_t count) {

@@ -17,6 +17,8 @@
 
 #pragma once
 
+#include <cstdio>
+#include <string>
 #include <writer/AbortReason.h>
 
 namespace facebook {
