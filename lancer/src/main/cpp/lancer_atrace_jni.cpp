@@ -4,7 +4,9 @@
 #include <jni.h>
 #include "atrace.h"
 #include "trace_provider.h"
-#include "lan_jni.h"
+
+#define LANCER_JNI_VERSION    JNI_VERSION_1_6
+#define LANCER_JNI_CLASS_NAME "com/bomber/lancer/Lancer"
 
 using namespace swan::lancer;
 
