@@ -10,6 +10,13 @@ set(PROJECT_NAME "lancer")
 
 project(${PROJECT_NAME})
 
+set(fastlog_DIR third_party/profilo/fastlog)
+include_directories(${fastlog_DIR})
+
+add_subdirectory(${fastlog_DIR} ${CMAKE_CURRENT_BINARY_DIR}/fastlog)
+
+
+
 
 file(GLOB STRACE_SRC
         xhook/*.c
@@ -58,7 +65,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 
 target_link_libraries( # Specifies the target library.
         ${PROJECT_NAME}
-
+        fastlog
         # Links the target library to the log library
         # included in the NDK.
         ${log-lib})
