@@ -5,6 +5,8 @@ import android.content.Context
 import android.os.Build
 import android.util.Log
 import com.bomber.lancer.Lancer
+import com.bomber.lancer.TraceApplicationLike
+import com.bomber.lancer.core.SysTracer
 import java.io.File
 import java.lang.Thread.sleep
 
@@ -14,19 +16,15 @@ import java.lang.Thread.sleep
  */
 class LancerApp : Application() {
 
-    override fun attachBaseContext(base: Context?) {
+    override fun attachBaseContext(base: Context) {
+        // TODO: 字节码自动插入
+        TraceApplicationLike.attachBaseContext(base)
+        SysTracer.i("com.smart.app.SmartApplication", "attachBaseContext")
         super.attachBaseContext(base)
-        installLancer()
-
     }
 
     override fun onCreate() {
         super.onCreate()
         sleep(300)
-    }
-
-    private fun installLancer() {
-        val traceDir = (externalCacheDir?.absolutePath ?: filesDir.absolutePath) + File.separator + "atrace"
-        Lancer.getInstance().start(traceDir)
     }
 }

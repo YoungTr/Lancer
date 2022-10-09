@@ -110,7 +110,7 @@ void TraceWriter::loop() {
 
     // Magic signal to terminate the loop.
     if (trace_id == kStopLoopTraceID) {
-      std::ofstream outfile(trace_folder_ + "/" + "rheatrace.stop");
+      std::ofstream outfile(trace_folder_ + "/" + "lancer-atrace.stop");
       return;
     }
 

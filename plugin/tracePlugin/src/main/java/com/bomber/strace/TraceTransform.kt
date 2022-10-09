@@ -17,8 +17,6 @@ abstract class TraceTransform : AsmClassVisitorFactory<TraceParams> {
     }
 
     override fun isInstrumentable(classData: ClassData): Boolean {
-        val pkg = parameters.get().pkg.get()
-
         val ignoreClass = parameters.get().ignoreClass.get().toMutableList()
         // 类库本身不做插桩操作
         ignoreClass.add("com.bomber.lancer.*")
@@ -33,6 +31,10 @@ abstract class TraceTransform : AsmClassVisitorFactory<TraceParams> {
         ignoreClass.add("dagger.*")
         ignoreClass.add("okio.*")
         ignoreClass.add("org.*")
+        ignoreClass.add("com.*.R")
+        ignoreClass.add("com.*.R\\\$.*")
+        ignoreClass.add("com.*.BuildConfig")
+        ignoreClass.add("com.*.Manifest")
 
         val ignore = ignoreClass.filter { regex ->
             Pattern.matches(regex, classData.className)

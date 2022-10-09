@@ -6,8 +6,6 @@ import org.gradle.api.tasks.Input
 
 
 interface TraceParams : InstrumentationParameters {
-    @get:Input
-    val pkg: Property<String>
 
     @get:Input
     val ignoreClass: Property<Array<String>>

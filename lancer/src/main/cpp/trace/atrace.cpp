@@ -96,7 +96,7 @@ void ATrace::revolveTrace(const char *trace, bool begin) {
                        gettid(), sec);
     }
 
-//    LOGD("tmp_buf length: %d, content: %s", len, tmp_buf);
+//    LOGD("tmp_buf content: %s", tmp_buf);
     Logger::get().writeBytes(
             EntryType::STRING_NAME,
             0,

@@ -11,7 +11,7 @@ import org.gradle.api.tasks.Input
 
 class TracePlugin : Plugin<Project> {
     companion object {
-        const val EXTENSION_NAME = "trace"
+        const val EXTENSION_NAME = "lancerTrace"
     }
 
 
@@ -30,7 +30,6 @@ class TracePlugin : Plugin<Project> {
                 TraceTransform::class.java,
                 InstrumentationScope.ALL
             ) {
-                it.pkg.set(extension.pkg)
                 it.ignoreClass.set(extension.ignoreClass)
             }
             variant.instrumentation.setAsmFramesComputationMode(
