@@ -4,7 +4,7 @@
 
 [打造一款支持线上抓 systrace 的框架](https://mp.weixin.qq.com/s/S49Fz1wPxqe2ua3PiTvIjg)
 
-这里主要简述一下 Lancer 的实现过程。
+这里主要简述一下 Lancer 的实现过程，因为是实战练习，所以代码贴的比较多。
 
 ### 实现目标
 
@@ -33,6 +33,8 @@ Systrace 抓取 Trace 信息最终都是通过调用 Android SDK 提供的 `Trac
 大致流程如下：
 
 ![](./assets/Lancer.png)
+
+### 代码实现
 
 *1. StarTrace*
 
