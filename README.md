@@ -1,14 +1,38 @@
 # Lancer
 
-### 实现功能
-
-* 不依赖 PC 抓取 Trace
-
 前段时间在学习 JNI 和 APM 相关知识（更多信息可以查看[关于学习 JNI 和 APM 需要了解的基础知识](https://github.com/YoungTr/Swan)，建立完整的知识体系），codelang 大佬发了一篇文章给我，我俩一拍即合准备自己实现一下，主要也是想通过一个实战来检验一下之前的学习成果。
 
 [打造一款支持线上抓 systrace 的框架](https://mp.weixin.qq.com/s/S49Fz1wPxqe2ua3PiTvIjg)
 
-这里主要简述一下 Native 的实现过程，atrace 工作原理这里不再赘述。
+这里主要简述一下 Lancer 的实现过程。
+
+### 实现目标
+
+* 不依赖 PC 抓取 Trace
+
+### Systrace 概述
+
+![systrace_flow](./assets/systrace-flow.png)
+
+Systrace 抓取 Trace 信息最终都是通过调用 Android SDK 提供的 `Trace.beginSection` 或者 `ATRACE_BEGIN` 记录到同一个文件 `/sys/kernel/debug/tracing/trace_marker` 。
+
+那么实现不依赖 PC 抓取 Trace 需要解决这么几个问题：
+
+* 方法的前后自动插入 Trace.beginSection 和 Trace.endSection 方法
+* 如何打开 Trace 开关？
+* 如果获取 atrace 的数据信息？
+
+### 实现方式
+
+上面提出的几个问题都有了解决方案：
+
+* 方法插入可以在编译期间插桩实现
+* atrace 通过 `atrace_enabled_tags `  每一位控制一种事件类型，可以获取该变量的地址，重新设置需要打开事件的值即可
+* atrace 数据实时写入 fd 为 `atrace_marker_fd ` 的文件中，只需 hook 系统 `write` 方法，对比 fd 的值是否和 `atrace_marker_fd ` 相同即可
+
+大致流程如下：
+
+![](./assets/Lancer.png)
 
 *1. StarTrace*
 
