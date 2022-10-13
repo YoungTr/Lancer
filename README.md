@@ -20,7 +20,7 @@ Systrace 抓取 Trace 信息最终都是通过调用 Android SDK 提供的 `Trac
 
 * 方法的前后自动插入 Trace.beginSection 和 Trace.endSection 方法
 * 如何打开 Trace 开关？
-* 如果获取 atrace 的数据信息？
+* 如何获取 atrace 的数据信息？
 
 ### 实现方式
 
@@ -28,7 +28,7 @@ Systrace 抓取 Trace 信息最终都是通过调用 Android SDK 提供的 `Trac
 
 * 方法插入可以在编译期间插桩实现
 * atrace 通过 `atrace_enabled_tags `  每一位控制一种事件类型，可以获取该变量的地址，重新设置需要打开事件的值即可
-* atrace 数据实时写入 fd 为 `atrace_marker_fd ` 的文件中，只需 hook 系统 `write` 方法，对比 fd 的值是否和 `atrace_marker_fd ` 相同即可
+* atrace 数据实时写入 fd 为 `atrace_marker_fd ` 的文件中，只需 hook 系统 `write` 方法，对比 fd 的值是否和 `atrace_marker_fd ` 相同即可(这里使用 `RingBuffer` 来做缓存，避免大量重复的 I/O 操作)
 
 大致流程如下：
 
@@ -224,3 +224,7 @@ void ATrace::LogTrace(const void *buf, size_t count) {
 * 这里使用 `RingBuffer` 来做缓存，避免大量重复的 I/O 操作
 
 总体来说，实现过程还是比较简单的，后续会更新其它 APM 的实战项目，感兴趣的可以关注 [关于学习 JNI 和 APM 需要了解的基础知识](https://github.com/YoungTr/Swan)。
+
+### 参考
+
+https://github.com/bytedance/btrace
