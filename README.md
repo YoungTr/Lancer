@@ -107,6 +107,7 @@ int32_t ATrace::InstallAtraceProbe() {
 
 * atrace_enabled_tags： 每一位表示一个事件的开关
 * atrace_marker_fd： atrace 数据是实时写入 fd 为 `atrace_marker_fd ` 的文件中
+* 这些都是公开的 NDK API ，所以可以直接使用系统的 dlopen 和 dlsym 方法获取
 
 *1.3 打开 atrace 开关*：
 
