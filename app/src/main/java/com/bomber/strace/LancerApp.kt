@@ -19,7 +19,7 @@ class LancerApp : Application() {
     override fun attachBaseContext(base: Context) {
         // TODO: 字节码自动插入
         TraceApplicationLike.attachBaseContext(base)
-        SysTracer.i("com.smart.app.SmartApplication", "attachBaseContext")
+        SysTracer.i("com.bomber.strace", "attachBaseContext")
         super.attachBaseContext(base)
     }
 

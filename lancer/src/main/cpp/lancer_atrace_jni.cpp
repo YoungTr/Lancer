@@ -17,6 +17,7 @@ static bool SetATraceLocation(JNIEnv *env, jobject thiz, jstring traceDir) {
 
     const char *trace_dir;
     trace_dir = env->GetStringUTFChars(traceDir, nullptr);
+    LOGD("Trace dir: %s", trace_dir);
     TraceProvider::Get().SetTraceFolder(trace_dir);
     env->ReleaseStringUTFChars(traceDir, trace_dir);
     return true;
@@ -36,10 +37,17 @@ static int32_t JNI_stopTrace(JNIEnv *env, jobject thiz) {
     return ATrace::Get().StopTrace();
 }
 
+static void JNI_traceSection(JNIEnv *env, jobject thiz, jstring section) {
+    const char *sect = env->GetStringUTFChars(section, nullptr);
+    ATrace::Get().LogTrace(sect, 0);
+    env->ReleaseStringUTFChars(section, sect);
+}
+
 
 static const JNINativeMethod methods[] = {
-        {"startTrace", "(Ljava/lang/String;J)I", (void *) JNI_startTrace},
-        {"stopTrace",  "()I",                   (void *) JNI_stopTrace}
+        {"startTrace",   "(Ljava/lang/String;J)I", (void *) JNI_startTrace},
+        {"stopTrace",    "()I",                    (void *) JNI_stopTrace},
+        {"traceSection", "(Ljava/lang/String;)V",  (void *) JNI_traceSection}
 };
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {

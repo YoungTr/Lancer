@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         funA()
+        textError()
 
         binding.sampleText.setOnClickListener {
             Lancer.getInstance().stop()
@@ -76,6 +77,18 @@ class MainActivity : AppCompatActivity() {
     fun recursion(x: Int): Int {
         val result = if (x <= 1) 1 else recursion(x - 1) + x
         return result
+    }
+
+    fun textError() {
+
+
+        try {
+            funB()
+        } catch (e: Exception) {
+
+        }
+
+        funC()
     }
 
     /**

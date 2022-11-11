@@ -5,6 +5,8 @@ import static com.bomber.lancer.Errno.OK;
 import android.os.Trace;
 import android.util.Log;
 
+import com.bomber.lancer.core.SysTracer;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -17,6 +19,8 @@ public class Lancer {
 
     private static final String TAG = "Lancer.NativeHandler";
 
+    private Configuration configuration;
+
     static {
         try {
             System.loadLibrary("lancer");
@@ -26,15 +30,31 @@ public class Lancer {
     }
 
 
+    public void init(Configuration configuration) {
+        this.configuration = configuration;
+        SysTracer.sIsMainProcess = true;
+        start(configuration.getTraceDir());
+    }
+
+    public Configuration getConfiguration() {
+        return configuration;
+    }
+
+
     public void start(String traceDir) {
-        int r = startTrace(traceDir, 100000);
+        int r = startTrace(traceDir, configuration.getAtraceBufferSize());
         if (r == OK) {
-            SystraceReflector.updateSystraceTags();
+            SysTracer.sStart = true;
         }
     }
 
     public void stop() {
         stopTrace();
+        SysTracer.sStart = false;
+    }
+
+    public void trace(String section) {
+        traceSection(section);
     }
 
 //    private native int nativeInit(int appLevel, String traceFile, int debug);
@@ -42,6 +62,8 @@ public class Lancer {
     private native int startTrace(String traceDir, long bufferSize);
 
     private native int stopTrace();
+
+    private native void traceSection(String section);
 
 
     public static Lancer getInstance() {
@@ -52,40 +74,4 @@ public class Lancer {
         private static final Lancer INSTANCE = new Lancer();
     }
 
-    private static final class SystraceReflector {
-
-        public static void updateSystraceTags() {
-            if (sTrace_sEnabledTags != null && sTrace_nativeGetEnabledTags != null) {
-                try {
-                    sTrace_sEnabledTags.set(null, sTrace_nativeGetEnabledTags.invoke(null));
-                } catch (IllegalAccessException e) {
-                } catch (InvocationTargetException e) {
-
-                }
-            }
-        }
-
-        private static final Method sTrace_nativeGetEnabledTags;
-        private static final Field sTrace_sEnabledTags;
-
-        static {
-            Method m;
-            try {
-                m = Trace.class.getDeclaredMethod("nativeGetEnabledTags");
-                m.setAccessible(true);
-            } catch (NoSuchMethodException e) {
-                m = null;
-            }
-            sTrace_nativeGetEnabledTags = m;
-
-            Field f;
-            try {
-                f = Trace.class.getDeclaredField("sEnabledTags");
-                f.setAccessible(true);
-            } catch (NoSuchFieldException e) {
-                f = null;
-            }
-            sTrace_sEnabledTags = f;
-        }
-    }
 }

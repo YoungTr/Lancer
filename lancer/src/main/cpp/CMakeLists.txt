@@ -19,12 +19,10 @@ add_subdirectory(${fastlog_DIR} ${CMAKE_CURRENT_BINARY_DIR}/fastlog)
 
 
 file(GLOB STRACE_SRC
-        xhook/*.c
         *.c
         *.cpp
         utils/*.cpp
-        trace/*.cpp
-        hook/*.cpp)
+        trace/*.cpp)
 
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
@@ -55,9 +53,7 @@ find_library( # Sets the name of the path variable.
 
 target_include_directories(${PROJECT_NAME} PUBLIC
         include
-        utils
-        hook
-        xhook)
+        utils)
 
 # Specifies libraries CMake should link to your target library. You
 # can link multiple libraries, such as libraries you define in this

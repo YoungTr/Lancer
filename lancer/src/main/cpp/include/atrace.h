@@ -30,8 +30,6 @@ public:
 
     int32_t StopTrace();
 
-    bool IsATrace(int fd, size_t count);
-
     void LogTrace(const void *buf, size_t count);
 
     bool IsATraceStarted() const { return atrace_started_; }
@@ -45,14 +43,6 @@ private:
     ATrace();
     ~ATrace();
 
-    int32_t InstallProbe();
-
-    int32_t InstallAtraceProbe();
-
-    std::atomic<uint64_t> *atrace_enable_tags_{nullptr};
-    std::atomic<uint64_t> original_tags_{UINT64_MAX};
-
-    std::string GetThreadName(const pid_t pid);
 
     void revolveTrace(const char *, bool);
 
@@ -64,7 +54,6 @@ private:
 
     uint64_t log_trace_cost_us_{0};
 
-    THREAD_MAP thread_map_;
 
 
     DISALLOW_COPY_AND_ASSIGN(ATrace);
