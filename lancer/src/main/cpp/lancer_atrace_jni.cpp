@@ -23,7 +23,7 @@ static bool SetATraceLocation(JNIEnv *env, jobject thiz, jstring traceDir) {
     return true;
 }
 
-static int32_t JNI_startTrace(JNIEnv *env, jobject thiz, jstring traceDir, jlong bufferSize) {
+static int32_t JNI_startTrace(JNIEnv *env, jobject thiz, jstring traceDir, jlong bufferSize, jboolean debug) {
     if (!SetATraceLocation(env, thiz, traceDir)) {
         return ATRACE_LOCATION_INVALID;
     }
@@ -45,7 +45,7 @@ static void JNI_traceSection(JNIEnv *env, jobject thiz, jstring section) {
 
 
 static const JNINativeMethod methods[] = {
-        {"startTrace",   "(Ljava/lang/String;J)I", (void *) JNI_startTrace},
+        {"startTrace",   "(Ljava/lang/String;JZ)I", (void *) JNI_startTrace},
         {"stopTrace",    "()I",                    (void *) JNI_stopTrace},
         {"traceSection", "(Ljava/lang/String;)V",  (void *) JNI_traceSection}
 };

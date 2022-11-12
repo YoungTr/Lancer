@@ -36,7 +36,7 @@ public class Lancer {
 
 
     public void start(String traceDir) {
-        int r = startTrace(traceDir, configuration.getAtraceBufferSize());
+        int r = startTrace(traceDir, configuration.getAtraceBufferSize(), configuration.getDebug());
         if (r == OK) {
             LanTracer.sStart = true;
         }
@@ -52,7 +52,7 @@ public class Lancer {
     }
 
 
-    private native int startTrace(String traceDir, long bufferSize);
+    private native int startTrace(String traceDir, long bufferSize, boolean debug);
 
     private native int stopTrace();
 

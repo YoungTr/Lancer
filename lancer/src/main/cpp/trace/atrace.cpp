@@ -55,7 +55,7 @@ void ATrace::LogTrace(const void *buf, size_t count) {
 
     len = snprintf(tmp_buf, sizeof(tmp_buf),"%.6f: %s\n",
                    sec, (char *)buf);
-    LOGD("tmp_buf content: %s", tmp_buf);
+//    LOGD("tmp_buf content: %s", tmp_buf);
     Logger::get().writeBytes(
             EntryType::STRING_NAME,
             0,
