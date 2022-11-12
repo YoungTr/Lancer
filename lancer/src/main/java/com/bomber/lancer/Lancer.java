@@ -2,14 +2,7 @@ package com.bomber.lancer;
 
 import static com.bomber.lancer.Errno.OK;
 
-import android.os.Trace;
 import android.util.Log;
-
-import com.bomber.lancer.core.SysTracer;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 /**
  * @author youngtr
@@ -32,7 +25,8 @@ public class Lancer {
 
     public void init(Configuration configuration) {
         this.configuration = configuration;
-        SysTracer.sIsMainProcess = true;
+        LanTracer.sIsMainProcess = true;
+        LanTracer.sIsMainThreadOnly = configuration.getOnlyMainThread();
         start(configuration.getTraceDir());
     }
 
@@ -44,20 +38,19 @@ public class Lancer {
     public void start(String traceDir) {
         int r = startTrace(traceDir, configuration.getAtraceBufferSize());
         if (r == OK) {
-            SysTracer.sStart = true;
+            LanTracer.sStart = true;
         }
     }
 
     public void stop() {
         stopTrace();
-        SysTracer.sStart = false;
+        LanTracer.sStart = false;
     }
 
     public void trace(String section) {
         traceSection(section);
     }
 
-//    private native int nativeInit(int appLevel, String traceFile, int debug);
 
     private native int startTrace(String traceDir, long bufferSize);
 
