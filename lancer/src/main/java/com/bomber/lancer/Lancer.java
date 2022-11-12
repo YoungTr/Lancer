@@ -2,6 +2,7 @@ package com.bomber.lancer;
 
 import static com.bomber.lancer.Errno.OK;
 
+import android.os.Looper;
 import android.util.Log;
 
 /**
@@ -27,6 +28,7 @@ public class Lancer {
         this.configuration = configuration;
         LanTracer.sIsMainProcess = true;
         LanTracer.sIsMainThreadOnly = configuration.getOnlyMainThread();
+        Looper.getMainLooper().setMessageLogging(new LooperPrinter());
         start(configuration.getTraceDir());
     }
 
