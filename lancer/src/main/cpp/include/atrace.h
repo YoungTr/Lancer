@@ -42,20 +42,7 @@ private:
 
     ATrace();
     ~ATrace();
-
-
-    void revolveTrace(const char *, bool);
-
-    int *atrace_maker_fd_{nullptr};
-
     bool atrace_started_{false};
-    bool atrace_probe_installed_{false};
-    bool first_start_trace_{true};
-
-    uint64_t log_trace_cost_us_{0};
-
-
-
     DISALLOW_COPY_AND_ASSIGN(ATrace);
 
 };
