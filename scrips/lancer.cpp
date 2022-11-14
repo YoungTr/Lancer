@@ -20,6 +20,10 @@ static bool IsMethodIn(const char x) {
     return x == METHOD_IN;
 }
 
+static bool IsMethodException(const char x) {
+    return x == METHOD_EXCEPTION;
+}
+
 static bool IsHandlerMethod(const char *method) {
     string s = string(method);
     return s.find("Handler (") == 0;
@@ -58,9 +62,6 @@ void Lancer::ReadFile(const string &file) {
 
 
     while (fgets(line, sizeof(line), in_fp_)) {
-//        if (nullptr != strstr(line, "TRACE_START") || nullptr != strstr(line, "TRACE_END")) {
-//            continue;
-//        }
         if (3 != sscanf(line, "%[^:]%*s %[^|]|%127[^\\\n]", time, type, method)) {
             continue;
         }
@@ -97,7 +98,7 @@ void Lancer::ReadFile(const string &file) {
 
         if (is_method_in) {
             words.push(string(method));
-            snprintf(temp, sizeof(temp), "%s-%s [000] ...1 %s tracing_mark_write: %s|%s|%s\n",
+            snprintf(temp, sizeof(temp), "%s-%s [000] ...1 %s: tracing_mark_write: %s|%s|%s\n",
                      DEFAULT_PACKAGE,
                      DEFAULT_PID,
                      time,
@@ -106,6 +107,12 @@ void Lancer::ReadFile(const string &file) {
                      method);
 
         } else {
+
+            if (IsMethodException(type[0])) {
+                // 异常丢弃
+                continue;
+            }
+
             if (words.empty()) {
                 printf("not find in method: %s\n", method);
             } else {
@@ -113,12 +120,12 @@ void Lancer::ReadFile(const string &file) {
                 if (0 == strcmp(in_method.c_str(), method)) {
                     words.pop();
                 } else {
-                    printf("not match in method: %s\n", method);
+                    printf("not match in method: %s, the top method is: %s\n", method, in_method.c_str());
                 }
 
             }
 
-            snprintf(temp, sizeof(temp), "%s-%s [000] ...1 %s tracing_mark_write: %s\n",
+            snprintf(temp, sizeof(temp), "%s-%s [000] ...1 %s: tracing_mark_write: %s\n",
                      DEFAULT_PACKAGE,
                      DEFAULT_PID,
                      time,

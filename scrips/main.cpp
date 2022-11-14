@@ -14,7 +14,7 @@ void test() {
 //    printf("time:%s, type:%s, method:%s\n", time, type, method);
 
 
-    int c = sscanf(line.c_str(), "%[^:]%*s %[^|]|%127[^\\\n]", time, type, method);
+    int c = sscanf(line.c_str(), "%[^:]%*s %[^|]|%[^\\\n]", time, type, method);
 
     printf("c: %d\n", c);
 

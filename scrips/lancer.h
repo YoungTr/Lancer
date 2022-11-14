@@ -15,6 +15,7 @@
 #define DEFAULT_PID "1234"
 #define METHOD_IN 'B'
 #define METHOD_OUT 'E'
+#define METHOD_EXCEPTION 'T'
 
 using namespace std;
 

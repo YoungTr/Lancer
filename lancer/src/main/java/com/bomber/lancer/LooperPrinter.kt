@@ -11,9 +11,9 @@ class LooperPrinter : Printer {
     override fun println(x: String) {
         if (x[0] == '>') {
             // in
-            LanTracer.i("B|$x")
+            LanTracer.i("B|${x.substring(21)}")
         } else {
-            LanTracer.i("E|$x")
+            LanTracer.i("E|${x.substring(18)}")
         }
     }
 }
