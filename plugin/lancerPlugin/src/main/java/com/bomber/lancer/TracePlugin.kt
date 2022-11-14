@@ -1,4 +1,4 @@
-package com.bomber.strace
+package com.bomber.lancer
 
 import com.android.build.api.instrumentation.FramesComputationMode
 import com.android.build.api.instrumentation.InstrumentationParameters

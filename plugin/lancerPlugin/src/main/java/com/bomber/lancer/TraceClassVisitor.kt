@@ -1,15 +1,17 @@
-package com.bomber.strace
+package com.bomber.lancer
 
-import com.android.tools.r8.internal.mv
 import org.objectweb.asm.ClassVisitor
 import org.objectweb.asm.MethodVisitor
 import org.objectweb.asm.Opcodes
 
-class TraceClassVisitor(nextVisitor: ClassVisitor, private val className: String) : ClassVisitor(
+class TraceClassVisitor(nextVisitor: ClassVisitor, clazzName: String) : ClassVisitor(
     Opcodes.ASM5, nextVisitor
 ) {
 
+
     private var superName: String? = null
+//    private val className = clazzName.substringAfterLast(".")
+    private val className = clazzName
 
     override fun visit(
         version: Int,
@@ -43,14 +45,21 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, private val className: String
             ) {
                 override fun onMethodStart() {
 //                    println("onMethodEnter ---->className=$className methodName=$name")
-                    if (isApplication() && name == "attachBaseContext") {
-                        // TODO: 字节码插装
-                        return
+                    if (isApplication() && name == APPLICATION_ATTACHCONTEXT_NAME) {
+//                        ALOAD 1
+//                        INVOKESTATIC com/bomber/lancer/TraceApplicationLike.attachBaseContext (Landroid/content/Context;)V
+                        mv.visitVarInsn(ALOAD, 1)
+                        mv.visitMethodInsn(
+                            INVOKESTATIC,
+                            APPLICATION_LIKE_CLASS,
+                            APPLICATION_ATTACHCONTEXT_NAME,
+                            APPLICATION_LIKE_ATTACHBASECONTEXT,
+                            false
+                        )
                     }
-                    mv.visitLdcInsn(className)
-                    mv.visitLdcInsn(name)
+                    mv.visitLdcInsn("B|$className:$name")
                     mv.visitMethodInsn(
-                        INVOKESTATIC, SYS_TRACE_CLASS, "i",
+                        INVOKESTATIC, SYS_TRACE_CLASS, SYS_TRACE_METHOD_IN,
                         SYS_TRACE_METHOD_DESC, false
                     )
 
@@ -58,20 +67,18 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, private val className: String
 
                 override fun onMethodEnd(opcode: Int) {
 //                    println("onMethodExit ---->className=$className methodName=$name")
-                    mv.visitLdcInsn(className)
-                    mv.visitLdcInsn(name)
+                    mv.visitLdcInsn("E|$className:$name")
                     mv.visitMethodInsn(
-                        INVOKESTATIC, SYS_TRACE_CLASS, "o",
+                        INVOKESTATIC, SYS_TRACE_CLASS, SYS_TRACE_METHOD_IN,
                         SYS_TRACE_METHOD_DESC, false
                     )
                 }
 
                 override fun onCatchIn() {
 //                    println("catchIn ---->className=$className methodName=$name")
-                    mv.visitLdcInsn(className)
-                    mv.visitLdcInsn(name)
+                    mv.visitLdcInsn("T|$className:$name")
                     mv.visitMethodInsn(
-                        INVOKESTATIC, SYS_TRACE_CLASS, "catchIn",
+                        INVOKESTATIC, SYS_TRACE_CLASS, SYS_TRACE_METHOD_IN,
                         SYS_TRACE_METHOD_DESC, false
                     )
                 }
@@ -86,8 +93,9 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, private val className: String
 
 
     companion object {
-        private const val SYS_TRACE_CLASS = "com/bomber/lancer/core/SysTracer"
-        private const val SYS_TRACE_METHOD_DESC = "(Ljava/lang/String;Ljava/lang/String;)V"
+        private const val SYS_TRACE_CLASS = "com/bomber/lancer/LanTracer"
+        private const val SYS_TRACE_METHOD_DESC = "(Ljava/lang/String;)V"
+        private const val SYS_TRACE_METHOD_IN = "i"
 
         private const val APPLICATION_LIKE_CLASS = "com/bomber/lancer/TraceApplicationLike"
         private const val APPLICATION_LIKE_ATTACHBASECONTEXT = "(Landroid/content/Context;)V"

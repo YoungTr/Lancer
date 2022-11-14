@@ -1,4 +1,4 @@
-package com.bomber.strace
+package com.bomber.lancer
 
 import org.objectweb.asm.Label
 import org.objectweb.asm.MethodVisitor

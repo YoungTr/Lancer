@@ -8,6 +8,7 @@ import android.app.Application
 import android.content.Context
 import android.os.Build
 import android.os.Build.VERSION_CODES.JELLY_BEAN_MR2
+import android.os.Looper
 import android.os.Process
 import android.util.Log
 import androidx.annotation.DoNotInline
@@ -72,3 +73,5 @@ private object Api28Impl {
     val processName: String
         get() = Application.getProcessName()
 }
+
+fun isMainThread() = Looper.getMainLooper() == Looper.myLooper()

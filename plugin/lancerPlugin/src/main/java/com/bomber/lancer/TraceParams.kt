@@ -1,4 +1,4 @@
-package com.bomber.strace
+package com.bomber.lancer
 
 import com.android.build.api.instrumentation.InstrumentationParameters
 import org.gradle.api.provider.Property

@@ -1,4 +1,4 @@
-package com.bomber.strace
+package com.bomber.lancer
 
 open class TraceExtension {
     /**
