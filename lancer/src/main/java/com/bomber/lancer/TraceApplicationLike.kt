@@ -11,7 +11,7 @@ object TraceApplicationLike {
         if (context.isMainProcess()) {
             val traceDir = (context.externalCacheDir?.absolutePath
                 ?: context.filesDir.absolutePath) + File.separator + "lancer-atrace"
-            Lancer.getInstance().start(traceDir)
+            Lancer.getInstance().init(Configuration(traceDir = traceDir))
         }
     }
 }

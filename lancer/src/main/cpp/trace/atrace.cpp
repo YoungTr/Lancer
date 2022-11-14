@@ -106,6 +106,7 @@ void ATrace::revolveTrace(const char *trace, bool begin) {
 
 void ATrace::LogTrace(const void *buf, size_t count) {
     const char *msg = (const char *) buf;
+    LOGD("tmp_buf content: %s", msg);
     switch (msg[0]) {
         case 'B':
             revolveTrace((const char *) buf, true);

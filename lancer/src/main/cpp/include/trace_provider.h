@@ -51,11 +51,12 @@ public:
 //
 //  void SetConfig(ConfigKey key, int64_t val);
 //  bool IsEnableIO() const;
-//  bool isMainThreadOnly() const;
+  bool IsMainThreadOnly() const;
+  void SetIsMainThreadOnly(bool only);
 //  bool isEnableMemory() const;
 //  bool isEnableClassLoad() const;
-//  void SetMainThreadId(pid_t tid);
-//  pid_t GetMainThreadId() const;
+  void SetMainThreadId(pid_t tid);
+  pid_t GetMainThreadId() const;
   void SetBufferSize(size_t buffer_size);
   size_t GetBufferSize()const;
   void SetTraceFolder(const std::string& trace_folder);
@@ -68,10 +69,11 @@ private:
   ~TraceProvider() = default;
 //
 //  int16_t atrace_config_[kEnd]{};
-//  pid_t main_thread_id_{0};
+  pid_t main_thread_id_{0};
   size_t buffer_size_{100000};
 //  std::vector<std::string> block_hook_libs;
   std::string trace_folder_{"/sdcard/rhea-trace"};
+  bool is_main_thread_only_{false};
 //
 //  DISALLOW_COPY_AND_ASSIGN(TraceProvider);
 };

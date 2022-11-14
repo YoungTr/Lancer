@@ -3,9 +3,11 @@
 //
 
 #include <xhook.h>
+#include <unistd.h>
 #include "hook_bridge.h"
 #include "trace.h"
 #include "atrace.h"
+#include "trace_provider.h"
 
 namespace swan {
 namespace lancer {
@@ -31,15 +33,38 @@ namespace lancer {
         return original_write(fd, buf, count);
     }
 
-    void hook_libc() {
+    void (*original_trace_begin)(const char *name);
+
+    void proxy_atrace_begin_body(const char *name) {
+        if (gettid() == TraceProvider::Get().GetMainThreadId()) {
+            original_trace_begin(name);
+        }
+    }
+
+    void (*original_atrace_end)();
+
+    void proxy_atrace_end_body() {
+
+        if (gettid() == TraceProvider::Get().GetMainThreadId()) {
+            original_atrace_end();
+        }
+    }
+
+    void HookLibc() {
         xhook_register(".*libc\\.so$", "write", (void *) my_write, (void **) (&original_write));
         xhook_register(".*libc\\.so$", "__write_chk", (void *) my_write_chk,
                        (void **) (&original_write_chk));
+
+        if (TraceProvider::Get().IsMainThreadOnly()) {
+            xhook_register(".*\\.so$", "atrace_begin_body", (void *) proxy_atrace_begin_body, (void **) (&original_trace_begin));
+            xhook_register(".*\\.so$", "atrace_end_body", (void *) proxy_atrace_end_body,
+                           (void **) (&original_atrace_end));
+        }
         xhook_refresh(1);
     }
 
     void HookBridge::HookForAtrace() {
-        hook_libc();
+        HookLibc();
     }
 
     HookBridge &HookBridge::Get() {
@@ -51,10 +76,8 @@ namespace lancer {
         if (IsHook()) {
             return true;
         }
-//        ATRACE_BEGIN(__FUNCTION__);
         HookForAtrace();
         hook_ok_ = true;
-//        ATRACE_END();
         return true;
     }
 

@@ -15,6 +15,9 @@ import java.lang.reflect.Method;
  */
 public class Lancer {
 
+    private Configuration configuration;
+
+
     private static final String TAG = "Lancer.NativeHandler";
 
     static {
@@ -25,21 +28,32 @@ public class Lancer {
         }
     }
 
+    public void init(Configuration configuration) {
+        LanTracer.sIsMainProcess = true;
+        LanTracer.sIsMainThreadOnly = configuration.getMainThreadOnly();
+        nativeInit(configuration.getTraceDir(), configuration.getAtraceBufferSize(), configuration.getMainThreadOnly());
+        if (configuration.getStartWhenLaunch()) {
+            start();
+        }
+    }
 
-    public void start(String traceDir) {
-        int r = startTrace(traceDir, 100000);
+
+    public void start() {
+        LanTracer.sStart = true;
+        int r = startTrace();
         if (r == OK) {
             SystraceReflector.updateSystraceTags();
         }
     }
 
     public void stop() {
+        LanTracer.sStart = false;
         stopTrace();
     }
 
-//    private native int nativeInit(int appLevel, String traceFile, int debug);
+    private native void nativeInit(String traceDir, long bufferSize, boolean mainThreadOnly);
 
-    private native int startTrace(String traceDir, long bufferSize);
+    private native int startTrace();
 
     private native int stopTrace();
 

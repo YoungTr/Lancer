@@ -2,6 +2,7 @@
 // Created by YoungTr on 2022/9/27.
 //
 #include <jni.h>
+#include <unistd.h>
 #include "atrace.h"
 #include "trace_provider.h"
 
@@ -23,12 +24,6 @@ static bool SetATraceLocation(JNIEnv *env, jobject thiz, jstring traceDir) {
 }
 
 static int32_t JNI_startTrace(JNIEnv *env, jobject thiz, jstring traceDir, jlong bufferSize) {
-    if (!SetATraceLocation(env, thiz, traceDir)) {
-        return ATRACE_LOCATION_INVALID;
-    }
-
-    TraceProvider::Get().SetBufferSize(bufferSize);
-
     return ATrace::Get().StarTrace();
 }
 
@@ -36,10 +31,21 @@ static int32_t JNI_stopTrace(JNIEnv *env, jobject thiz) {
     return ATrace::Get().StopTrace();
 }
 
+static void JNI_nativeInit(JNIEnv *env, jobject thiz, jstring trace_dir,
+                                         jlong buffer_size, jboolean main_thread_only) {
+
+    SetATraceLocation(env, thiz, trace_dir);
+    TraceProvider::Get().SetBufferSize(buffer_size);
+    TraceProvider::Get().SetMainThreadId(gettid());
+    TraceProvider::Get().SetIsMainThreadOnly(main_thread_only);
+
+}
+
 
 static const JNINativeMethod methods[] = {
-        {"startTrace", "(Ljava/lang/String;J)I", (void *) JNI_startTrace},
-        {"stopTrace",  "()I",                   (void *) JNI_stopTrace}
+        {"startTrace", "()I",  (void *) JNI_startTrace},
+        {"stopTrace",  "()I",                     (void *) JNI_stopTrace},
+        {"nativeInit", "(Ljava/lang/String;JZ)V", (void *) JNI_nativeInit}
 };
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
