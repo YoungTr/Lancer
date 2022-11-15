@@ -57,7 +57,7 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, clazzName: String) : ClassVis
                             false
                         )
                     }
-                    mv.visitLdcInsn("B|$className:$name")
+                    mv.visitLdcInsn("B:$className:$name")
                     mv.visitMethodInsn(
                         INVOKESTATIC, SYS_TRACE_CLASS, SYS_TRACE_METHOD_IN,
                         SYS_TRACE_METHOD_DESC, false
@@ -67,7 +67,7 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, clazzName: String) : ClassVis
 
                 override fun onMethodEnd(opcode: Int) {
 //                    println("onMethodExit ---->className=$className methodName=$name")
-                    mv.visitLdcInsn("E|$className:$name")
+                    mv.visitLdcInsn("E:$className:$name")
                     mv.visitMethodInsn(
                         INVOKESTATIC, SYS_TRACE_CLASS, SYS_TRACE_METHOD_IN,
                         SYS_TRACE_METHOD_DESC, false
@@ -76,7 +76,7 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, clazzName: String) : ClassVis
 
                 override fun onCatchIn() {
 //                    println("catchIn ---->className=$className methodName=$name")
-                    mv.visitLdcInsn("T|$className:$name")
+                    mv.visitLdcInsn("T:$className:$name")
                     mv.visitMethodInsn(
                         INVOKESTATIC, SYS_TRACE_CLASS, SYS_TRACE_METHOD_IN,
                         SYS_TRACE_METHOD_DESC, false
