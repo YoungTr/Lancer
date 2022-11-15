@@ -10,8 +10,8 @@ class TraceClassVisitor(nextVisitor: ClassVisitor, clazzName: String) : ClassVis
 
 
     private var superName: String? = null
-//    private val className = clazzName.substringAfterLast(".")
-    private val className = clazzName
+    private val className = clazzName.substringAfterLast(".")
+//    private val className = clazzName
 
     override fun visit(
         version: Int,

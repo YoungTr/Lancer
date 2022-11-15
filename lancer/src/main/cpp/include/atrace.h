@@ -13,7 +13,6 @@
 #include "macros.h"
 #include "../log.h"
 
-typedef std::map<int, std::string> THREAD_MAP;
 
 namespace swan {
 namespace lancer {
@@ -52,10 +51,6 @@ private:
     std::atomic<uint64_t> *atrace_enable_tags_{nullptr};
     std::atomic<uint64_t> original_tags_{UINT64_MAX};
 
-    std::string GetThreadName(const pid_t pid);
-
-    void revolveTrace(const char *, bool);
-
     int *atrace_maker_fd_{nullptr};
 
     bool atrace_started_{false};
@@ -63,9 +58,6 @@ private:
     bool first_start_trace_{true};
 
     uint64_t log_trace_cost_us_{0};
-
-    THREAD_MAP thread_map_;
-
 
     DISALLOW_COPY_AND_ASSIGN(ATrace);
 

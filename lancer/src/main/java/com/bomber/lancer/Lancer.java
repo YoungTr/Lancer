@@ -15,9 +15,6 @@ import java.lang.reflect.Method;
  */
 public class Lancer {
 
-    private Configuration configuration;
-
-
     private static final String TAG = "Lancer.NativeHandler";
 
     static {
@@ -39,16 +36,18 @@ public class Lancer {
 
 
     public void start() {
-        LanTracer.sStart = true;
+        if (LanTracer.sStart) return;
         int r = startTrace();
         if (r == OK) {
             SystraceReflector.updateSystraceTags();
         }
+        LanTracer.sStart = true;
     }
 
     public void stop() {
-        LanTracer.sStart = false;
+        if (!LanTracer.sStart) return;
         stopTrace();
+        LanTracer.sStart = false;
     }
 
     private native void nativeInit(String traceDir, long bufferSize, boolean mainThreadOnly);
@@ -68,10 +67,14 @@ public class Lancer {
 
     private static final class SystraceReflector {
 
+        private static volatile boolean injected = false;
+
         public static void updateSystraceTags() {
+            if (injected) return;
             if (sTrace_sEnabledTags != null && sTrace_nativeGetEnabledTags != null) {
                 try {
                     sTrace_sEnabledTags.set(null, sTrace_nativeGetEnabledTags.invoke(null));
+                    injected = true;
                 } catch (IllegalAccessException e) {
                 } catch (InvocationTargetException e) {
 

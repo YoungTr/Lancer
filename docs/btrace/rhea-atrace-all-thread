@@ -1,0 +1,2113 @@
+512|TRACE_START|55132838547078|23406|2147483647|2|18316
+55133.014995 23406: B|23406|monotonic_time: 55133.014748
+55133.015348 23406: B|23406|VerifyClass com.bytedance.rheatrace.atrace.TraceEnableTagsHelper
+55133.016030 23406: E|23406
+55133.016363 23406: B|23406|VerifyClass com.bytedance.rheatrace.common.ReflectUtil
+55133.017511 23406: E|23406
+55133.017947 23406: B|23406|VerifyClass kotlin.jvm.internal.Intrinsics
+55133.020759 23406: E|23406
+55133.022610 23406: B|23406|open:/proc/self/cmdline
+55133.022872 23406: E|23406
+55133.023189 23406: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55133.023402 23406: B|23406|read:/proc/23406/cmdline,size:1024
+55133.023525 23406: E|23406
+55133.023610 23406: E|23406
+55133.023835 23406: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55133.024156 23406: B|23406|read:/proc/23406/cmdline,size:1024
+55133.024343 23406: E|23406
+55133.024463 23406: E|23406
+55133.024883 23406: B|23406|VerifyClass com.bytedance.rheatrace.core.TraceStub
+55133.025920 23406: E|23406
+55133.026559 23406: B|23406|B:RheaApplication:attachBaseContext
+55133.027129 23406: B|23406|E:RheaApplication:attachBaseContext
+55133.027481 23406: E|23406
+55133.028679 23406: B|23406|B:RheaApplication:onCreate
+55133.029436 23406: B|23406|B:RheaApplication:printApplicationName[rhea.sample.android.app.RheaApplication]
+55133.030268 23406: B|23406|E:RheaApplication:printApplicationName[rhea.sample.android.app.RheaApplication]
+55133.030813 23406: B|23406|E:RheaApplication:onCreate
+55133.033757 23406: E|23406
+55133.034472 23406: B|23406|activityStart
+55133.037116 23406: B|23406|ResourcesImpl#updateConfiguration
+55133.037944 23406: B|23406|AssetManager::SetConfiguration
+55133.038248 23406: E|23406
+55133.038574 23406: E|23406
+55133.039236 23406: B|23406|Theme::ApplyStyle
+55133.040546 23406: E|23406
+55133.041349 23406: B|23406|ResourcesManager#getResources
+55133.041871 23406: B|23406|ResourcesManager#createApkAssetsSupplierNotLocked
+55133.042165 23406: E|23406
+55133.042770 23406: B|23406|AssetManager::SetApkAssets
+55133.043519 23406: E|23406
+55133.044645 23406: B|23406|ResourcesImpl#updateConfiguration
+55133.045718 23406: B|23406|AssetManager::SetConfiguration
+55133.046431 23406: E|23406
+55133.046814 23406: E|23406
+55133.047302 23406: E|23406
+55133.048261 23406: B|23406|Theme::ApplyStyle
+55133.048801 23406: E|23406
+55133.049407 23406: B|23406|ResourcesManager#applyConfigurationToResourcesLocked
+55133.049613 23406: E|23406
+55133.051718 23445: B|23406|AttachCurrentThread
+55133.051945 23445: B|23406|Thread::Attach
+55133.052063 23445: B|23406|Thread birth
+55133.052203 23445: B|23406|Thread::Init
+55133.052317 23445: B|23406|InitStackHwm
+55133.052742 23445: E|23406
+55133.052903 23445: B|23406|InitTlsEntryPoints
+55133.053085 23445: E|23406
+55133.053221 23445: B|23406|InitInterpreterTls
+55133.053365 23445: E|23406
+55133.054467 23445: B|23406|ThreadList::Register
+55133.054661 23406: B|23406|hintActivityLaunch
+55133.054931 23445: E|23406
+55133.055084 23445: E|23406
+55133.055208 23406: E|23406
+55133.055473 23446: B|23406|sendGpuStatsLocked
+55133.055379 23445: E|23406
+55133.056318 23445: E|23406
+55133.056660 23446: E|23406
+55133.057705 23445: E|23406
+55133.060384 23406: B|23406|ResourcesManager#createBaseActivityResources
+55133.061515 23406: B|23406|ResourcesManager#updateResourcesForActivity
+55133.062047 23406: E|23406
+55133.063451 23406: B|23406|AssetManager::SetApkAssets
+55133.064560 23406: E|23406
+55133.065005 23445: B|23406|refreshRateCallback
+55133.065204 23445: E|23406
+55133.065898 23447: B|23406|eglGetDisplay
+55133.066176 23447: B|23406|open
+55133.066376 23406: B|23406|ResourcesImpl#updateConfiguration
+55133.066458 23447: E|23406
+55133.066831 23447: B|23406|getPlatformDisplay
+55133.067062 23447: E|23406
+55133.067179 23447: E|23406
+55133.067618 23406: B|23406|AssetManager::SetConfiguration
+55133.068893 23406: E|23406
+55133.069278 23406: E|23406
+55133.069759 23406: E|23406
+55133.078918 23406: B|23406|VerifyClass androidx.core.app.ComponentActivity
+55133.082876 23406: E|23406
+55133.083451 23406: B|23406|VerifyClass androidx.activity.ComponentActivity
+55133.089423 23406: E|23406
+55133.089704 23406: B|23406|VerifyClass androidx.fragment.app.FragmentActivity
+55133.100167 23406: E|23406
+55133.100462 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatActivity
+55133.107667 23406: E|23406
+55133.108096 23406: B|23406|VerifyClass rhea.sample.android.app.MainActivity
+55133.112789 23406: E|23406
+55133.114680 23406: B|23406|VerifyClass androidx.collection.SimpleArrayMap
+55133.118221 23406: E|23406
+55133.118598 23406: B|23406|VerifyClass androidx.collection.ContainerHelpers
+55133.119301 23406: E|23406
+55133.119644 23406: B|23406|VerifyClass androidx.lifecycle.Lifecycle
+55133.120119 23406: E|23406
+55133.120409 23406: B|23406|VerifyClass androidx.lifecycle.LifecycleRegistry
+55133.124655 23406: E|23406
+55133.124971 23406: B|23406|VerifyClass androidx.arch.core.internal.SafeIterableMap
+55133.127793 23406: E|23406
+55133.128146 23406: B|23406|VerifyClass androidx.arch.core.internal.FastSafeIterableMap
+55133.128820 23406: E|23406
+55133.129333 23406: B|23406|VerifyClass androidx.lifecycle.Lifecycle$State
+55133.130048 23406: E|23406
+55133.130695 23406: B|23406|VerifyClass androidx.savedstate.SavedStateRegistryController
+55133.132047 23406: E|23406
+55133.132401 23406: B|23406|VerifyClass androidx.savedstate.SavedStateRegistry
+55133.134747 23406: E|23406
+55133.135384 23406: B|23406|VerifyClass androidx.activity.OnBackPressedDispatcher
+55133.137249 23406: E|23406
+55133.137567 23406: B|23406|VerifyClass androidx.activity.ComponentActivity$1
+55133.138017 23406: E|23406
+55133.138428 23406: B|23406|VerifyClass androidx.activity.ComponentActivity$2
+55133.139127 23406: E|23406
+55133.139469 23406: B|23406|VerifyClass androidx.lifecycle.LifecycleRegistry$ObserverWithState
+55133.140225 23406: E|23406
+55133.140561 23406: B|23406|VerifyClass androidx.lifecycle.Lifecycling
+55133.145434 23406: E|23406
+55133.145891 23406: B|23406|VerifyClass androidx.arch.core.internal.SafeIterableMap$Entry
+55133.146521 23406: E|23406
+55133.147199 23406: B|23406|VerifyClass androidx.activity.ComponentActivity$3
+55133.147758 23406: E|23406
+55133.148354 23406: B|23406|VerifyClass androidx.fragment.app.FragmentContainer
+55133.148756 23406: E|23406
+55133.149024 23406: B|23406|VerifyClass androidx.fragment.app.FragmentHostCallback
+55133.150767 23406: E|23406
+55133.151066 23406: B|23406|VerifyClass androidx.fragment.app.FragmentActivity$HostCallbacks
+55133.152626 23406: E|23406
+55133.153091 23406: B|23406|VerifyClass androidx.fragment.app.FragmentManager
+55133.178947 23406: E|23406
+55133.179201 23406: B|23406|VerifyClass androidx.fragment.app.FragmentManagerImpl
+55133.179573 23406: E|23406
+55133.180009 23406: B|23406|VerifyClass androidx.fragment.app.FragmentStore
+55133.182884 23406: E|23406
+55133.183241 23406: B|23406|VerifyClass androidx.fragment.app.FragmentLayoutInflaterFactory
+55133.185970 23406: E|23406
+55133.186342 23406: B|23406|VerifyClass androidx.activity.OnBackPressedCallback
+55133.186975 23406: E|23406
+55133.187230 23406: B|23406|VerifyClass androidx.fragment.app.FragmentManager$1
+55133.187555 23406: E|23406
+55133.188372 23406: B|23406|VerifyClass androidx.fragment.app.FragmentManager$2
+55133.188865 23406: E|23406
+55133.189180 23406: B|23406|VerifyClass androidx.fragment.app.FragmentLifecycleCallbacksDispatcher
+55133.191516 23406: E|23406
+55133.191844 23406: B|23406|VerifyClass androidx.fragment.app.FragmentFactory
+55133.192885 23406: E|23406
+55133.193092 23406: B|23406|VerifyClass androidx.fragment.app.FragmentManager$3
+55133.193373 23406: E|23406
+55133.193618 23406: B|23406|VerifyClass androidx.fragment.app.FragmentManager$4
+55133.193844 23406: E|23406
+55133.194052 23406: B|23406|VerifyClass androidx.core.util.Preconditions
+55133.194817 23406: E|23406
+55133.195265 23406: B|23406|VerifyClass androidx.fragment.app.FragmentController
+55133.196920 23406: E|23406
+55133.198088 23406: B|23406|ResourcesManager#getResources
+55133.198582 23406: B|23406|ResourcesManager#createApkAssetsSupplierNotLocked
+55133.199109 23406: E|23406
+55133.199795 23406: E|23406
+55133.201391 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegate
+55133.203312 23406: E|23406
+55133.203660 23406: B|23406|VerifyClass androidx.collection.ArraySet
+55133.207243 23406: E|23406
+55133.207776 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl
+55133.249543 23406: E|23406
+55133.250098 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$2
+55133.250593 23406: E|23406
+55133.251017 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatDrawableManager
+55133.253501 23406: E|23406
+55133.253914 23406: B|23406|VerifyClass androidx.appcompat.widget.ResourceManagerInternal
+55133.259833 23406: E|23406
+55133.260226 23406: B|23406|VerifyClass androidx.collection.LruCache
+55133.262400 23406: E|23406
+55133.262645 23406: B|23406|VerifyClass androidx.appcompat.widget.ResourceManagerInternal$ColorFilterLruCache
+55133.263174 23406: E|23406
+55133.263654 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatDrawableManager$1
+55133.267121 23406: E|23406
+55133.267453 23406: B|23406|VerifyClass androidx.appcompat.R$drawable
+55133.267750 23406: E|23406
+55133.268396 23406: B|23406|ResourcesManager#getResources
+55133.268918 23406: B|23406|ResourcesManager#createApkAssetsSupplierNotLocked
+55133.269502 23406: E|23406
+55133.270194 23406: E|23406
+55133.270877 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi24
+55133.271469 23406: E|23406
+55133.271854 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi26
+55133.272220 23406: E|23406
+55133.272508 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi17
+55133.272892 23406: E|23406
+55133.273318 23406: B|23406|VerifyClass androidx.appcompat.view.ContextThemeWrapper
+55133.274731 23406: E|23406
+55133.275092 23406: B|23406|VerifyClass androidx.appcompat.R$style
+55133.275421 23406: E|23406
+55133.276871 23406: B|23406|VerifyClass androidx.appcompat.widget.VectorEnabledTintResources
+55133.277485 23406: E|23406
+55133.278222 23406: B|23406|ResourcesManager#getResources
+55133.279204 23406: B|23406|ResourcesManager#createApkAssetsSupplierNotLocked
+55133.279717 23406: E|23406
+55133.280411 23406: B|23406|AssetManager::SetApkAssets
+55133.281244 23406: E|23406
+55133.282811 23406: B|23406|ResourcesImpl#updateConfiguration
+55133.284100 23406: B|23406|AssetManager::SetConfiguration
+55133.285162 23406: E|23406
+55133.285545 23406: E|23406
+55133.286072 23406: E|23406
+55133.296389 23406: B|23406|read:/proc/sys/kernel/random/boot_id,size:1024
+55133.296586 23406: E|23406
+55133.296943 23406: B|23406|read:/proc/sys/kernel/random/boot_id,size:1024
+55133.297204 23406: E|23406
+55133.304128 23406: B|23406|Theme::ApplyStyle
+55133.305231 23406: E|23406
+55133.306171 23406: B|23406|Theme::ApplyStyle
+55133.306465 23406: E|23406
+55133.307095 23406: B|23406|Theme::ApplyStyle
+55133.309647 23406: E|23406
+55133.313957 23406: B|23406|VerifyClass androidx.core.view.LayoutInflaterCompat
+55133.315600 23406: E|23406
+55133.318958 23406: B|23406|VerifyClass androidx.appcompat.view.WindowCallbackWrapper
+55133.320291 23406: E|23406
+55133.320562 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback
+55133.322047 23406: E|23406
+55133.322448 23406: B|23406|VerifyClass androidx.appcompat.widget.TintTypedArray
+55133.324363 23406: E|23406
+55133.325046 23406: B|23406|VerifyClass androidx.appcompat.resources.R$drawable
+55133.325299 23406: E|23406
+55133.325854 23406: B|23406|VerifyClass androidx.core.content.ContextCompat
+55133.328021 23406: E|23406
+55133.328775 23406: B|23406|res/drawable/abc_vector_test.xml
+55133.331089 23406: B|23406|AssetManager::OpenXmlAsset(res/drawable/abc_vector_test.xml)
+55133.332744 23406: E|23406
+55133.334246 23406: B|23406|VectorDrawable#inflate
+55133.337375 23406: E|23406
+55133.337662 23406: E|23406
+55133.338483 23406: B|23406|VerifyClass androidx.appcompat.widget.DrawableUtils
+55133.341042 23406: E|23406
+55133.342674 23406: B|23406|VerifyClass androidx.core.app.NavUtils
+55133.344690 23406: E|23406
+55133.348388 23421: B|23406|JIT compiling int android.os.Parcel.readInt() (baseline=0, osr=0)
+55133.348967 23421: B|23406|Compiling
+55133.350061 23421: B|23406|ScopedCodeCacheWrite
+55133.350458 23421: B|23406|mprotect all
+55133.350935 23421: E|23406
+55133.352184 23406: B|23406|VerifyClass androidx.collection.MapCollections
+55133.351496 23421: B|23406|mprotect code
+55133.354836 23406: E|23406
+55133.355053 23421: E|23406
+55133.355134 23406: B|23406|VerifyClass androidx.collection.ArraySet$1
+55133.355262 23421: E|23406
+55133.355787 23406: E|23406
+55133.356134 23406: B|23406|VerifyClass androidx.collection.MapCollections$KeySet
+55133.356446 23421: B|23406|ScopedCodeCacheWrite
+55133.356597 23421: B|23406|mprotect all
+55133.356797 23421: E|23406
+55133.357427 23421: B|23406|mprotect code
+55133.357661 23406: E|23406
+55133.358116 23406: B|23406|VerifyClass androidx.collection.MapCollections$ArrayIterator
+55133.358291 23421: E|23406
+55133.358468 23421: E|23406
+55133.358844 23406: E|23406
+55133.359135 23421: E|23406
+55133.359401 23406: B|23406|VerifyClass androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable
+55133.359615 23421: B|23406|TrimMaps
+55133.359929 23406: E|23406
+55133.359806 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55133.360309 23421: E|23406
+55133.360675 23406: B|23406|VerifyClass androidx.lifecycle.ViewModelStore
+55133.361738 23406: E|23406
+55133.361948 23421: E|23406
+55133.362117 23406: B|23406|VerifyClass androidx.lifecycle.ViewModel
+55133.362952 23406: E|23406
+55133.363585 23406: B|23406|VerifyClass androidx.fragment.app.FragmentManagerViewModel
+55133.363494 23421: E|23406
+55133.366705 23406: E|23406
+55133.367200 23406: B|23406|VerifyClass androidx.fragment.app.FragmentManagerViewModel$1
+55133.367607 23406: E|23406
+55133.368017 23406: B|23406|VerifyClass androidx.lifecycle.ViewModelProvider
+55133.369288 23406: E|23406
+55133.370137 23406: B|23406|VerifyClass androidx.collection.SparseArrayCompat
+55133.372818 23406: E|23406
+55133.374408 23406: B|23406|VerifyClass androidx.lifecycle.ReportFragment
+55133.377294 23406: E|23406
+55133.377735 23406: B|23406|VerifyClass androidx.lifecycle.ReportFragment$LifecycleCallbacks
+55133.378443 23406: E|23406
+55133.380649 23406: B|23406|VerifyClass androidx.savedstate.Recreator
+55133.382270 23406: E|23406
+55133.382941 23406: B|23406|VerifyClass androidx.savedstate.SavedStateRegistry$1
+55133.383378 23406: E|23406
+55133.383985 23406: B|23406|VerifyClass androidx.lifecycle.Lifecycle$Event
+55133.384851 23406: E|23406
+55133.385467 23406: B|23406|VerifyClass androidx.lifecycle.LifecycleRegistry$1
+55133.386545 23406: E|23406
+55133.387147 23406: B|23406|VerifyClass androidx.arch.core.internal.SafeIterableMap$IteratorWithAdditions
+55133.387713 23406: E|23406
+55133.388916 23406: B|23406|VerifyClass androidx.appcompat.R$styleable
+55133.389801 23406: E|23406
+55133.392682 23406: B|23406|ResourcesManager#getResources
+55133.393281 23406: B|23406|ResourcesManager#createApkAssetsSupplierNotLocked
+55133.393951 23406: E|23406
+55133.394867 23406: E|23406
+55133.395731 23406: B|23406|Theme::ApplyStyle
+55133.396578 23406: E|23406
+55133.397465 23406: B|23406|Theme::ApplyStyle
+55133.397788 23406: E|23406
+55133.413313 23406: B|23406|AssetManager::OpenXmlAsset(res/interpolator/linear_out_slow_in.xml)
+55133.414154 23406: E|23406
+55133.416235 23406: B|23406|AssetManager::OpenXmlAsset(res/interpolator/fast_out_linear_in.xml)
+55133.416787 23406: E|23406
+55133.422308 23406: B|23406|AssetManager::OpenXmlAsset(res/layout/screen_simple.xml)
+55133.422964 23406: E|23406
+55133.423529 23406: B|23406|inflate
+55133.426136 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatViewInflater
+55133.448308 23406: E|23406
+55133.448602 23406: B|23406|VerifyClass com.google.android.material.theme.MaterialComponentsViewInflater
+55133.456598 23406: E|23406
+55133.457989 23406: B|23406|LinearLayout
+55133.460656 23406: E|23406
+55133.461959 23406: B|23406|Theme::ApplyStyle
+55133.462250 23406: E|23406
+55133.462973 23406: B|23406|ViewStub
+55133.465393 23406: E|23406
+55133.465713 23406: B|23406|ViewStub
+55133.467633 23406: E|23406
+55133.467989 23406: B|23406|ViewStub
+55133.469839 23406: E|23406
+55133.470162 23406: B|23406|ViewStub
+55133.471845 23406: E|23406
+55133.473780 23406: B|23406|FrameLayout
+55133.476234 23406: E|23406
+55133.476989 23406: E|23406
+55133.479719 23406: B|23406|AssetManager::OpenXmlAsset(res/transition/fade.xml)
+55133.480454 23406: E|23406
+55133.482135 23406: B|23406|AssetManager::OpenXmlAsset(res/transition/move.xml)
+55133.482662 23406: E|23406
+55133.488377 23406: B|23406|VerifyClass androidx.appcompat.R$layout
+55133.488689 23406: E|23406
+55133.489381 23406: B|23406|AssetManager::OpenXmlAsset(res/layout/abc_screen_simple.xml)
+55133.490674 23406: E|23406
+55133.491398 23406: B|23406|inflate
+55133.492255 23406: B|23406|androidx.appcompat.widget.FitWindowsLinearLayout
+55133.493991 23406: B|23406|VerifyClass androidx.appcompat.widget.FitWindowsLinearLayout
+55133.494808 23406: E|23406
+55133.496788 23406: E|23406
+55133.497638 23406: B|23406|androidx.appcompat.widget.ViewStubCompat
+55133.498270 23406: B|23406|VerifyClass androidx.appcompat.widget.ViewStubCompat
+55133.501000 23406: E|23406
+55133.503133 23406: E|23406
+55133.504784 23406: B|23406|AssetManager::OpenXmlAsset(res/layout/abc_screen_content_include.xml)
+55133.506057 23406: E|23406
+55133.507252 23406: B|23406|androidx.appcompat.widget.ContentFrameLayout
+55133.507953 23406: B|23406|VerifyClass androidx.appcompat.widget.ContentFrameLayout
+55133.511017 23406: E|23406
+55133.512965 23406: E|23406
+55133.514092 23406: E|23406
+55133.514447 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$3
+55133.515201 23406: E|23406
+55133.515561 23406: B|23406|VerifyClass androidx.core.view.ViewCompat
+55133.542356 23406: E|23406
+55133.542779 23406: B|23406|VerifyClass androidx.core.R$id
+55133.543104 23406: E|23406
+55133.543484 23406: B|23406|VerifyClass androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager
+55133.545836 23406: E|23406
+55133.546482 23406: B|23406|VerifyClass androidx.core.view.ViewCompat$1
+55133.546933 23406: E|23406
+55133.547354 23406: B|23406|VerifyClass androidx.appcompat.R$id
+55133.547673 23406: E|23406
+55133.548458 23406: B|23406|VerifyClass androidx.appcompat.widget.ViewUtils
+55133.549400 23406: E|23406
+55133.555481 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$5
+55133.555915 23406: E|23406
+55133.558497 23406: B|23406|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$PanelFeatureState
+55133.560647 23406: E|23406
+55133.562019 23406: B|23406|AssetManager::OpenXmlAsset(res/layout/activity_main.xml)
+55133.563527 23406: E|23406
+55133.564145 23406: B|23406|inflate
+55133.565389 23406: B|23406|androidx.coordinatorlayout.widget.CoordinatorLayout
+55133.568871 23406: B|23406|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout
+55133.594421 23406: E|23406
+55133.595480 23406: B|23406|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$ViewElevationComparator
+55133.595974 23406: E|23406
+55133.596436 23406: B|23406|VerifyClass androidx.core.util.Pools$SimplePool
+55133.597056 23406: E|23406
+55133.597412 23406: B|23406|VerifyClass androidx.core.util.Pools$SynchronizedPool
+55133.597996 23406: E|23406
+55133.598484 23406: B|23406|VerifyClass androidx.coordinatorlayout.R$attr
+55133.598791 23406: E|23406
+55133.600378 23406: B|23406|VerifyClass androidx.coordinatorlayout.widget.DirectedAcyclicGraph
+55133.601808 23406: E|23406
+55133.602241 23406: B|23406|VerifyClass androidx.core.view.NestedScrollingParentHelper
+55133.602736 23406: E|23406
+55133.603059 23406: B|23406|VerifyClass androidx.coordinatorlayout.R$styleable
+55133.603478 23406: E|23406
+55133.604823 23406: B|23406|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$HierarchyChangeListener
+55133.605366 23406: E|23406
+55133.605964 23406: E|23406
+55133.607879 23406: B|23406|Theme::ApplyStyle
+55133.608295 23406: E|23406
+55133.609026 23406: B|23406|com.google.android.material.appbar.AppBarLayout
+55133.611644 23406: B|23406|VerifyClass com.google.android.material.appbar.AppBarLayout
+55133.634578 23406: E|23406
+55133.635180 23406: B|23406|VerifyClass com.google.android.material.R$style
+55133.635542 23406: E|23406
+55133.636218 23406: B|23406|VerifyClass com.google.android.material.R$attr
+55133.636557 23406: E|23406
+55133.637166 23406: B|23406|VerifyClass com.google.android.material.theme.overlay.MaterialThemeOverlay
+55133.637992 23406: E|23406
+55133.641842 23406: B|23406|AssetManager::OpenXmlAsset(res/animator-v21/design_appbar_state_list_animator.xml)
+55133.643341 23406: E|23406
+55133.649030 23406: B|23406|VerifyClass com.google.android.material.appbar.ViewUtilsLollipop
+55133.651221 23406: E|23406
+55133.651728 23406: B|23406|VerifyClass com.google.android.material.internal.ThemeEnforcement
+55133.653072 23406: E|23406
+55133.653499 23406: B|23406|VerifyClass com.google.android.material.R$styleable
+55133.655005 23406: E|23406
+55133.658670 23406: B|23406|VerifyClass com.google.android.material.shape.MaterialShapeDrawable
+55133.668680 23406: E|23406
+55133.669552 23406: B|23406|VerifyClass com.google.android.material.shape.ShapeAppearanceModel
+55133.673292 23406: E|23406
+55133.673593 23406: B|23406|VerifyClass com.google.android.material.shape.RelativeCornerSize
+55133.674166 23406: E|23406
+55133.674558 23406: B|23406|VerifyClass com.google.android.material.shape.MaterialShapeUtils
+55133.675904 23406: E|23406
+55133.676214 23406: B|23406|VerifyClass com.google.android.material.shape.CornerTreatment
+55133.677005 23406: E|23406
+55133.677287 23406: B|23406|VerifyClass com.google.android.material.shape.RoundedCornerTreatment
+55133.677726 23406: E|23406
+55133.678263 23406: B|23406|VerifyClass com.google.android.material.shape.AbsoluteCornerSize
+55133.678789 23406: E|23406
+55133.679145 23406: B|23406|VerifyClass com.google.android.material.shape.EdgeTreatment
+55133.679555 23406: E|23406
+55133.679888 23406: B|23406|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$MaterialShapeDrawableState
+55133.680489 23406: E|23406
+55133.681334 23406: B|23406|VerifyClass com.google.android.material.shadow.ShadowRenderer
+55133.683053 23406: E|23406
+55133.683773 23406: B|23406|VerifyClass androidx.core.graphics.ColorUtils
+55133.688163 23406: E|23406
+55133.688865 23406: B|23406|VerifyClass com.google.android.material.shape.ShapeAppearancePathProvider
+55133.691770 23406: E|23406
+55133.692289 23406: B|23406|VerifyClass com.google.android.material.shape.ShapePath
+55133.695790 23406: E|23406
+55133.696762 23406: B|23406|VerifyClass androidx.core.util.ObjectsCompat
+55133.697316 23406: E|23406
+55133.697670 23406: B|23406|VerifyClass $r8$backportedMethods$utility$Objects$2$equals
+55133.698094 23406: E|23406
+55133.698482 23406: B|23406|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$1
+55133.699087 23406: E|23406
+55133.699852 23406: B|23406|VerifyClass com.google.android.material.elevation.ElevationOverlayProvider
+55133.700936 23406: E|23406
+55133.701307 23406: B|23406|VerifyClass com.google.android.material.resources.MaterialAttributes
+55133.702302 23406: E|23406
+55133.702801 23406: B|23406|VerifyClass com.google.android.material.color.MaterialColors
+55133.703434 23406: E|23406
+55133.705399 23406: B|23406|VerifyClass com.google.android.material.appbar.AppBarLayout$1
+55133.705817 23406: E|23406
+55133.706191 23406: E|23406
+55133.706479 23406: B|23406|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams
+55133.709607 23406: E|23406
+55133.711371 23406: B|23406|androidx.appcompat.widget.Toolbar
+55133.711920 23406: B|23406|VerifyClass androidx.appcompat.widget.Toolbar
+55133.744996 23406: E|23406
+55133.745590 23406: B|23406|VerifyClass androidx.appcompat.R$attr
+55133.745936 23406: E|23406
+55133.748427 23406: B|23406|VerifyClass androidx.appcompat.widget.Toolbar$1
+55133.748830 23406: E|23406
+55133.749131 23406: B|23406|VerifyClass androidx.appcompat.widget.Toolbar$2
+55133.749487 23406: E|23406
+55133.750171 23406: B|23406|VerifyClass androidx.core.view.ViewCompat$Api29Impl
+55133.750692 23406: E|23406
+55133.751042 23406: B|23406|VerifyClass androidx.appcompat.widget.RtlSpacingHelper
+55133.751594 23406: E|23406
+55133.751861 23406: B|23406|VerifyClass androidx.appcompat.content.res.AppCompatResources
+55133.753172 23406: E|23406
+55133.755186 23406: B|23406|res/color/abc_primary_text_material_dark.xml
+55133.755522 23406: B|23406|AssetManager::OpenXmlAsset(res/color/abc_primary_text_material_dark.xml)
+55133.757134 23406: E|23406
+55133.759576 23406: E|23406
+55133.761603 23406: B|23406|res/color/abc_secondary_text_material_dark.xml
+55133.761938 23406: B|23406|AssetManager::OpenXmlAsset(res/color/abc_secondary_text_material_dark.xml)
+55133.763243 23406: E|23406
+55133.764672 23406: E|23406
+55133.765294 23406: E|23406
+55133.765630 23406: B|23406|VerifyClass com.google.android.material.appbar.AppBarLayout$LayoutParams
+55133.766590 23406: E|23406
+55133.769330 23406: B|23406|AssetManager::OpenXmlAsset(res/layout/content_main.xml)
+55133.770643 23406: E|23406
+55133.771836 23406: B|23406|androidx.constraintlayout.widget.ConstraintLayout
+55133.774383 23406: B|23406|VerifyClass androidx.constraintlayout.widget.ConstraintLayout
+55133.798120 23406: E|23406
+55133.799936 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget
+55133.830543 23406: E|23406
+55133.830858 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.WidgetContainer
+55133.831289 23422: B|23406|Background young concurrent copying GC
+55133.831534 23422: B|23406|InitializePhase
+55133.831952 23406: E|23406
+55133.832149 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidgetContainer
+55133.832931 23422: B|23406|MarkZygoteLargeObjects
+55133.833193 23422: E|23406
+55133.833321 23422: E|23406
+55133.833476 23406: B|23406|Lock contention on thread suspend count lock (owner tid: 23422)
+55133.833605 23406: E|23406
+55133.833701 23406: B|23406|Run checkpoint function
+55133.833841 23406: E|23406
+55133.834046 23422: B|23406|GrayAllDirtyImmuneObjects
+55133.836160 23422: E|23406
+55133.836443 23422: B|23406|FlipThreadRoots
+55133.836787 23422: B|23406|ThreadListFlip
+55133.837208 23406: B|23406|FullSuspendCheck
+55133.837532 23422: B|23406|(Paused)FlipCallback
+55133.837712 23422: B|23406|(Paused)SetFromSpace
+55133.837956 23422: E|23406
+55133.838134 23422: B|23406|(Paused)GrayAllNewlyDirtyImmuneObjects
+55133.838385 23422: B|23406|(Paused)ClearCards
+55133.838519 23422: E|23406
+55133.838670 23422: B|23406|(Paused)ClearCards
+55133.838830 23422: E|23406
+55133.838983 23422: B|23406|(Paused)ClearCards
+55133.839322 23422: E|23406
+55133.839495 23422: B|23406|(Paused)ClearCards
+55133.839659 23422: E|23406
+55133.839816 23422: B|23406|(Paused)ClearCards
+55133.839963 23422: E|23406
+55133.840082 23422: B|23406|(Paused)ClearCards
+55133.840220 23422: E|23406
+55133.840390 23422: B|23406|(Paused)ClearCards
+55133.840544 23422: E|23406
+55133.840646 23422: B|23406|(Paused)ClearCards
+55133.840794 23422: E|23406
+55133.840913 23422: B|23406|(Paused)ClearCards
+55133.841015 23422: E|23406
+55133.841306 23422: B|23406|(Paused)ClearCards
+55133.841448 23422: E|23406
+55133.841547 23422: B|23406|(Paused)ClearCards
+55133.841701 23422: E|23406
+55133.841845 23422: B|23406|(Paused)ClearCards
+55133.841951 23422: E|23406
+55133.842071 23422: B|23406|(Paused)ClearCards
+55133.842175 23422: E|23406
+55133.842310 23422: E|23406
+55133.842444 23422: E|23406
+55133.842645 23422: B|23406|ResumeRunnableThreads
+55133.842911 23422: E|23406
+55133.843209 23422: B|23406|FlipOtherThreads
+55133.843353 23406: E|23406
+55133.843788 23422: E|23406
+55133.844072 23422: B|23406|ResumeOtherThreads
+55133.844473 23422: E|23406
+55133.845126 23422: E|23406
+55133.845392 23422: E|23406
+55133.845667 23422: B|23406|CopyingPhase
+55133.846040 23422: B|23406|ScanCardsForSpace
+55133.847153 23422: E|23406
+55133.847443 23422: B|23406|ScanImmuneSpaces
+55133.855636 23406: E|23406
+55133.856096 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintAnchor
+55133.857522 23422: E|23406
+55133.858004 23422: B|23406|VisitConcurrentRoots
+55133.860457 23406: E|23406
+55133.860786 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintAnchor$Type
+55133.861614 23406: E|23406
+55133.862240 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget$DimensionBehaviour
+55133.862830 23406: E|23406
+55133.863453 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.BasicMeasure
+55133.865068 23422: E|23406
+55133.865390 23422: B|23406|VisitNonThreadRoots
+55133.865961 23422: E|23406
+55133.866237 23422: B|23406|ProcessMarkStack
+55133.866662 23406: B|23406|Lock contention on thread suspend count lock (owner tid: 23422)
+55133.866843 23406: E|23406
+55133.866955 23406: B|23406|Run checkpoint function
+55133.867170 23406: E|23406
+55133.873101 23406: E|23406
+55133.873602 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.BasicMeasure$Measure
+55133.873979 23406: E|23406
+55133.874332 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.DependencyGraph
+55133.877084 23406: B|23406|Lock contention on thread suspend count lock (owner tid: 23422)
+55133.877292 23406: E|23406
+55133.877397 23406: B|23406|Run checkpoint function
+55133.877556 23406: E|23406
+55133.882709 23406: B|23406|Lock contention on thread suspend count lock (owner tid: 23422)
+55133.882946 23406: E|23406
+55133.883111 23406: B|23406|Run checkpoint function
+55133.883313 23406: E|23406
+55133.883433 23406: B|23406|Run checkpoint function
+55133.883609 23406: E|23406
+55133.883936 23406: B|23406|Lock contention on GC barrier lock (owner tid: 23422)
+55133.884129 23406: E|23406
+55133.884679 23422: B|23406|ProcessReferences
+55133.884859 23422: B|23406|ProcessReferences
+55133.885045 23422: B|23406|ForwardSoftReferences
+55133.885283 23422: E|23406
+55133.885460 23422: B|23406|EnqueueFinalizerReferences
+55133.885798 23422: E|23406
+55133.885967 23422: E|23406
+55133.886096 23422: E|23406
+55133.886234 23422: B|23406|SweepSystemWeaks
+55133.887384 23422: E|23406
+55133.887785 23406: B|23406|Run checkpoint function
+55133.888109 23406: E|23406
+55133.891568 23422: E|23406
+55133.892316 23422: E|23406
+55133.892516 23422: B|23406|ReclaimPhase
+55133.892736 23422: B|23406|SweepArray
+55133.893943 23422: B|23406|FreeList
+55133.894275 23422: E|23406
+55133.895789 23406: E|23406
+55133.896166 23406: B|23406|VerifyClass androidx.constraintlayout.solver.LinearSystem
+55133.896692 23422: B|23406|RecordFree
+55133.896944 23422: E|23406
+55133.897067 23422: B|23406|ResetStack
+55133.897246 23422: E|23406
+55133.897488 23422: E|23406
+55133.897653 23422: B|23406|SwapBitmaps
+55133.897867 23422: E|23406
+55133.898230 23422: B|23406|UnBindBitmaps
+55133.898666 23422: E|23406
+55133.898783 23422: B|23406|RecordFree
+55133.899531 23422: B|23406|ClearFromSpace
+55133.900566 23422: E|23406
+55133.906002 23422: E|23406
+55133.906226 23422: E|23406
+55133.906689 23422: B|23406|EmptyRBMarkBitStack
+55133.906943 23422: E|23406
+55133.907271 23406: E|23406
+55133.907672 23406: B|23406|VerifyClass androidx.constraintlayout.solver.Cache
+55133.908573 23406: E|23406
+55133.908695 23422: E|23406
+55133.908864 23406: B|23406|VerifyClass androidx.constraintlayout.solver.Pools$SimplePool
+55133.909469 23406: E|23406
+55133.909864 23406: B|23406|VerifyClass androidx.constraintlayout.solver.ArrayRow
+55133.914853 23406: E|23406
+55133.915157 23406: B|23406|VerifyClass androidx.constraintlayout.solver.PriorityGoalRow
+55133.917544 23406: E|23406
+55133.918009 23406: B|23406|VerifyClass androidx.constraintlayout.solver.ArrayLinkedVariables
+55133.921570 23406: E|23406
+55133.921982 23406: B|23406|VerifyClass androidx.constraintlayout.solver.PriorityGoalRow$GoalVariableAccessor
+55133.923319 23406: E|23406
+55133.923871 23406: B|23406|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$Measurer
+55133.930994 23406: E|23406
+55133.931558 23406: B|23406|VerifyClass androidx.constraintlayout.widget.R$styleable
+55133.932809 23406: E|23406
+55133.934170 23406: E|23406
+55133.937714 23406: B|23406|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior
+55133.939029 23406: E|23406
+55133.939334 23406: B|23406|VerifyClass com.google.android.material.appbar.ViewOffsetBehavior
+55133.940513 23406: E|23406
+55133.941531 23406: B|23406|VerifyClass com.google.android.material.appbar.HeaderScrollingViewBehavior
+55133.944792 23406: E|23406
+55133.945098 23406: B|23406|VerifyClass com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+55133.947569 23406: E|23406
+55133.949504 23406: B|23406|VerifyClass androidx.fragment.R$styleable
+55133.949936 23406: E|23406
+55133.952347 23406: B|23406|VerifyClass androidx.fragment.app.Fragment
+55133.964152 23406: E|23406
+55133.964792 23406: B|23406|VerifyClass androidx.navigation.fragment.NavHostFragment
+55133.970778 23406: E|23406
+55133.972300 23406: B|23406|VerifyClass androidx.fragment.app.Fragment$1
+55133.972735 23406: E|23406
+55133.973066 23406: B|23406|VerifyClass androidx.lifecycle.LiveData
+55133.976416 23406: E|23406
+55133.976678 23406: B|23406|VerifyClass androidx.lifecycle.MutableLiveData
+55133.976991 23406: E|23406
+55133.977339 23406: B|23406|VerifyClass androidx.lifecycle.LiveData$1
+55133.977654 23406: E|23406
+55133.978713 23406: B|23406|VerifyClass androidx.fragment.app.Fragment$2
+55133.979245 23406: E|23406
+55133.979920 23406: B|23406|VerifyClass androidx.navigation.R$styleable
+55133.980401 23406: E|23406
+55133.980980 23406: B|23406|VerifyClass androidx.navigation.fragment.R$styleable
+55133.981525 23406: E|23406
+55133.982090 23406: B|23406|VerifyClass androidx.fragment.app.FragmentStateManager
+55133.988218 23406: E|23406
+55133.989099 23406: B|23406|VerifyClass androidx.fragment.app.FragmentStateManager$1
+55133.989624 23406: E|23406
+55133.990322 23406: B|23406|VerifyClass androidx.fragment.app.Fragment$4
+55133.990886 23406: E|23406
+55133.991828 23406: B|23406|VerifyClass androidx.fragment.app.FragmentTransaction
+55133.995652 23406: E|23406
+55133.995963 23406: B|23406|VerifyClass androidx.fragment.app.BackStackRecord
+55134.001500 23406: E|23406
+55134.001911 23406: B|23406|VerifyClass androidx.fragment.app.FragmentTransaction$Op
+55134.002388 23406: E|23406
+55134.003693 23406: B|23406|VerifyClass androidx.navigation.NavController
+55134.015578 23406: E|23406
+55134.015873 23406: B|23406|VerifyClass androidx.navigation.NavHostController
+55134.016318 23406: E|23406
+55134.016935 23406: B|23406|VerifyClass androidx.navigation.NavigatorProvider
+55134.018363 23406: E|23406
+55134.018729 23406: B|23406|VerifyClass androidx.navigation.NavController$1
+55134.019186 23406: E|23406
+55134.019495 23406: B|23406|VerifyClass androidx.navigation.NavController$2
+55134.019861 23406: E|23406
+55134.020191 23406: B|23406|VerifyClass androidx.navigation.Navigator
+55134.020559 23406: E|23406
+55134.020811 23406: B|23406|VerifyClass androidx.navigation.NavGraphNavigator
+55134.021547 23406: E|23406
+55134.025403 23406: B|23406|VerifyClass androidx.navigation.ActivityNavigator
+55134.028648 23406: E|23406
+55134.030207 23406: B|23406|VerifyClass androidx.navigation.NavControllerViewModel
+55134.031481 23406: E|23406
+55134.031808 23406: B|23406|VerifyClass androidx.navigation.NavControllerViewModel$1
+55134.032194 23406: E|23406
+55134.032788 23421: B|23406|JIT compiling int java.lang.String.indexOf(java.lang.String, java.lang.String, int) (baseline=0, osr=0)
+55134.033139 23406: B|23406|VerifyClass androidx.navigation.fragment.DialogFragmentNavigator
+55134.033055 23421: B|23406|Compiling
+55134.035340 23406: E|23406
+55134.035810 23406: B|23406|VerifyClass androidx.navigation.fragment.DialogFragmentNavigator$1
+55134.036304 23406: E|23406
+55134.036771 23421: B|23406|ScopedCodeCacheWrite
+55134.037169 23421: B|23406|mprotect all
+55134.037412 23406: B|23406|VerifyClass androidx.navigation.fragment.FragmentNavigator
+55134.037933 23421: E|23406
+55134.038260 23421: B|23406|mprotect code
+55134.038455 23421: E|23406
+55134.038575 23421: E|23406
+55134.039010 23421: B|23406|ScopedCodeCacheWrite
+55134.039155 23421: B|23406|mprotect all
+55134.039315 23421: E|23406
+55134.039494 23421: B|23406|mprotect code
+55134.039648 23421: E|23406
+55134.039767 23421: E|23406
+55134.039908 23406: E|23406
+55134.040079 23421: E|23406
+55134.040229 23421: B|23406|TrimMaps
+55134.040346 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.040555 23421: E|23406
+55134.040679 23421: E|23406
+55134.040814 23406: B|23406|VerifyClass androidx.navigation.NavInflater
+55134.040931 23421: E|23406
+55134.046726 23406: E|23406
+55134.047785 23406: B|23406|AssetManager::OpenXmlAsset(res/navigation/nav_graph.xml)
+55134.048680 23406: E|23406
+55134.049421 23406: B|23406|VerifyClass androidx.navigation.NavDestination
+55134.052958 23406: E|23406
+55134.053239 23406: B|23406|VerifyClass androidx.navigation.NavGraph
+55134.055402 23406: E|23406
+55134.056019 23406: B|23406|VerifyClass androidx.navigation.common.R$styleable
+55134.056522 23406: E|23406
+55134.058366 23406: B|23406|VerifyClass androidx.navigation.fragment.FragmentNavigator$Destination
+55134.059138 23406: E|23406
+55134.060375 23406: B|23406|VerifyClass androidx.navigation.NavAction
+55134.060942 23406: E|23406
+55134.061315 23406: B|23406|VerifyClass androidx.navigation.NavOptions$Builder
+55134.061874 23406: E|23406
+55134.062267 23406: B|23406|VerifyClass androidx.navigation.NavOptions
+55134.062939 23406: E|23406
+55134.065979 23406: B|23406|VerifyClass rhea.sample.android.app.FirstFragment
+55134.068555 23406: E|23406
+55134.070557 23406: B|23406|VerifyClass androidx.navigation.NavBackStackEntry
+55134.073314 23406: E|23406
+55134.077674 23406: B|23406|VerifyClass androidx.fragment.app.FragmentTransition
+55134.086460 23406: E|23406
+55134.086804 23406: B|23406|VerifyClass androidx.fragment.app.FragmentTransitionImpl
+55134.090442 23406: E|23406
+55134.090659 23406: B|23406|VerifyClass androidx.fragment.app.FragmentTransitionCompat21
+55134.094291 23406: E|23406
+55134.095139 23406: B|23406|VerifyClass androidx.transition.FragmentTransitionSupport
+55134.099850 23406: E|23406
+55134.101546 23406: B|23406|VerifyClass androidx.navigation.NavBackStackEntry$1
+55134.102316 23406: E|23406
+55134.104149 23406: B|23406|VerifyClass androidx.fragment.app.FragmentViewLifecycleOwner
+55134.104913 23406: E|23406
+55134.105282 23406: B|23406|VerifyClass androidx.fragment.app.FragmentContainerView
+55134.109948 23406: E|23406
+55134.112076 23406: B|23406|VerifyClass androidx.arch.core.executor.TaskExecutor
+55134.112480 23406: E|23406
+55134.112730 23406: B|23406|VerifyClass androidx.arch.core.executor.ArchTaskExecutor
+55134.114184 23406: E|23406
+55134.114701 23406: B|23406|VerifyClass androidx.arch.core.executor.ArchTaskExecutor$1
+55134.115074 23406: E|23406
+55134.115399 23406: B|23406|VerifyClass androidx.arch.core.executor.ArchTaskExecutor$2
+55134.115774 23406: E|23406
+55134.116114 23406: B|23406|VerifyClass androidx.arch.core.executor.DefaultTaskExecutor
+55134.117527 23406: E|23406
+55134.117932 23406: B|23406|VerifyClass androidx.arch.core.executor.DefaultTaskExecutor$1
+55134.118599 23406: E|23406
+55134.119900 23406: B|23406|VerifyClass androidx.fragment.R$id
+55134.120241 23406: E|23406
+55134.120752 23406: B|23406|VerifyClass androidx.navigation.Navigation
+55134.122925 23406: E|23406
+55134.123257 23406: B|23406|VerifyClass androidx.navigation.R$id
+55134.123585 23406: E|23406
+55134.125000 23406: B|23406|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$LayoutParams
+55134.129564 23406: E|23406
+55134.130971 23406: B|23406|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$LayoutParams$Table
+55134.132166 23406: E|23406
+55134.135596 23406: B|23406|com.google.android.material.floatingactionbutton.FloatingActionButton
+55134.136175 23406: B|23406|VerifyClass com.google.android.material.internal.VisibilityAwareImageButton
+55134.137149 23406: E|23406
+55134.137468 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton
+55134.151019 23406: E|23406
+55134.154387 23406: B|23406|VerifyClass com.google.android.material.resources.MaterialResources
+55134.155749 23406: E|23406
+55134.156531 23406: B|23406|res/color/mtrl_fab_bg_color_selector.xml
+55134.156848 23406: B|23406|AssetManager::OpenXmlAsset(res/color/mtrl_fab_bg_color_selector.xml)
+55134.158310 23406: E|23406
+55134.159728 23406: E|23406
+55134.160389 23406: B|23406|VerifyClass com.google.android.material.internal.ViewUtils
+55134.164815 23406: E|23406
+55134.165505 23406: B|23406|res/color/mtrl_fab_ripple_color.xml
+55134.165839 23406: B|23406|AssetManager::OpenXmlAsset(res/color/mtrl_fab_ripple_color.xml)
+55134.167103 23406: E|23406
+55134.169320 23406: E|23406
+55134.169901 23406: B|23406|VerifyClass com.google.android.material.R$dimen
+55134.170247 23406: E|23406
+55134.170977 23406: B|23406|VerifyClass com.google.android.material.animation.MotionSpec
+55134.173345 23406: E|23406
+55134.174039 23406: B|23406|AssetManager::OpenXmlAsset(res/animator/mtrl_fab_show_motion_spec.xml)
+55134.175280 23406: E|23406
+55134.178362 23406: B|23406|AssetManager::OpenXmlAsset(res/interpolator/mtrl_linear.xml)
+55134.178890 23406: E|23406
+55134.180563 23406: B|23406|AssetManager::OpenXmlAsset(res/interpolator-v21/mtrl_linear_out_slow_in.xml)
+55134.181887 23406: E|23406
+55134.186717 23406: B|23406|VerifyClass com.google.android.material.animation.MotionTiming
+55134.188178 23406: E|23406
+55134.189144 23406: B|23406|AssetManager::OpenXmlAsset(res/animator/mtrl_fab_hide_motion_spec.xml)
+55134.190383 23406: E|23406
+55134.192953 23406: B|23406|AssetManager::OpenXmlAsset(res/interpolator-v21/mtrl_fast_out_linear_in.xml)
+55134.193652 23406: E|23406
+55134.198623 23406: B|23406|Theme::ApplyStyle
+55134.198867 23406: E|23406
+55134.199762 23406: B|23406|VerifyClass com.google.android.material.shape.ShapeAppearanceModel$Builder
+55134.201849 23406: E|23406
+55134.202844 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatImageHelper
+55134.205399 23406: E|23406
+55134.207089 23406: B|23406|res/drawable-hdpi-v4/ic_dialog_email.png
+55134.207457 23406: B|23406|AssetManager::OpenNonAsset(res/drawable-hdpi-v4/ic_dialog_email.png)
+55134.209298 23406: E|23406
+55134.211873 23406: E|23406
+55134.212875 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl
+55134.225006 23406: E|23406
+55134.225327 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImplLollipop
+55134.230213 23406: E|23406
+55134.230535 23406: B|23406|VerifyClass com.google.android.material.animation.AnimationUtils
+55134.232407 23406: E|23406
+55134.232711 23406: B|23406|VerifyClass androidx.interpolator.view.animation.LookupTableInterpolator
+55134.233144 23406: E|23406
+55134.233341 23406: B|23406|VerifyClass androidx.interpolator.view.animation.FastOutSlowInInterpolator
+55134.233674 23406: E|23406
+55134.233981 23406: B|23406|VerifyClass androidx.interpolator.view.animation.FastOutLinearInInterpolator
+55134.234272 23406: E|23406
+55134.234555 23406: B|23406|VerifyClass androidx.interpolator.view.animation.LinearOutSlowInInterpolator
+55134.234952 23406: E|23406
+55134.235339 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$ShadowDelegateImpl
+55134.236327 23406: E|23406
+55134.236837 23406: B|23406|VerifyClass com.google.android.material.internal.StateListAnimator
+55134.238614 23406: E|23406
+55134.238995 23406: B|23406|VerifyClass com.google.android.material.internal.StateListAnimator$1
+55134.239434 23406: E|23406
+55134.239803 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ShadowAnimatorImpl
+55134.240909 23406: E|23406
+55134.241265 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ElevateToPressedTranslationZAnimation
+55134.241881 23406: E|23406
+55134.242683 23406: B|23406|VerifyClass com.google.android.material.internal.StateListAnimator$Tuple
+55134.243024 23406: E|23406
+55134.243502 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ElevateToHoveredFocusedTranslationZAnimation
+55134.243934 23406: E|23406
+55134.245009 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ResetElevationAnimation
+55134.245425 23406: E|23406
+55134.246031 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$DisabledElevationAnimation
+55134.246442 23406: E|23406
+55134.247725 23406: B|23406|res/color/mtrl_fab_icon_text_color_selector.xml
+55134.248085 23406: B|23406|AssetManager::OpenXmlAsset(res/color/mtrl_fab_icon_text_color_selector.xml)
+55134.249951 23406: E|23406
+55134.251808 23406: E|23406
+55134.252297 23406: B|23406|VerifyClass androidx.core.widget.ImageViewCompat
+55134.253260 23406: E|23406
+55134.254327 23406: B|23406|VerifyClass com.google.android.material.expandable.ExpandableWidgetHelper
+55134.255519 23406: E|23406
+55134.255911 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImplLollipop$AlwaysStatefulMaterialShapeDrawable
+55134.256263 23406: E|23406
+55134.259355 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.BorderDrawable
+55134.262357 23406: E|23406
+55134.263425 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.BorderDrawable$BorderState
+55134.263884 23406: E|23406
+55134.264413 23406: B|23406|VerifyClass com.google.android.material.R$color
+55134.264802 23406: E|23406
+55134.265946 23406: B|23406|VerifyClass com.google.android.material.ripple.RippleUtils
+55134.266923 23406: E|23406
+55134.280707 23406: E|23406
+55134.282758 23406: E|23406
+55134.283362 23406: B|23406|VerifyClass androidx.appcompat.app.ActionBar
+55134.284586 23406: E|23406
+55134.284884 23406: B|23406|VerifyClass androidx.appcompat.app.ToolbarActionBar
+55134.290648 23406: E|23406
+55134.291048 23406: B|23406|VerifyClass androidx.appcompat.app.ToolbarActionBar$1
+55134.291448 23406: E|23406
+55134.291781 23406: B|23406|VerifyClass androidx.appcompat.app.ToolbarActionBar$2
+55134.292231 23406: E|23406
+55134.292561 23406: B|23406|VerifyClass androidx.appcompat.widget.ToolbarWidgetWrapper
+55134.304035 23406: E|23406
+55134.304394 23406: B|23406|VerifyClass androidx.appcompat.R$string
+55134.304788 23406: E|23406
+55134.307133 23406: B|23406|VerifyClass androidx.appcompat.widget.ToolbarWidgetWrapper$1
+55134.308865 23406: E|23406
+55134.309182 23406: B|23406|VerifyClass androidx.appcompat.view.menu.ActionMenuItem
+55134.311921 23406: E|23406
+55134.312781 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatImageButton
+55134.315000 23406: E|23406
+55134.315421 23406: B|23406|VerifyClass androidx.appcompat.widget.TintContextWrapper
+55134.316993 23406: E|23406
+55134.320528 23406: B|23406|VerifyClass androidx.appcompat.widget.ThemeUtils
+55134.322027 23406: E|23406
+55134.323501 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatBackgroundHelper
+55134.325450 23406: E|23406
+55134.326799 23406: B|23406|VerifyClass androidx.appcompat.app.ActionBar$LayoutParams
+55134.327525 23406: E|23406
+55134.327887 23406: B|23406|VerifyClass androidx.appcompat.widget.Toolbar$LayoutParams
+55134.328522 23406: E|23406
+55134.329693 23406: B|23406|VerifyClass androidx.appcompat.app.ToolbarActionBar$ToolbarCallbackWrapper
+55134.330176 23406: E|23406
+55134.330524 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatTextView
+55134.338869 23406: E|23406
+55134.342141 23406: B|23406|res/color/abc_hint_foreground_material_dark.xml
+55134.342431 23406: B|23406|AssetManager::OpenXmlAsset(res/color/abc_hint_foreground_material_dark.xml)
+55134.343758 23406: E|23406
+55134.345238 23406: E|23406
+55134.349384 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatTextHelper
+55134.355712 23406: E|23406
+55134.356028 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper
+55134.363491 23406: E|23406
+55134.363925 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl
+55134.364368 23406: E|23406
+55134.364706 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl23
+55134.365215 23406: E|23406
+55134.365488 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29
+55134.366134 23406: E|23406
+55134.367152 23406: B|23406|VerifyClass androidx.core.content.res.ResourcesCompat$FontCallback
+55134.368390 23406: E|23406
+55134.368677 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatTextHelper$1
+55134.369156 23406: E|23406
+55134.369645 23406: B|23406|VerifyClass androidx.core.content.res.ResourcesCompat
+55134.372186 23406: E|23406
+55134.372915 23406: B|23406|VerifyClass androidx.core.content.res.ResourcesCompat$FontCallback$2
+55134.373326 23406: E|23406
+55134.374744 23406: B|23406|VerifyClass androidx.core.widget.AutoSizeableTextView
+55134.375103 23406: E|23406
+55134.375703 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatTextClassifierHelper
+55134.376210 23406: E|23406
+55134.380968 23406: B|23406|VerifyClass rhea.sample.android.app.MainActivity$onCreate$1
+55134.382312 23406: E|23406
+55134.383044 23406: B|23406|B:MainActivity$onCreate$1:<clinit>
+55134.383647 23406: B|23406|E:MainActivity$onCreate$1:<clinit>
+55134.388880 23406: B|23406|AssetManager::GetResourceConfigurations
+55134.389619 23406: E|23406
+55134.398579 23406: E|23406
+55134.402562 23406: B|23406|B:FirstFragment:onCreateView
+55134.403281 23406: B|23406|AssetManager::OpenXmlAsset(res/layout/fragment_first.xml)
+55134.404863 23406: E|23406
+55134.405456 23406: B|23406|inflate
+55134.406688 23406: B|23406|androidx.constraintlayout.widget.ConstraintLayout
+55134.410263 23406: E|23406
+55134.411500 23406: B|23406|VerifyClass com.google.android.material.textview.MaterialTextView
+55134.412854 23406: E|23406
+55134.415149 23406: B|23406|res/color/highlighted_text_material.xml
+55134.415477 23406: B|23406|AssetManager::OpenXmlAsset(res/color/highlighted_text_material.xml)
+55134.416799 23406: E|23406
+55134.417956 23406: E|23406
+55134.418570 23406: B|23406|res/color/hint_foreground_material_light.xml
+55134.418874 23406: B|23406|AssetManager::OpenXmlAsset(res/color/hint_foreground_material_light.xml)
+55134.421491 23406: E|23406
+55134.422922 23406: E|23406
+55134.430694 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatButton
+55134.436106 23406: E|23406
+55134.436350 23406: B|23406|VerifyClass com.google.android.material.button.MaterialButton
+55134.447216 23406: E|23406
+55134.451656 23406: B|23406|AssetManager::OpenXmlAsset(res/animator-v19/mtrl_btn_state_list_anim.xml)
+55134.452599 23406: E|23406
+55134.466846 23406: B|23406|res/color/text_color_primary.xml
+55134.467102 23406: B|23406|AssetManager::OpenXmlAsset(res/color/text_color_primary.xml)
+55134.467603 23406: E|23406
+55134.469085 23406: E|23406
+55134.470717 23406: B|23406|res/color/mtrl_btn_text_color_selector.xml
+55134.471021 23406: B|23406|AssetManager::OpenXmlAsset(res/color/mtrl_btn_text_color_selector.xml)
+55134.472473 23406: E|23406
+55134.473871 23406: E|23406
+55134.478804 23406: B|23406|res/color/mtrl_btn_bg_color_selector.xml
+55134.479131 23406: B|23406|AssetManager::OpenXmlAsset(res/color/mtrl_btn_bg_color_selector.xml)
+55134.482236 23406: E|23406
+55134.483635 23406: E|23406
+55134.484626 23406: B|23406|VerifyClass androidx.appcompat.widget.TintInfo
+55134.485066 23406: E|23406
+55134.489117 23406: B|23406|VerifyClass com.google.android.material.button.MaterialButtonHelper
+55134.492975 23406: E|23406
+55134.494047 23406: B|23406|res/color/mtrl_btn_ripple_color.xml
+55134.494372 23406: B|23406|AssetManager::OpenXmlAsset(res/color/mtrl_btn_ripple_color.xml)
+55134.495908 23406: E|23406
+55134.497498 23406: E|23406
+55134.500731 23406: B|23406|VerifyClass androidx.core.graphics.drawable.DrawableCompat
+55134.503568 23406: E|23406
+55134.516389 23406: B|23406|VerifyClass androidx.core.widget.TextViewCompat
+55134.523405 23406: E|23406
+55134.525501 23406: E|23406
+55134.526256 23406: B|23406|E:FirstFragment:onCreateView
+55134.528367 23406: B|23406|B:FirstFragment:onViewCreated
+55134.528751 23406: B|23406|VerifyClass rhea.sample.android.app.FirstFragment$onViewCreated$1
+55134.529422 23406: E|23406
+55134.530509 23406: B|23406|VerifyClass rhea.sample.android.app.FirstFragment$onViewCreated$2
+55134.530948 23406: E|23406
+55134.532134 23406: B|23406|E:FirstFragment:onViewCreated
+55134.533530 23406: B|23406|VerifyClass androidx.fragment.app.FragmentAnim
+55134.537007 23406: E|23406
+55134.539905 23406: B|23406|VerifyClass androidx.activity.OnBackPressedDispatcher$OnBackPressedCancellable
+55134.540358 23406: E|23406
+55134.548513 23406: B|23406|notifyContentCapture(START) for {rhea.sample.android/rhea.sample.android.app.MainActivity}
+55134.549420 23406: E|23406
+55134.549979 23406: B|23406|activityResume
+55134.552528 23406: B|23406|notifyContentCapture(RESUME) for {rhea.sample.android/rhea.sample.android.app.MainActivity}
+55134.553074 23406: E|23406
+55134.576678 23445: B|23406|notifyFramePending
+55134.576897 23445: E|23406
+55134.587484 23406: E|23406
+55134.589826 23406: B|23406|topResumedActivityChangeItem
+55134.590534 23406: E|23406
+55134.592839 23406: B|23406|Choreographer#doFrame
+55134.593420 23406: B|23406|traversal
+55134.620279 23421: B|23406|JIT compiling java.lang.Object java.lang.ref.Reference.get() (baseline=0, osr=0)
+55134.620525 23421: B|23406|Compiling
+55134.622461 23421: B|23406|ScopedCodeCacheWrite
+55134.622626 23421: B|23406|mprotect all
+55134.622762 23421: E|23406
+55134.622907 23421: B|23406|mprotect code
+55134.623057 23421: E|23406
+55134.623168 23421: E|23406
+55134.623563 23421: B|23406|ScopedCodeCacheWrite
+55134.623712 23421: B|23406|mprotect all
+55134.623869 23421: E|23406
+55134.624041 23421: B|23406|mprotect code
+55134.624183 23421: E|23406
+55134.624296 23421: E|23406
+55134.624483 23421: E|23406
+55134.624713 23421: B|23406|TrimMaps
+55134.624848 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.625085 23421: E|23406
+55134.625257 23421: E|23406
+55134.625448 23421: E|23406
+55134.641680 23421: B|23406|JIT compiling java.lang.Object[] java.util.Arrays.copyOf(java.lang.Object[], int, java.lang.Class) (baseline=0, osr=0)
+55134.641908 23421: B|23406|Compiling
+55134.643403 23421: B|23406|ScopedCodeCacheWrite
+55134.643589 23406: B|23406|dispatchApplyInsets
+55134.645382 23421: B|23406|mprotect all
+55134.645695 23421: E|23406
+55134.645901 23421: B|23406|mprotect code
+55134.646125 23421: E|23406
+55134.646300 23421: E|23406
+55134.646732 23421: B|23406|ScopedCodeCacheWrite
+55134.646921 23421: B|23406|mprotect all
+55134.647155 23421: E|23406
+55134.647373 23421: B|23406|mprotect code
+55134.647603 23421: E|23406
+55134.647778 23421: E|23406
+55134.648107 23421: E|23406
+55134.648308 23421: B|23406|TrimMaps
+55134.648430 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.648662 23421: E|23406
+55134.648828 23421: E|23406
+55134.648968 23421: E|23406
+55134.652478 23406: E|23406
+55134.653151 23406: B|23406|measure
+55134.655134 23406: B|23406|VerifyClass com.google.android.material.appbar.HeaderBehavior
+55134.660583 23406: E|23406
+55134.660877 23406: B|23406|VerifyClass com.google.android.material.appbar.AppBarLayout$BaseBehavior
+55134.669695 23406: E|23406
+55134.669935 23406: B|23406|VerifyClass com.google.android.material.appbar.AppBarLayout$Behavior
+55134.670710 23406: E|23406
+55134.671533 23406: B|23406|VerifyClass androidx.core.view.GravityCompat
+55134.672187 23406: E|23406
+55134.673132 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior
+55134.677433 23406: E|23406
+55134.677711 23406: B|23406|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior
+55134.678482 23406: E|23406
+55134.679457 23406: B|23406|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$OnPreDrawListener
+55134.679852 23406: E|23406
+55134.693999 23406: B|23406|VerifyClass androidx.core.view.MarginLayoutParamsCompat
+55134.694791 23406: E|23406
+55134.699340 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget$1
+55134.700559 23406: E|23406
+55134.703346 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.Optimizer
+55134.704142 23406: E|23406
+55134.704917 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.Direct
+55134.710929 23406: E|23406
+55134.712484 23406: B|23406|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$1
+55134.713073 23406: E|23406
+55134.720158 23406: B|23406|VerifyClass androidx.constraintlayout.solver.SolverVariable
+55134.722530 23406: E|23406
+55134.723005 23406: B|23406|VerifyClass androidx.constraintlayout.solver.SolverVariable$Type
+55134.723681 23406: E|23406
+55134.724711 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.ChainHead
+55134.726435 23406: E|23406
+55134.727911 23406: B|23406|VerifyClass androidx.constraintlayout.solver.widgets.Chain
+55134.736826 23406: E|23406
+55134.741014 23421: B|23406|JIT compiling boolean androidx.constraintlayout.solver.PriorityGoalRow$GoalVariableAccessor.addToGoal(androidx.constraintlayout.solver.SolverVariable, float) (baseline=0, osr=0)
+55134.741282 23421: B|23406|Compiling
+55134.744557 23421: B|23406|ScopedCodeCacheWrite
+55134.744758 23421: B|23406|mprotect all
+55134.745006 23421: E|23406
+55134.745269 23421: B|23406|mprotect code
+55134.745526 23421: E|23406
+55134.745666 23421: E|23406
+55134.746103 23421: B|23406|ScopedCodeCacheWrite
+55134.746281 23421: B|23406|mprotect all
+55134.746459 23421: E|23406
+55134.746678 23421: B|23406|mprotect code
+55134.746863 23421: E|23406
+55134.747000 23421: E|23406
+55134.747732 23421: E|23406
+55134.748154 23421: B|23406|TrimMaps
+55134.748317 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.748509 23421: E|23406
+55134.748647 23421: E|23406
+55134.748798 23421: E|23406
+55134.756571 23406: E|23406
+55134.773767 23421: B|23406|JIT compiling void java.lang.String.getChars(int, int, char[], int) (baseline=0, osr=0)
+55134.774001 23421: B|23406|Compiling
+55134.777485 23421: B|23406|ScopedCodeCacheWrite
+55134.777689 23421: B|23406|mprotect all
+55134.778209 23421: E|23406
+55134.778445 23421: B|23406|mprotect code
+55134.778667 23421: E|23406
+55134.778775 23421: E|23406
+55134.779444 23421: B|23406|ScopedCodeCacheWrite
+55134.782183 23406: B|23406|ResourcesManager#applyConfigurationToResourcesLocked
+55134.782506 23406: E|23406
+55134.782563 23421: B|23406|mprotect all
+55134.782745 23421: E|23406
+55134.782965 23421: B|23406|mprotect code
+55134.783149 23421: E|23406
+55134.783299 23421: E|23406
+55134.783548 23421: E|23406
+55134.783754 23406: B|23406|dispatchApplyInsets
+55134.783885 23421: B|23406|TrimMaps
+55134.784070 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.784295 23421: E|23406
+55134.784436 23421: E|23406
+55134.784659 23421: E|23406
+55134.784884 23421: B|23406|JIT compiling void java.lang.Object.<init>() (baseline=0, osr=0)
+55134.785050 23421: B|23406|Compiling
+55134.785542 23421: B|23406|ScopedCodeCacheWrite
+55134.785795 23421: B|23406|mprotect all
+55134.786010 23421: E|23406
+55134.786181 23421: B|23406|mprotect code
+55134.788044 23421: E|23406
+55134.788180 23421: E|23406
+55134.787949 23406: E|23406
+55134.788616 23421: B|23406|ScopedCodeCacheWrite
+55134.788816 23421: B|23406|mprotect all
+55134.789060 23421: E|23406
+55134.789536 23406: B|23406|measure
+55134.789873 23421: B|23406|mprotect code
+55134.790415 23421: E|23406
+55134.790589 23421: E|23406
+55134.790794 23421: E|23406
+55134.790919 23421: B|23406|TrimMaps
+55134.792561 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.792925 23421: E|23406
+55134.793180 23421: E|23406
+55134.793403 23421: E|23406
+55134.793735 23421: B|23406|JIT compiling android.graphics.Insets android.graphics.Insets.max(android.graphics.Insets, android.graphics.Insets) (baseline=0, osr=0)
+55134.793982 23421: B|23406|Compiling
+55134.795310 23421: B|23406|ScopedCodeCacheWrite
+55134.795520 23421: B|23406|mprotect all
+55134.795698 23421: E|23406
+55134.796003 23421: B|23406|mprotect code
+55134.796240 23421: E|23406
+55134.796362 23421: E|23406
+55134.796738 23421: B|23406|ScopedCodeCacheWrite
+55134.796856 23421: B|23406|mprotect all
+55134.797306 23421: E|23406
+55134.797504 23421: B|23406|mprotect code
+55134.797713 23421: E|23406
+55134.797808 23421: E|23406
+55134.798096 23421: E|23406
+55134.798372 23421: B|23406|TrimMaps
+55134.798704 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.799045 23421: E|23406
+55134.799232 23421: E|23406
+55134.799455 23421: E|23406
+55134.799819 23421: B|23406|JIT compiling boolean android.view.InsetsSource.getIntersection(android.graphics.Rect, android.graphics.Rect, android.graphics.Rect) (baseline=0, osr=0)
+55134.799974 23421: B|23406|Compiling
+55134.801573 23445: B|23406|setSurface
+55134.802315 23445: B|23406|Creating EGLContext
+55134.802526 23445: B|23406|eglGetDisplay
+55134.802645 23445: B|23406|open
+55134.802811 23445: E|23406
+55134.803027 23445: B|23406|getPlatformDisplay
+55134.803208 23445: E|23406
+55134.803310 23445: E|23406
+55134.803806 23445: B|23406|open:/data/data/com.mali.testjava/.mali_config
+55134.804016 23445: E|23406
+55134.811280 23421: B|23406|ScopedCodeCacheWrite
+55134.811472 23421: B|23406|mprotect all
+55134.811611 23421: E|23406
+55134.811729 23421: B|23406|mprotect code
+55134.811847 23421: E|23406
+55134.811972 23421: E|23406
+55134.812418 23421: B|23406|ScopedCodeCacheWrite
+55134.812667 23421: B|23406|mprotect all
+55134.814994 23421: E|23406
+55134.815250 23421: B|23406|mprotect code
+55134.815530 23421: E|23406
+55134.815684 23421: E|23406
+55134.815909 23421: E|23406
+55134.816054 23421: B|23406|TrimMaps
+55134.818200 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.820910 23421: E|23406
+55134.821138 23421: E|23406
+55134.821451 23421: E|23406
+55134.827319 23406: E|23406
+55134.827715 23406: B|23406|layout
+55134.831521 23421: B|23406|JIT compiling android.graphics.Insets android.view.WindowInsets.insetInsets(android.graphics.Insets, int, int, int, int) (baseline=0, osr=0)
+55134.831830 23421: B|23406|Compiling
+55134.836785 23406: B|23406|VerifyClass com.google.android.material.appbar.ViewOffsetHelper
+55134.838575 23406: E|23406
+55134.839561 23406: B|23406|VerifyClass androidx.core.math.MathUtils
+55134.840020 23406: E|23406
+55134.843542 23406: B|23406|VerifyClass androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
+55134.846424 23421: B|23406|ScopedCodeCacheWrite
+55134.846733 23421: B|23406|mprotect all
+55134.847065 23421: E|23406
+55134.847361 23421: B|23406|mprotect code
+55134.847589 23421: E|23406
+55134.847763 23421: E|23406
+55134.848867 23406: E|23406
+55134.855198 23406: E|23406
+55134.857174 23406: B|23406|VerifyClass androidx.coordinatorlayout.widget.ViewGroupUtils
+55134.859205 23406: E|23406
+55134.863147 23406: B|23406|draw
+55134.863712 23445: B|23406|HIDL::IServiceManager::getTransport::client
+55134.864969 23421: B|23406|ScopedCodeCacheWrite
+55134.865155 23421: B|23406|mprotect all
+55134.865406 23421: E|23406
+55134.865982 23445: E|23406
+55134.867104 23445: B|23406|open:/proc/23406/cmdline
+55134.867336 23445: E|23406
+55134.867684 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55134.867929 23445: E|23406
+55134.868228 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55134.868441 23445: E|23406
+55134.868827 23445: B|23406|open:/proc/23406/cmdline
+55134.869153 23445: E|23406
+55134.869534 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55134.869717 23445: E|23406
+55134.870034 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55134.870194 23445: E|23406
+55134.865683 23421: B|23406|mprotect code
+55134.884883 23421: E|23406
+55134.885102 23421: E|23406
+55134.885400 23421: E|23406
+55134.885617 23421: B|23406|TrimMaps
+55134.885794 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.886503 23421: E|23406
+55134.886710 23421: E|23406
+55134.886928 23421: E|23406
+55134.888809 23421: B|23406|JIT compiling void androidx.constraintlayout.solver.SolverVariable.addToRow(androidx.constraintlayout.solver.ArrayRow) (baseline=0, osr=0)
+55134.889087 23421: B|23406|Compiling
+55134.891544 23421: B|23406|ScopedCodeCacheWrite
+55134.891806 23421: B|23406|mprotect all
+55134.892362 23421: E|23406
+55134.892588 23421: B|23406|mprotect code
+55134.892808 23421: E|23406
+55134.892996 23421: E|23406
+55134.893888 23421: B|23406|ScopedCodeCacheWrite
+55134.894108 23421: B|23406|mprotect all
+55134.894278 23421: E|23406
+55134.894672 23421: B|23406|mprotect code
+55134.895081 23421: E|23406
+55134.895262 23421: E|23406
+55134.895584 23421: E|23406
+55134.895795 23421: B|23406|TrimMaps
+55134.895963 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.896852 23421: E|23406
+55134.897047 23421: E|23406
+55134.897298 23421: E|23406
+55134.898732 23421: B|23406|JIT compiling androidx.constraintlayout.solver.SolverVariable androidx.constraintlayout.solver.ArrayLinkedVariables.getVariable(int) (baseline=0, osr=0)
+55134.899006 23421: B|23406|Compiling
+55134.902610 23421: B|23406|ScopedCodeCacheWrite
+55134.903081 23421: B|23406|mprotect all
+55134.903541 23421: E|23406
+55134.904006 23421: B|23406|mprotect code
+55134.904613 23421: E|23406
+55134.904968 23421: E|23406
+55134.906153 23421: B|23406|ScopedCodeCacheWrite
+55134.906616 23421: B|23406|mprotect all
+55134.907108 23421: E|23406
+55134.907513 23421: B|23406|mprotect code
+55134.908149 23421: E|23406
+55134.908453 23421: E|23406
+55134.908953 23421: E|23406
+55134.909310 23421: B|23406|TrimMaps
+55134.909888 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.911330 23421: E|23406
+55134.911648 23421: E|23406
+55134.911980 23421: E|23406
+55134.912417 23421: B|23406|JIT compiling void java.util.Arrays.fill(float[], float) (baseline=0, osr=0)
+55134.912966 23421: B|23406|Compiling
+55134.915912 23421: B|23406|ScopedCodeCacheWrite
+55134.916357 23421: B|23406|mprotect all
+55134.916825 23421: E|23406
+55134.917152 23421: B|23406|mprotect code
+55134.917564 23421: E|23406
+55134.917939 23421: E|23406
+55134.919962 23421: B|23406|ScopedCodeCacheWrite
+55134.920557 23421: B|23406|mprotect all
+55134.921079 23421: E|23406
+55134.921581 23421: B|23406|mprotect code
+55134.922016 23421: E|23406
+55134.922232 23421: E|23406
+55134.922545 23421: E|23406
+55134.922764 23421: B|23406|TrimMaps
+55134.922960 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.923285 23421: E|23406
+55134.923489 23421: E|23406
+55134.923667 23421: E|23406
+55134.923991 23421: B|23406|JIT compiling void androidx.constraintlayout.solver.ArrayLinkedVariables.add(androidx.constraintlayout.solver.SolverVariable, float, boolean) (baseline=0, osr=0)
+55134.924215 23421: B|23406|Compiling
+55134.937177 23421: B|23406|ScopedCodeCacheWrite
+55134.937655 23421: B|23406|mprotect all
+55134.938311 23421: E|23406
+55134.938644 23421: B|23406|mprotect code
+55134.939023 23421: E|23406
+55134.939198 23421: E|23406
+55134.940146 23421: B|23406|ScopedCodeCacheWrite
+55134.940409 23421: B|23406|mprotect all
+55134.940730 23421: E|23406
+55134.941013 23421: B|23406|mprotect code
+55134.941458 23421: E|23406
+55134.941672 23421: E|23406
+55134.942001 23421: E|23406
+55134.942218 23421: B|23406|TrimMaps
+55134.942415 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.943234 23421: E|23406
+55134.943445 23421: E|23406
+55134.943702 23421: E|23406
+55134.944023 23421: B|23406|JIT compiling float androidx.constraintlayout.solver.ArrayLinkedVariables.get(androidx.constraintlayout.solver.SolverVariable) (baseline=0, osr=0)
+55134.944242 23421: B|23406|Compiling
+55134.948220 23421: B|23406|ScopedCodeCacheWrite
+55134.948757 23421: B|23406|mprotect all
+55134.949227 23421: E|23406
+55134.950390 23421: B|23406|mprotect code
+55134.950770 23421: E|23406
+55134.951804 23421: E|23406
+55134.952091 23445: E|23406
+55134.952787 23445: B|23406|open
+55134.953000 23445: E|23406
+55134.953215 23421: B|23406|ScopedCodeCacheWrite
+55134.953641 23421: B|23406|mprotect all
+55134.954056 23421: E|23406
+55134.954699 23445: B|23406|open
+55134.954597 23421: B|23406|mprotect code
+55134.954966 23445: E|23406
+55134.955142 23421: E|23406
+55134.955619 23445: B|23406|open
+55134.955694 23421: E|23406
+55134.955902 23445: E|23406
+55134.955998 23421: E|23406
+55134.956132 23421: B|23406|TrimMaps
+55134.956280 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55134.956377 23445: B|23406|open
+55134.956527 23445: E|23406
+55134.956618 23421: E|23406
+55134.956933 23421: E|23406
+55134.957150 23421: E|23406
+55134.957228 23445: B|23406|open
+55134.957518 23445: E|23406
+55134.958126 23445: B|23406|open
+55134.958321 23445: E|23406
+55134.958844 23445: B|23406|open
+55134.959050 23445: E|23406
+55134.959698 23445: B|23406|open
+55134.959900 23445: E|23406
+55134.960459 23445: B|23406|open
+55134.960669 23445: E|23406
+55134.961216 23445: B|23406|open
+55134.961461 23445: E|23406
+55134.961992 23445: B|23406|open
+55134.962191 23445: E|23406
+55134.962670 23445: B|23406|open
+55134.962847 23445: E|23406
+55134.963350 23445: B|23406|open
+55134.963542 23445: E|23406
+55134.964039 23445: B|23406|open
+55134.964236 23445: E|23406
+55134.964821 23445: B|23406|open
+55134.965001 23445: E|23406
+55134.965500 23445: B|23406|open
+55134.965708 23445: E|23406
+55134.966224 23445: B|23406|open
+55134.966435 23445: E|23406
+55134.966955 23445: B|23406|open
+55134.967144 23445: E|23406
+55134.967642 23445: B|23406|open
+55134.968057 23445: E|23406
+55134.968631 23445: B|23406|open
+55134.968824 23445: E|23406
+55134.969356 23445: B|23406|open
+55134.969577 23445: E|23406
+55134.970112 23445: B|23406|open
+55134.970312 23445: E|23406
+55134.970814 23445: B|23406|open
+55134.971006 23445: E|23406
+55134.971590 23445: B|23406|open
+55134.971798 23445: E|23406
+55134.972285 23445: B|23406|open
+55134.972499 23445: E|23406
+55134.973022 23445: B|23406|open
+55134.973292 23445: E|23406
+55134.973846 23445: B|23406|open
+55134.974062 23445: E|23406
+55134.974660 23445: B|23406|open
+55134.974869 23445: E|23406
+55134.975382 23445: B|23406|open
+55134.975579 23445: E|23406
+55134.976100 23445: B|23406|open
+55134.976314 23445: E|23406
+55134.976803 23445: B|23406|open
+55134.977002 23445: E|23406
+55134.977558 23445: B|23406|open
+55134.977774 23445: E|23406
+55134.978512 23445: B|23406|open
+55134.978727 23445: E|23406
+55134.979277 23445: B|23406|open
+55134.979480 23445: E|23406
+55134.980005 23445: B|23406|open
+55134.980202 23445: E|23406
+55134.980759 23445: B|23406|open
+55134.980969 23445: E|23406
+55134.981568 23445: B|23406|open
+55134.981770 23445: E|23406
+55134.982286 23445: B|23406|open
+55134.982479 23445: E|23406
+55134.983136 23445: B|23406|open
+55134.983370 23445: E|23406
+55134.983933 23445: B|23406|open
+55134.984139 23445: E|23406
+55134.984771 23445: B|23406|open
+55134.985005 23445: E|23406
+55134.985581 23445: B|23406|open
+55134.985799 23445: E|23406
+55134.986351 23445: B|23406|open
+55134.986578 23445: E|23406
+55134.987120 23445: B|23406|open
+55134.987326 23445: E|23406
+55134.987921 23445: B|23406|open
+55134.988326 23445: E|23406
+55134.988914 23445: B|23406|open
+55134.989137 23445: E|23406
+55134.989670 23445: B|23406|open
+55134.989865 23445: E|23406
+55134.990394 23445: B|23406|open
+55134.990592 23445: E|23406
+55134.991097 23445: B|23406|open
+55134.991381 23445: E|23406
+55134.991907 23445: B|23406|open
+55134.992121 23445: E|23406
+55134.992658 23445: B|23406|open
+55134.992869 23445: E|23406
+55134.993506 23445: B|23406|open
+55134.993718 23445: E|23406
+55134.994254 23445: B|23406|open
+55134.994573 23445: E|23406
+55134.995184 23445: B|23406|open
+55134.995377 23445: E|23406
+55134.995877 23445: B|23406|open
+55134.996066 23445: E|23406
+55134.996568 23445: B|23406|open
+55134.996762 23445: E|23406
+55134.997255 23445: B|23406|open
+55134.997472 23445: E|23406
+55134.998034 23445: B|23406|open
+55134.998220 23445: E|23406
+55134.998985 23445: B|23406|open
+55134.999209 23445: E|23406
+55134.999733 23445: B|23406|open
+55134.999943 23445: E|23406
+55135.000465 23445: B|23406|open
+55135.000667 23445: E|23406
+55135.001228 23445: B|23406|open
+55135.001459 23445: E|23406
+55135.002009 23445: B|23406|open
+55135.002215 23445: E|23406
+55135.002749 23445: B|23406|open
+55135.002945 23445: E|23406
+55135.003489 23445: B|23406|initShaderDiskCache
+55135.003906 23445: B|23406|open:/data/user_de/0/rhea.sample.android/code_cache/com.android.skia.shaders_cache
+55135.019100 23445: E|23406
+55135.021686 23445: E|23406
+55135.022596 23445: B|23406|query
+55135.022755 23445: E|23406
+55135.023065 23445: B|23406|connect
+55135.024480 23445: E|23406
+55135.024881 23445: B|23406|setSwapInterval
+55135.025008 23445: E|23406
+55135.025197 23445: B|23406|query
+55135.025315 23445: E|23406
+55135.025450 23445: B|23406|query
+55135.026055 23445: E|23406
+55135.026268 23445: B|23406|query
+55135.027354 23445: E|23406
+55135.027713 23445: B|23406|setBufferCount
+55135.029191 23445: E|23406
+55135.030158 23445: E|23406
+55135.030492 23445: B|23406|query
+55135.030761 23445: E|23406
+55135.031650 23406: B|23406|Record View#draw()
+55135.037340 23406: B|23406|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$2
+55135.039673 23406: E|23406
+55135.040623 23406: B|23406|VerifyClass com.google.android.material.shape.AdjustedCornerSize
+55135.042086 23406: E|23406
+55135.042909 23406: B|23406|VerifyClass com.google.android.material.shape.ShapeAppearancePathProvider$ShapeAppearancePathSpec
+55135.043326 23406: E|23406
+55135.043806 23406: B|23406|VerifyClass com.google.android.material.shape.ShapePath$PathOperation
+55135.044189 23406: E|23406
+55135.044462 23406: B|23406|VerifyClass com.google.android.material.shape.ShapePath$PathArcOperation
+55135.045398 23406: E|23406
+55135.045990 23406: B|23406|VerifyClass com.google.android.material.shape.ShapePath$ShadowCompatOperation
+55135.046444 23406: E|23406
+55135.046688 23406: B|23406|VerifyClass com.google.android.material.shape.ShapePath$ArcShadowOperation
+55135.047156 23406: E|23406
+55135.049456 23406: B|23406|VerifyClass com.google.android.material.shape.ShapePath$PathLineOperation
+55135.049991 23406: E|23406
+55135.050478 23406: B|23406|VerifyClass com.google.android.material.shape.ShapePath$LineShadowOperation
+55135.051252 23406: E|23406
+55135.055423 23421: B|23406|JIT compiling int sun.misc.Unsafe.getAndAddInt(java.lang.Object, long, int) (baseline=0, osr=0)
+55135.056012 23421: B|23406|Compiling
+55135.057300 23421: B|23406|ScopedCodeCacheWrite
+55135.057794 23421: B|23406|mprotect all
+55135.058552 23406: B|23406|VerifyClass com.google.android.material.shape.ShapePath$1
+55135.059040 23406: E|23406
+55135.059480 23421: E|23406
+55135.061106 23421: B|23406|mprotect code
+55135.061971 23421: E|23406
+55135.062474 23421: E|23406
+55135.063524 23421: B|23406|ScopedCodeCacheWrite
+55135.064019 23421: B|23406|mprotect all
+55135.064486 23421: E|23406
+55135.065118 23421: B|23406|mprotect code
+55135.065621 23421: E|23406
+55135.065927 23421: E|23406
+55135.066303 23421: E|23406
+55135.066624 23421: B|23406|TrimMaps
+55135.067702 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.068258 23421: E|23406
+55135.068757 23421: E|23406
+55135.069096 23421: E|23406
+55135.071998 23445: B|23406|notifyFramePending
+55135.072185 23445: E|23406
+55135.092516 23421: B|23406|JIT compiling java.lang.Runnable libcore.util.NativeAllocationRegistry.registerNativeAllocation(java.lang.Object, long) (baseline=0, osr=0)
+55135.093169 23421: B|23406|Compiling
+55135.095428 23421: B|23406|ScopedCodeCacheWrite
+55135.095999 23421: B|23406|mprotect all
+55135.096447 23421: E|23406
+55135.096755 23421: B|23406|mprotect code
+55135.097233 23421: E|23406
+55135.098175 23421: E|23406
+55135.098985 23421: B|23406|ScopedCodeCacheWrite
+55135.100048 23421: B|23406|mprotect all
+55135.101294 23421: E|23406
+55135.102025 23421: B|23406|mprotect code
+55135.102502 23421: E|23406
+55135.103456 23421: E|23406
+55135.104077 23421: E|23406
+55135.104626 23421: B|23406|TrimMaps
+55135.105385 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.106278 23421: E|23406
+55135.106733 23421: E|23406
+55135.107047 23421: E|23406
+55135.107447 23421: B|23406|JIT compiling void android.graphics.Path.transform(android.graphics.Matrix) (baseline=0, osr=0)
+55135.108033 23421: B|23406|Compiling
+55135.109569 23421: B|23406|ScopedCodeCacheWrite
+55135.110049 23421: B|23406|mprotect all
+55135.110618 23421: E|23406
+55135.110946 23421: B|23406|mprotect code
+55135.111737 23421: E|23406
+55135.112198 23421: E|23406
+55135.112912 23421: B|23406|ScopedCodeCacheWrite
+55135.113370 23421: B|23406|mprotect all
+55135.113862 23421: E|23406
+55135.114225 23421: B|23406|mprotect code
+55135.114877 23421: E|23406
+55135.115180 23421: E|23406
+55135.115537 23421: E|23406
+55135.115841 23421: B|23406|TrimMaps
+55135.116413 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.116903 23421: E|23406
+55135.117185 23421: E|23406
+55135.117487 23421: E|23406
+55135.117965 23421: B|23406|JIT compiling void java.lang.ref.Reference.<init>(java.lang.Object, java.lang.ref.ReferenceQueue) (baseline=0, osr=0)
+55135.118552 23421: B|23406|Compiling
+55135.119827 23421: B|23406|ScopedCodeCacheWrite
+55135.120229 23421: B|23406|mprotect all
+55135.120846 23421: E|23406
+55135.121571 23421: B|23406|mprotect code
+55135.122185 23421: E|23406
+55135.122498 23421: E|23406
+55135.122997 23421: B|23406|ScopedCodeCacheWrite
+55135.123438 23421: B|23406|mprotect all
+55135.123870 23421: E|23406
+55135.124229 23421: B|23406|mprotect code
+55135.124436 23406: B|23406|computePalette
+55135.124690 23406: E|23406
+55135.124889 23421: E|23406
+55135.125183 23421: E|23406
+55135.125557 23421: E|23406
+55135.125874 23421: B|23406|TrimMaps
+55135.126278 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.126984 23421: E|23406
+55135.127311 23421: E|23406
+55135.127635 23421: E|23406
+55135.128116 23421: B|23406|JIT compiling void libcore.util.NativeAllocationRegistry$CleanerThunk.<init>(libcore.util.NativeAllocationRegistry) (baseline=0, osr=0)
+55135.128749 23421: B|23406|Compiling
+55135.130221 23421: B|23406|ScopedCodeCacheWrite
+55135.130647 23421: B|23406|mprotect all
+55135.131204 23421: E|23406
+55135.131444 23421: B|23406|mprotect code
+55135.131858 23421: E|23406
+55135.132218 23421: E|23406
+55135.132786 23421: B|23406|ScopedCodeCacheWrite
+55135.133040 23421: B|23406|mprotect all
+55135.133304 23421: E|23406
+55135.133382 23406: E|23406
+55135.133806 23421: B|23406|mprotect code
+55135.134068 23445: B|23406|DrawFrame
+55135.134237 23445: B|23406|query
+55135.135020 23445: E|23406
+55135.135222 23445: B|23406|query
+55135.134667 23421: E|23406
+55135.135773 23421: E|23406
+55135.135872 23445: E|23406
+55135.136093 23445: B|23406|syncFrameState
+55135.136326 23421: E|23406
+55135.136509 23421: B|23406|TrimMaps
+55135.136457 23445: B|23406|prepareTree
+55135.136942 23445: E|23406
+55135.136717 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.137172 23445: E|23406
+55135.137318 23421: E|23406
+55135.137622 23406: E|23406
+55135.137477 23445: B|23406|query
+55135.137574 23421: E|23406
+55135.138082 23421: E|23406
+55135.138022 23445: E|23406
+55135.138360 23445: B|23406|query
+55135.138513 23421: B|23406|JIT compiling void libcore.util.NativeAllocationRegistry$CleanerRunner.<init>(sun.misc.Cleaner) (baseline=0, osr=0)
+55135.138638 23445: E|23406
+55135.138796 23421: B|23406|Compiling
+55135.138947 23445: B|23406|eglBeginFrame
+55135.139132 23445: E|23406
+55135.139799 23421: B|23406|ScopedCodeCacheWrite
+55135.139981 23421: B|23406|mprotect all
+55135.140153 23421: E|23406
+55135.140279 23421: B|23406|mprotect code
+55135.140408 23421: E|23406
+55135.140519 23421: E|23406
+55135.141103 23421: B|23406|ScopedCodeCacheWrite
+55135.141364 23421: B|23406|mprotect all
+55135.141722 23421: E|23406
+55135.142249 23421: B|23406|mprotect code
+55135.142607 23445: B|23406|texture_upload
+55135.142762 23421: E|23406
+55135.142872 23421: E|23406
+55135.143094 23421: E|23406
+55135.143312 23445: E|23406
+55135.143544 23421: B|23406|TrimMaps
+55135.143733 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.143935 23421: E|23406
+55135.144090 23421: E|23406
+55135.144260 23421: E|23406
+55135.144534 23421: B|23406|JIT compiling void android.graphics.Path.<init>() (baseline=0, osr=0)
+55135.144762 23421: B|23406|Compiling
+55135.146083 23421: B|23406|ScopedCodeCacheWrite
+55135.146292 23421: B|23406|mprotect all
+55135.146505 23421: E|23406
+55135.146698 23421: B|23406|mprotect code
+55135.146912 23421: E|23406
+55135.147078 23421: E|23406
+55135.147876 23445: B|23406|texture_upload
+55135.148904 23421: B|23406|ScopedCodeCacheWrite
+55135.149430 23421: B|23406|mprotect all
+55135.149728 23421: E|23406
+55135.149927 23421: B|23406|mprotect code
+55135.150292 23421: E|23406
+55135.150739 23421: E|23406
+55135.151135 23445: E|23406
+55135.151045 23421: E|23406
+55135.151471 23421: B|23406|TrimMaps
+55135.151905 23445: B|23406|flush commands
+55135.152093 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.152301 23421: E|23406
+55135.152437 23421: E|23406
+55135.152593 23421: E|23406
+55135.153429 23421: B|23406|JIT compiling void android.graphics.Matrix.<init>() (baseline=0, osr=0)
+55135.154395 23421: B|23406|Compiling
+55135.160691 23445: B|23406|texture_upload
+55135.160450 23421: B|23406|ScopedCodeCacheWrite
+55135.161416 23421: B|23406|mprotect all
+55135.161854 23421: E|23406
+55135.162470 23445: E|23406
+55135.162664 23421: B|23406|mprotect code
+55135.163519 23421: E|23406
+55135.163058 23445: B|23406|query
+55135.164205 23445: E|23406
+55135.164340 23445: B|23406|query
+55135.164453 23445: E|23406
+55135.164872 23445: B|23406|query
+55135.165047 23445: E|23406
+55135.165169 23445: B|23406|setBuffersDimensions
+55135.164777 23421: E|23406
+55135.165284 23445: E|23406
+55135.165600 23445: B|23406|dequeueBuffer
+55135.166356 23421: B|23406|ScopedCodeCacheWrite
+55135.166569 23421: B|23406|mprotect all
+55135.166733 23421: E|23406
+55135.167242 23421: B|23406|mprotect code
+55135.168501 23421: E|23406
+55135.169440 23421: E|23406
+55135.170295 23421: E|23406
+55135.170838 23421: B|23406|TrimMaps
+55135.171392 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.171968 23421: E|23406
+55135.172219 23421: E|23406
+55135.172497 23421: E|23406
+55135.172955 23421: B|23406|JIT compiling void android.graphics.Path.computeBounds(android.graphics.RectF, boolean) (baseline=0, osr=0)
+55135.173330 23421: B|23406|Compiling
+55135.174821 23421: B|23406|ScopedCodeCacheWrite
+55135.175049 23421: B|23406|mprotect all
+55135.175205 23421: E|23406
+55135.175389 23421: B|23406|mprotect code
+55135.175478 23445: B|23406|HWC release fence 0 has signaled
+55135.175655 23421: E|23406
+55135.175757 23421: E|23406
+55135.176038 23445: E|23406
+55135.176431 23421: B|23406|ScopedCodeCacheWrite
+55135.176599 23421: B|23406|mprotect all
+55135.176813 23421: E|23406
+55135.177121 23445: B|23406|HIDL::IServiceManager::getTransport::client
+55135.177524 23421: B|23406|mprotect code
+55135.178007 23421: E|23406
+55135.178435 23421: E|23406
+55135.178629 23445: E|23406
+55135.179038 23421: E|23406
+55135.179197 23421: B|23406|TrimMaps
+55135.179316 23421: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55135.179496 23421: E|23406
+55135.179621 23421: E|23406
+55135.179810 23421: E|23406
+55135.182353 23445: B|23406|HIDL::IServiceManager::registerPassthroughClient::client
+55135.183452 23445: E|23406
+55135.183880 23445: B|23406|HIDL::IMapper::interfaceChain::passthrough
+55135.184095 23445: E|23406
+55135.184335 23445: B|23406|importBuffer
+55135.184604 23445: B|23406|HIDL::IMapper::importBuffer::passthrough
+55135.185103 23445: E|23406
+55135.185319 23445: B|23406|HIDL::IMapper::validateBufferSize::passthrough
+55135.189870 23445: E|23406
+55135.190090 23445: E|23406
+55135.190292 23445: B|23406|HIDL::IMapper::getTransportSize::passthrough
+55135.190449 23445: E|23406
+55135.190630 23445: E|23406
+55135.190787 23445: B|23406|query
+55135.191563 23445: E|23406
+55135.192620 23445: B|23406|open:/proc/self/cmdline
+55135.193304 23445: E|23406
+55135.193732 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55135.194155 23445: E|23406
+55135.194647 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55135.195278 23445: E|23406
+55135.195620 23445: B|23406|open:/proc/self/cmdline
+55135.196060 23445: E|23406
+55135.196521 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55135.196940 23445: E|23406
+55135.197351 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55135.197743 23445: E|23406
+55135.198853 23445: B|23406|open:/proc/self/cmdline
+55135.199485 23445: E|23406
+55135.200006 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55135.200623 23445: E|23406
+55135.201471 23445: B|23406|__read_chk:/proc/23406/cmdline,size:1024
+55135.202144 23445: E|23406
+55135.208154 23445: B|23406|shader_compile
+55135.208609 23445: B|23406|ShaderCache::load
+55135.209142 23445: E|23406
+55135.209815 23445: B|23406|cache_hit
+55135.212326 23445: E|23406
+55135.212797 23445: E|23406
+55135.214263 23445: B|23406|shader_compile
+55135.214834 23445: B|23406|ShaderCache::load
+55135.215361 23445: E|23406
+55135.216227 23445: B|23406|cache_hit
+55135.218260 23445: E|23406
+55135.218716 23445: E|23406
+55135.219258 23445: B|23406|shader_compile
+55135.219693 23445: B|23406|ShaderCache::load
+55135.220110 23445: E|23406
+55135.220870 23445: B|23406|cache_hit
+55135.223291 23445: E|23406
+55135.223758 23445: E|23406
+55135.224944 23445: B|23406|shader_compile
+55135.225403 23445: B|23406|ShaderCache::load
+55135.225912 23445: E|23406
+55135.226549 23445: B|23406|cache_hit
+55135.228466 23445: E|23406
+55135.228914 23445: E|23406
+55135.229624 23445: B|23406|shader_compile
+55135.230044 23445: B|23406|ShaderCache::load
+55135.230487 23445: E|23406
+55135.232052 23445: B|23406|cache_hit
+55135.234437 23445: E|23406
+55135.235202 23445: E|23406
+55135.236306 23445: B|23406|shader_compile
+55135.236752 23445: B|23406|ShaderCache::load
+55135.237207 23445: E|23406
+55135.238201 23445: B|23406|cache_hit
+55135.240253 23445: E|23406
+55135.240732 23445: E|23406
+55135.241551 23445: E|23406
+55135.241952 23445: B|23406|eglSwapBuffersWithDamageKHR
+55135.242402 23445: B|23406|setSurfaceDamage
+55135.242803 23445: E|23406
+55135.294836 23445: B|23406|setBuffersTransform
+55135.295750 23445: E|23406
+55135.296536 23445: B|23406|queueBuffer
+55135.302069 23445: B|23406|GPU completion fence 0 has signaled
+55135.302509 23445: E|23406
+55135.302780 23445: E|23406
+55135.303088 23445: E|23406
+55135.303386 23445: B|23406|frameComplete 1
+55135.304234 23445: E|23406
+55135.305632 23445: E|23406
+55135.306538 23406: B|23406|dispatchContentCapture() for ViewRootImpl
+55135.307566 23406: E|23406
+55135.307916 23406: E|23406
+55135.308345 23406: E|23406
+55135.313020 23406: B|23406|Choreographer#doFrame
+55135.313464 23406: B|23406|animation
+55135.315155 23406: E|23406
+55135.316697 23406: B|23406|traversal
+55135.319134 23406: B|23406|draw
+55135.319770 23406: B|23406|Record View#draw()
+55135.320066 23406: E|23406
+55135.320406 23445: B|23406|DrawFrame
+55135.320771 23445: B|23406|query
+55135.321846 23445: E|23406
+55135.322190 23445: B|23406|query
+55135.322880 23445: E|23406
+55135.323218 23445: B|23406|syncFrameState
+55135.323592 23445: B|23406|prepareTree
+55135.323888 23445: E|23406
+55135.324013 23445: E|23406
+55135.324182 23445: B|23406|query
+55135.324620 23406: E|23406
+55135.324880 23406: E|23406
+55135.325253 23406: E|23406
+55135.325691 23445: E|23406
+55135.325834 23445: B|23406|query
+55135.325995 23406: B|23406|VerifyClass androidx.appcompat.app.ToolbarActionBar$ActionMenuPresenterCallback
+55135.326512 23445: E|23406
+55135.326726 23406: E|23406
+55135.326858 23445: E|23406
+55135.327024 23406: B|23406|VerifyClass androidx.appcompat.app.ToolbarActionBar$MenuBuilderCallback
+55135.327509 23406: E|23406
+55135.329064 23406: B|23406|VerifyClass androidx.appcompat.widget.LinearLayoutCompat
+55135.364913 23406: E|23406
+55135.365206 23406: B|23406|VerifyClass androidx.appcompat.widget.ActionMenuView
+55135.384392 23406: E|23406
+55135.387992 23445: B|23406|notifyFramePending
+55135.388232 23445: E|23406
+55135.388846 23406: B|23406|VerifyClass androidx.appcompat.view.menu.MenuBuilder
+55135.410160 23406: E|23406
+55135.411317 23406: B|23406|VerifyClass androidx.appcompat.widget.ActionMenuView$MenuBuilderCallback
+55135.412129 23406: E|23406
+55135.418301 23406: B|23406|VerifyClass androidx.appcompat.view.menu.BaseMenuPresenter
+55135.422484 23406: E|23406
+55135.423197 23406: B|23406|VerifyClass androidx.appcompat.widget.ActionMenuPresenter
+55135.446147 23406: E|23406
+55135.446879 23406: B|23406|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$PopupPresenterCallback
+55135.447480 23406: E|23406
+55135.448269 23406: B|23406|VerifyClass androidx.appcompat.view.ActionBarPolicy
+55135.453283 23406: E|23406
+55135.455184 23406: B|23406|VerifyClass androidx.appcompat.widget.AppCompatImageView
+55135.459490 23406: E|23406
+55135.460030 23406: B|23406|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton
+55135.469196 23406: E|23406
+55135.479903 23406: B|23406|VerifyClass androidx.appcompat.widget.TooltipCompat
+55135.481455 23406: E|23406
+55135.482057 23406: B|23406|VerifyClass androidx.appcompat.widget.ForwardingListener
+55135.488758 23406: E|23406
+55135.489020 23406: B|23406|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton$1
+55135.489997 23406: E|23406
+55135.492111 23406: B|23406|VerifyClass androidx.appcompat.widget.Toolbar$ExpandedActionViewMenuPresenter
+55135.494977 23406: E|23406
+55135.496192 23406: B|23406|B:MainActivity:onCreateOptionsMenu
+55135.496572 23406: B|23406|VerifyClass androidx.appcompat.view.SupportMenuInflater
+55135.498748 23406: E|23406
+55135.499913 23406: B|23406|AssetManager::OpenXmlAsset(res/menu/menu_main.xml)
+55135.500551 23406: E|23406
+55135.501384 23406: B|23406|VerifyClass androidx.appcompat.view.SupportMenuInflater$MenuState
+55135.505957 23406: E|23406
+55135.507172 23406: B|23406|VerifyClass androidx.appcompat.view.menu.MenuItemImpl
+55135.512463 23406: E|23406
+55135.513132 23406: B|23406|VerifyClass androidx.core.view.MenuItemCompat
+55135.515130 23406: E|23406
+55135.516019 23406: B|23406|E:MainActivity:onCreateOptionsMenu
+55135.517755 23406: B|23406|VerifyClass androidx.appcompat.widget.LinearLayoutCompat$LayoutParams
+55135.518560 23406: E|23406
+55135.518861 23406: B|23406|VerifyClass androidx.appcompat.widget.ActionMenuView$LayoutParams
+55135.519325 23406: E|23406
+55135.530752 23406: B|23406|Choreographer#doFrame
+55135.531320 23406: B|23406|animation
+55135.534225 23406: E|23406
+55135.534643 23406: B|23406|traversal
+55135.535776 23406: B|23406|measure
+55135.547612 23406: E|23406
+55135.548112 23406: B|23406|layout
+55135.555634 23406: E|23406
+55135.558726 23406: B|23406|draw
+55135.559375 23406: B|23406|Record View#draw()
+55135.563751 23445: B|23406|notifyFramePending
+55135.563941 23445: E|23406
+55135.565316 23406: B|23406|computePalette
+55135.565548 23406: E|23406
+55135.567669 23406: E|23406
+55135.568217 23445: B|23406|DrawFrame
+55135.568417 23445: B|23406|query
+55135.569131 23445: E|23406
+55135.569333 23445: B|23406|query
+55135.569942 23445: E|23406
+55135.570117 23445: B|23406|syncFrameState
+55135.570295 23445: B|23406|prepareTree
+55135.570655 23445: E|23406
+55135.570821 23445: E|23406
+55135.571142 23406: E|23406
+55135.571068 23445: B|23406|query
+55135.571586 23406: E|23406
+55135.571517 23445: E|23406
+55135.571964 23406: E|23406
+55135.571915 23445: B|23406|query
+55135.572246 23445: E|23406
+55135.572408 23445: B|23406|eglBeginFrame
+55135.572554 23445: E|23406
+55135.573491 23445: B|23406|VectorDrawable repaint 36x36
+55135.573974 23445: E|23406
+55135.574046 23406: B|23406|B:MainActivity:onWindowFocusChanged
+55135.575618 23445: B|23406|texture_upload
+55135.575710 23406: B|23406|E:MainActivity:onWindowFocusChanged
+55135.576546 23445: E|23406
+55135.577402 23445: B|23406|flush commands
+55135.577992 23445: B|23406|query
+55135.578185 23445: E|23406
+55135.578339 23445: B|23406|query
+55135.578476 23445: E|23406
+55135.578621 23445: B|23406|query
+55135.578784 23445: E|23406
+55135.578919 23445: B|23406|setBuffersDimensions
+55135.579062 23445: E|23406
+55135.579215 23445: B|23406|dequeueBuffer
+55135.584627 23445: B|23406|HWC release fence 1 has signaled
+55135.584861 23445: E|23406
+55135.585746 23445: B|23406|importBuffer
+55135.585975 23445: B|23406|HIDL::IMapper::importBuffer::passthrough
+55135.586372 23445: E|23406
+55135.586593 23445: B|23406|HIDL::IMapper::validateBufferSize::passthrough
+55135.586748 23445: E|23406
+55135.586897 23445: E|23406
+55135.587014 23445: B|23406|HIDL::IMapper::getTransportSize::passthrough
+55135.587106 23445: E|23406
+55135.587227 23445: E|23406
+55135.587319 23445: B|23406|query
+55135.587906 23445: E|23406
+55135.590758 23445: E|23406
+55135.591097 23445: B|23406|eglSwapBuffersWithDamageKHR
+55135.591548 23445: B|23406|setSurfaceDamage
+55135.591753 23445: E|23406
+55135.593945 23445: B|23406|setBuffersTransform
+55135.594886 23445: E|23406
+55135.595476 23445: B|23406|queueBuffer
+55135.597646 23406: B|23406|flushContentCapture for ViewRootImpl
+55135.598055 23406: E|23406
+55135.598864 23406: B|23406|Choreographer#doFrame
+55135.599206 23406: B|23406|traversal
+55135.600414 23445: B|23406|GPU completion fence 1 has signaled
+55135.600643 23445: E|23406
+55135.600803 23445: E|23406
+55135.600976 23445: E|23406
+55135.601430 23445: E|23406
+55135.603079 23406: B|23406|draw
+55135.603693 23406: B|23406|Record View#draw()
+55135.605051 23406: B|23406|computePalette
+55135.605304 23406: E|23406
+55135.610431 23406: E|23406
+55135.610850 23445: B|23406|DrawFrame
+55135.611082 23445: B|23406|query
+55135.611718 23445: E|23406
+55135.611940 23445: B|23406|query
+55135.615973 23445: E|23406
+55135.616158 23445: B|23406|syncFrameState
+55135.616271 23445: B|23406|prepareTree
+55135.616571 23445: E|23406
+55135.616685 23445: E|23406
+55135.616891 23445: B|23406|query
+55135.616985 23445: E|23406
+55135.617087 23445: B|23406|query
+55135.617173 23445: E|23406
+55135.617259 23445: B|23406|eglBeginFrame
+55135.617345 23445: E|23406
+55135.618644 23445: B|23406|flush commands
+55135.619056 23445: B|23406|query
+55135.619200 23445: E|23406
+55135.619311 23445: B|23406|query
+55135.619416 23445: E|23406
+55135.619514 23445: B|23406|query
+55135.619607 23445: E|23406
+55135.619702 23445: B|23406|setBuffersDimensions
+55135.619797 23445: E|23406
+55135.619900 23445: B|23406|dequeueBuffer
+55135.622024 23406: E|23406
+55135.622263 23406: E|23406
+55135.622568 23406: E|23406
+55135.627424 23445: B|23406|HWC release fence 2 has signaled
+55135.627640 23445: E|23406
+55135.628598 23445: B|23406|importBuffer
+55135.628824 23445: B|23406|HIDL::IMapper::importBuffer::passthrough
+55135.629197 23445: E|23406
+55135.629434 23445: B|23406|HIDL::IMapper::validateBufferSize::passthrough
+55135.629647 23445: E|23406
+55135.629821 23445: E|23406
+55135.630001 23445: B|23406|HIDL::IMapper::getTransportSize::passthrough
+55135.630198 23445: E|23406
+55135.630422 23445: E|23406
+55135.630607 23445: B|23406|query
+55135.631360 23445: E|23406
+55135.634105 23445: E|23406
+55135.634419 23445: B|23406|eglSwapBuffersWithDamageKHR
+55135.634729 23445: B|23406|setSurfaceDamage
+55135.634911 23445: E|23406
+55135.636284 23445: B|23406|setBuffersTransform
+55135.637032 23445: E|23406
+55135.637571 23445: B|23406|queueBuffer
+55135.643517 23445: B|23406|GPU completion fence 2 has signaled
+55135.643722 23445: E|23406
+55135.643920 23445: E|23406
+55135.644126 23445: E|23406
+55135.644571 23445: E|23406
+55137.526472 23440: B|23406|void art::ProfileSaver::FetchAndCacheResolvedClassesAndMethods(bool)
+55137.526674 23422: B|23406|Releasing app image spaces metadata
+55137.526901 23422: E|23406
+55137.527076 23422: B|23406|Delete thread pool
+55137.527278 23440: B|23406|Get class loaders
+55137.528002 23415: B|23406|DetachCurrentThread
+55137.528306 23415: E|23406
+55137.528904 23414: B|23406|DetachCurrentThread
+55137.529237 23416: B|23406|DetachCurrentThread
+55137.529313 23414: E|23406
+55137.529644 23416: E|23406
+55137.527880 23413: B|23406|DetachCurrentThread
+55137.530002 23413: E|23406
+55137.529113 23440: E|23406
+55137.530791 23440: B|23406|Visiting class table
+55137.531340 23440: E|23406
+55137.531516 23440: B|23406|Visiting class table
+55137.531887 23422: E|23406
+55137.539013 23440: E|23406
+55137.539246 23440: B|23406|Visiting class table
+55137.540104 23440: E|23406
+55137.544117 23440: E|23406
+55138.909365 23422: B|23406|void art::gc::Heap::TrimIndirectReferenceTables(art::Thread *)
+55138.909747 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.910101 23422: E|23406
+55138.910451 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.911587 23422: E|23406
+55138.911868 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.912472 23422: E|23406
+55138.912876 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.913493 23422: E|23406
+55138.913867 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.914445 23422: E|23406
+55138.914954 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.915583 23422: E|23406
+55138.915986 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.916599 23422: E|23406
+55138.917010 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.917611 23422: E|23406
+55138.918075 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.918722 23422: E|23406
+55138.919129 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.919746 23422: E|23406
+55138.920113 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.920434 23422: E|23406
+55138.920688 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.921012 23422: E|23406
+55138.921372 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.921710 23422: E|23406
+55138.921978 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.922269 23422: E|23406
+55138.922504 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.922813 23422: E|23406
+55138.923074 23422: B|23406|void art::IndirectReferenceTable::Trim()
+55138.923357 23422: E|23406
+55138.923649 23422: E|23406
+55138.923909 23422: B|23406|void art::gc::Heap::TrimSpaces(art::Thread *)
+55138.924236 23422: E|23406
+55138.924596 23422: B|23406|virtual void art::MemMapArenaPool::TrimMaps()
+55138.924998 23422: E|23406
+55141.817354 23406: B|23406|broadcastReceiveComp
+55141.819599 23406: B|23406|VerifyClass com.bytedance.rheatrace.core.TraceReceiver
+55141.821520 23406: E|23406
+55141.822277 23406: B|23406|VerifyClass com.bytedance.rheatrace.core.TraceReceiver$3
+55141.822696 23406: E|23406
+55141.824063 23406: E|23406
+2624|TRACE_END|55141824779356|23406|2147483647|2|18316

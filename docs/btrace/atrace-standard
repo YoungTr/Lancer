@@ -1,0 +1,998 @@
+TRACE:
+# tracer: nop
+  sample.android-28404 (28404) [001] ...1 1302543.059188: tracing_mark_write: B|28404|VerifyClass com.bytedance.rheatrace.atrace.TraceEnableTagsHelper
+  sample.android-28404 (28404) [001] ...1 1302543.059326: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.059371: tracing_mark_write: B|28404|VerifyClass com.bytedance.rheatrace.common.ReflectUtil
+  sample.android-28404 (28404) [001] ...1 1302543.059521: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.059557: tracing_mark_write: B|28404|VerifyClass kotlin.jvm.internal.Intrinsics
+  sample.android-28404 (28404) [001] ...1 1302543.059937: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.060289: tracing_mark_write: B|28404|open:/proc/self/cmdline
+  sample.android-28404 (28404) [001] ...1 1302543.060308: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.060347: tracing_mark_write: B|28404|VerifyClass com.bytedance.rheatrace.core.TraceStub
+  sample.android-28404 (28404) [001] ...1 1302543.060400: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.060431: tracing_mark_write: B|28404|RheaApplication:attachBaseContext
+  sample.android-28404 (28404) [001] ...1 1302543.060451: tracing_mark_write: E|28404|RheaApplication:attachBaseContext
+  sample.android-28404 (28404) [001] ...1 1302543.060707: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.060837: tracing_mark_write: B|28404|RheaApplication:onCreate
+  sample.android-28404 (28404) [001] ...1 1302543.060892: tracing_mark_write: B|28404|RheaApplication:printApplicationName[rhea.sample.android.app.RheaApplication]
+  sample.android-28404 (28404) [001] ...1 1302543.060956: tracing_mark_write: E|28404|RheaApplication:printApplicationName[rhea.sample.android.app.RheaApplication]
+  sample.android-28404 (28404) [001] ...1 1302543.060976: tracing_mark_write: E|28404|RheaApplication:onCreate
+  sample.android-28404 (28404) [001] ...1 1302543.063630: tracing_mark_write: B|28404|transact[android.content.pm.IPackageManager:13]
+  sample.android-28404 (28404) [001] ...1 1302543.063826: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.064068: tracing_mark_write: B|28404|transact[android.app.IActivityManager:199]
+  sample.android-28404 (28404) [001] ...1 1302543.064354: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.064470: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.065010: tracing_mark_write: B|28404|activityStart
+  sample.android-28404 (28404) [001] ...1 1302543.065727: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.065874: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.067180: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.067300: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.068236: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.068323: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.068949: tracing_mark_write: B|28404|transact[android.view.IWindowManager:37]
+  sample.android-28404 (28404) [001] ...1 1302543.069087: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.069130: tracing_mark_write: B|28404|hintActivityLaunch
+  sample.android-28404 (28404) [001] ...1 1302543.069193: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.069415: tracing_mark_write: B|28404|transact[:1]
+  sample.android-28404 (28404) [001] ...1 1302543.070380: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.070566: tracing_mark_write: B|28404|transact[android.app.IActivityTaskManager:47]
+  sample.android-28404 (28404) [001] ...1 1302543.070669: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.071556: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.071673: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.071813: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.071911: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.072862: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.072953: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.074094: tracing_mark_write: B|28404|VerifyClass androidx.core.app.ComponentActivity
+  sample.android-28404 (28404) [001] ...1 1302543.074442: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.074463: tracing_mark_write: B|28404|VerifyClass androidx.activity.ComponentActivity
+  sample.android-28404 (28404) [001] ...1 1302543.074843: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.074864: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentActivity
+  sample.android-28404 (28404) [001] ...1 1302543.075865: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.075889: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatActivity
+  sample.android-28404 (28404) [001] ...1 1302543.076710: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.076733: tracing_mark_write: B|28404|VerifyClass rhea.sample.android.app.MainActivity
+  sample.android-28404 (28404) [001] ...1 1302543.077239: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.077565: tracing_mark_write: B|28404|VerifyClass androidx.collection.SimpleArrayMap
+  sample.android-28404 (28404) [001] ...1 1302543.077955: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.077982: tracing_mark_write: B|28404|VerifyClass androidx.collection.ContainerHelpers
+  sample.android-28404 (28404) [001] ...1 1302543.078032: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.078048: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.Lifecycle
+  sample.android-28404 (28404) [001] ...1 1302543.078070: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.078075: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.LifecycleRegistry
+  sample.android-28404 (28404) [001] ...1 1302543.078436: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.078461: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.internal.SafeIterableMap
+  sample.android-28404 (28404) [001] ...1 1302543.078673: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.078690: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.internal.FastSafeIterableMap
+  sample.android-28404 (28404) [001] ...1 1302543.078736: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.078772: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.Lifecycle$State
+  sample.android-28404 (28404) [001] ...1 1302543.078819: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.078872: tracing_mark_write: B|28404|VerifyClass androidx.savedstate.SavedStateRegistryController
+  sample.android-28404 (28404) [001] ...1 1302543.078995: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.079023: tracing_mark_write: B|28404|VerifyClass androidx.savedstate.SavedStateRegistry
+  sample.android-28404 (28404) [001] ...1 1302543.079192: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.079229: tracing_mark_write: B|28404|VerifyClass androidx.activity.OnBackPressedDispatcher
+  sample.android-28404 (28404) [001] ...1 1302543.079359: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.079369: tracing_mark_write: B|28404|VerifyClass androidx.activity.ComponentActivity$1
+  sample.android-28404 (28404) [001] ...1 1302543.079381: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.079393: tracing_mark_write: B|28404|VerifyClass androidx.activity.ComponentActivity$2
+  sample.android-28404 (28404) [001] ...1 1302543.079444: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.079454: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.LifecycleRegistry$ObserverWithState
+  sample.android-28404 (28404) [001] ...1 1302543.079499: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.079510: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.Lifecycling
+  sample.android-28404 (28404) [001] ...1 1302543.079859: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.079884: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.internal.SafeIterableMap$Entry
+  sample.android-28404 (28404) [001] ...1 1302543.079935: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.079968: tracing_mark_write: B|28404|VerifyClass androidx.activity.ComponentActivity$3
+  sample.android-28404 (28404) [001] ...1 1302543.079994: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.080019: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentContainer
+  sample.android-28404 (28404) [001] ...1 1302543.080034: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.080040: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentHostCallback
+  sample.android-28404 (28404) [001] ...1 1302543.080180: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.080189: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentActivity$HostCallbacks
+  sample.android-28404 (28404) [001] ...1 1302543.080293: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.080319: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentManager
+  sample.android-28404 (28404) [001] ...1 1302543.083317: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.083350: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentManagerImpl
+  sample.android-28404 (28404) [001] ...1 1302543.083369: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.083400: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentStore
+  sample.android-28404 (28404) [001] ...1 1302543.083635: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.083654: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentLayoutInflaterFactory
+  sample.android-28404 (28404) [001] ...1 1302543.083863: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.083888: tracing_mark_write: B|28404|VerifyClass androidx.activity.OnBackPressedCallback
+  sample.android-28404 (28404) [001] ...1 1302543.083927: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.083946: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentManager$1
+  sample.android-28404 (28404) [001] ...1 1302543.083957: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.083970: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentManager$2
+  sample.android-28404 (28404) [001] ...1 1302543.083991: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.084004: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentLifecycleCallbacksDispatcher
+  sample.android-28404 (28404) [001] ...1 1302543.084195: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.084214: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentFactory
+  sample.android-28404 (28404) [001] ...1 1302543.084322: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.084335: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentManager$3
+  sample.android-28404 (28404) [001] ...1 1302543.084356: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.084379: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentManager$4
+  sample.android-28404 (28404) [001] ...1 1302543.084390: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.084410: tracing_mark_write: B|28404|VerifyClass androidx.core.util.Preconditions
+  sample.android-28404 (28404) [001] ...1 1302543.084474: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.084499: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentController
+  sample.android-28404 (28404) [001] ...1 1302543.084626: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.085161: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegate
+  sample.android-28404 (28404) [001] ...1 1302543.085381: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.085408: tracing_mark_write: B|28404|VerifyClass androidx.collection.ArraySet
+  sample.android-28404 (28404) [001] ...1 1302543.085767: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.085809: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl
+  sample.android-28404 (28404) [001] ...1 1302543.090444: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.090513: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$2
+  sample.android-28404 (28404) [001] ...1 1302543.090543: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.090572: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatDrawableManager
+  sample.android-28404 (28404) [001] ...1 1302543.090735: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.090764: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ResourceManagerInternal
+  sample.android-28404 (28404) [001] ...1 1302543.091421: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.091465: tracing_mark_write: B|28404|VerifyClass androidx.collection.LruCache
+  sample.android-28404 (28404) [001] ...1 1302543.091658: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.091675: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ResourceManagerInternal$ColorFilterLruCache
+  sample.android-28404 (28404) [001] ...1 1302543.091699: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.091734: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatDrawableManager$1
+  sample.android-28404 (28404) [001] ...1 1302543.092039: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.092062: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.R$drawable
+  sample.android-28404 (28404) [001] ...1 1302543.092079: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.092295: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi24
+  sample.android-28404 (28404) [001] ...1 1302543.092340: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.092364: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi26
+  sample.android-28404 (28404) [001] ...1 1302543.092384: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.092397: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi17
+  sample.android-28404 (28404) [001] ...1 1302543.092411: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.092435: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.ContextThemeWrapper
+  sample.android-28404 (28404) [001] ...1 1302543.092544: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.092560: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.R$style
+  sample.android-28404 (28404) [001] ...1 1302543.092573: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.092909: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.VectorEnabledTintResources
+  sample.android-28404 (28404) [001] ...1 1302543.092963: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.093808: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.093948: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.095464: tracing_mark_write: B|28404|transact[android.app.IActivityManager:20]
+  sample.android-28404 (28404) [001] ...1 1302543.096020: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.096758: tracing_mark_write: B|28404|transact[android.content.IContentProvider:21]
+  sample.android-28404 (28404) [001] ...1 1302543.097063: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.098422: tracing_mark_write: B|28404|transact[android.content.pm.IPackageManager:109]
+  sample.android-28404 (28404) [001] ...1 1302543.098520: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.099575: tracing_mark_write: B|28404|HwResourcesImpl#inflateFwkResForAll
+  sample.android-28404 (28404) [001] ...1 1302543.099822: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.099973: tracing_mark_write: B|28404|transact[android.app.IActivityTaskManager:66]
+  sample.android-28404 (28404) [001] ...1 1302543.100248: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.100387: tracing_mark_write: B|28404|VerifyClass androidx.core.view.LayoutInflaterCompat
+  sample.android-28404 (28404) [001] ...1 1302543.100621: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.100734: tracing_mark_write: B|28404|transact[android.content.pm.IPackageManager:14]
+  sample.android-28404 (28404) [001] ...1 1302543.100861: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.101011: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.WindowCallbackWrapper
+  sample.android-28404 (28404) [001] ...1 1302543.101154: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.101169: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback
+  sample.android-28404 (28404) [001] ...1 1302543.101307: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.101338: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.TintTypedArray
+  sample.android-28404 (28404) [001] ...1 1302543.101566: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.101639: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.resources.R$drawable
+  sample.android-28404 (28404) [001] ...1 1302543.101659: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.101725: tracing_mark_write: B|28404|VerifyClass androidx.core.content.ContextCompat
+  sample.android-28404 (28404) [001] ...1 1302543.101995: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.103056: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.DrawableUtils
+  sample.android-28404 (28404) [001] ...1 1302543.103376: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.103605: tracing_mark_write: B|28404|VerifyClass androidx.core.app.NavUtils
+  sample.android-28404 (28404) [001] ...1 1302543.103817: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.103900: tracing_mark_write: B|28404|transact[android.content.pm.IPackageManager:14]
+  sample.android-28404 (28404) [001] ...1 1302543.104022: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.104149: tracing_mark_write: B|28404|VerifyClass androidx.collection.MapCollections
+  sample.android-28404 (28404) [001] ...1 1302543.104408: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.104426: tracing_mark_write: B|28404|VerifyClass androidx.collection.ArraySet$1
+  sample.android-28404 (28404) [001] ...1 1302543.104470: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.104486: tracing_mark_write: B|28404|VerifyClass androidx.collection.MapCollections$KeySet
+  sample.android-28404 (28404) [001] ...1 1302543.104573: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.104599: tracing_mark_write: B|28404|VerifyClass androidx.collection.MapCollections$ArrayIterator
+  sample.android-28404 (28404) [001] ...1 1302543.104643: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.104685: tracing_mark_write: B|28404|VerifyClass androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable
+  sample.android-28404 (28404) [001] ...1 1302543.104723: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.104787: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.ViewModelStore
+  sample.android-28404 (28404) [001] ...1 1302543.104835: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.104854: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.ViewModel
+  sample.android-28404 (28404) [001] ...1 1302543.104915: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.104927: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentManagerViewModel
+  sample.android-28404 (28404) [001] ...1 1302543.105158: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.105177: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentManagerViewModel$1
+  sample.android-28404 (28404) [001] ...1 1302543.105194: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.105208: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.ViewModelProvider
+  sample.android-28404 (28404) [001] ...1 1302543.105290: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.105352: tracing_mark_write: B|28404|VerifyClass androidx.collection.SparseArrayCompat
+  sample.android-28404 (28404) [001] ...1 1302543.105552: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.105632: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.ReportFragment
+  sample.android-28404 (28404) [001] ...1 1302543.105818: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.105851: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.ReportFragment$LifecycleCallbacks
+  sample.android-28404 (28404) [001] ...1 1302543.105884: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.106145: tracing_mark_write: B|28404|VerifyClass androidx.savedstate.Recreator
+  sample.android-28404 (28404) [001] ...1 1302543.106261: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.106314: tracing_mark_write: B|28404|VerifyClass androidx.savedstate.SavedStateRegistry$1
+  sample.android-28404 (28404) [001] ...1 1302543.106338: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.106370: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.Lifecycle$Event
+  sample.android-28404 (28404) [001] ...1 1302543.106413: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.106458: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.LifecycleRegistry$1
+  sample.android-28404 (28404) [001] ...1 1302543.106546: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.106575: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.internal.SafeIterableMap$IteratorWithAdditions
+  sample.android-28404 (28404) [001] ...1 1302543.106612: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.106701: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.R$styleable
+  sample.android-28404 (28404) [001] ...1 1302543.106797: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.107734: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.107858: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.108063: tracing_mark_write: B|28404|transact[android.view.IWindowManager:65]
+  sample.android-28404 (28404) [001] ...1 1302543.108160: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.108803: tracing_mark_write: B|28404|transact[android.app.IActivityManager:42]
+  sample.android-28404 (28404) [001] ...1 1302543.108896: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.108930: tracing_mark_write: B|28404|transact[android.app.IActivityManager:42]
+  sample.android-28404 (28404) [001] ...1 1302543.108995: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.109189: tracing_mark_write: B|28404|transact[android.view.accessibility.IAccessibilityManager:3]
+  sample.android-28404 (28404) [001] ...1 1302543.109673: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.109718: tracing_mark_write: B|28404|transact[android.view.accessibility.IAccessibilityManager:19]
+  sample.android-28404 (28404) [001] ...1 1302543.109783: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.113705: tracing_mark_write: B|28404|transact[android.app.IActivityTaskManager:158]
+  sample.android-28404 (28404) [001] ...1 1302543.113903: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.114871: tracing_mark_write: B|28404|transact[com.huawei.android.app.IHwActivityTaskManager:40]
+  sample.android-28404 (28404) [001] ...1 1302543.115075: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.115729: tracing_mark_write: B|28404|inflate
+  sample.android-28404 (28404) [001] ...1 1302543.115762: tracing_mark_write: B|28404|Inflate Message Send
+  sample.android-28404 (28404) [001] ...1 1302543.115793: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.116088: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatViewInflater
+  sample.android-28404 (28404) [001] ...1 1302543.118906: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.118932: tracing_mark_write: B|28404|VerifyClass com.google.android.material.theme.MaterialComponentsViewInflater
+  sample.android-28404 (28404) [001] ...1 1302543.119794: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.120033: tracing_mark_write: B|28404|LinearLayout
+  sample.android-28404 (28404) [001] ...1 1302543.120428: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.120618: tracing_mark_write: B|28404|ViewStub
+  sample.android-28404 (28404) [001] ...1 1302543.120861: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.120883: tracing_mark_write: B|28404|ViewStub
+  sample.android-28404 (28404) [001] ...1 1302543.121010: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.121029: tracing_mark_write: B|28404|ViewStub
+  sample.android-28404 (28404) [001] ...1 1302543.121157: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.121179: tracing_mark_write: B|28404|ViewStub
+  sample.android-28404 (28404) [001] ...1 1302543.121324: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.121509: tracing_mark_write: B|28404|FrameLayout
+  sample.android-28404 (28404) [001] ...1 1302543.121725: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.121804: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.123022: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.R$layout
+  sample.android-28404 (28404) [001] ...1 1302543.123059: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.123167: tracing_mark_write: B|28404|inflate
+  sample.android-28404 (28404) [001] ...1 1302543.123186: tracing_mark_write: B|28404|Inflate Message Send
+  sample.android-28404 (28404) [001] ...1 1302543.123205: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.123263: tracing_mark_write: B|28404|androidx.appcompat.widget.FitWindowsLinearLayout
+  sample.android-28404 (28404) [001] ...1 1302543.123536: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.FitWindowsLinearLayout
+  sample.android-28404 (28404) [001] ...1 1302543.123624: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.123840: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.123901: tracing_mark_write: B|28404|androidx.appcompat.widget.ViewStubCompat
+  sample.android-28404 (28404) [001] ...1 1302543.123934: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ViewStubCompat
+  sample.android-28404 (28404) [001] ...1 1302543.124212: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.124340: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.124577: tracing_mark_write: B|28404|androidx.appcompat.widget.ContentFrameLayout
+  sample.android-28404 (28404) [001] ...1 1302543.124617: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ContentFrameLayout
+  sample.android-28404 (28404) [001] ...1 1302543.124894: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.125076: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.125159: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.125180: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$3
+  sample.android-28404 (28404) [001] ...1 1302543.125218: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.125235: tracing_mark_write: B|28404|VerifyClass androidx.core.view.ViewCompat
+  sample.android-28404 (28404) [001] ...1 1302543.127881: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.127952: tracing_mark_write: B|28404|VerifyClass androidx.core.R$id
+  sample.android-28404 (28404) [001] ...1 1302543.127963: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.127976: tracing_mark_write: B|28404|VerifyClass androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager
+  sample.android-28404 (28404) [001] ...1 1302543.128088: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.128114: tracing_mark_write: B|28404|VerifyClass androidx.core.view.ViewCompat$1
+  sample.android-28404 (28404) [001] ...1 1302543.128130: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.128148: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.R$id
+  sample.android-28404 (28404) [001] ...1 1302543.128156: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.128203: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ViewUtils
+  sample.android-28404 (28404) [001] ...1 1302543.128268: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.129811: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$5
+  sample.android-28404 (28404) [001] ...1 1302543.129871: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.130187: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$PanelFeatureState
+  sample.android-28404 (28404) [001] ...1 1302543.130508: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.130774: tracing_mark_write: B|28404|inflate
+  sample.android-28404 (28404) [001] ...1 1302543.130793: tracing_mark_write: B|28404|Inflate Message Send
+  sample.android-28404 (28404) [001] ...1 1302543.130815: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.130946: tracing_mark_write: B|28404|androidx.coordinatorlayout.widget.CoordinatorLayout
+  sample.android-28404 (28404) [001] ...1 1302543.131407: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout
+  sample.android-28404 (28404) [001] ...1 1302543.134139: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.134243: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$ViewElevationComparator
+  sample.android-28404 (28404) [001] ...1 1302543.134274: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.134321: tracing_mark_write: B|28404|VerifyClass androidx.core.util.Pools$SimplePool
+  sample.android-28404 (28404) [001] ...1 1302543.134363: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.134375: tracing_mark_write: B|28404|VerifyClass androidx.core.util.Pools$SynchronizedPool
+  sample.android-28404 (28404) [001] ...1 1302543.134401: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.134422: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.R$attr
+  sample.android-28404 (28404) [001] ...1 1302543.134434: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.134683: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.widget.DirectedAcyclicGraph
+  sample.android-28404 (28404) [001] ...1 1302543.134812: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.134838: tracing_mark_write: B|28404|VerifyClass androidx.core.view.NestedScrollingParentHelper
+  sample.android-28404 (28404) [001] ...1 1302543.134867: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.134880: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.R$styleable
+  sample.android-28404 (28404) [001] ...1 1302543.134907: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.134985: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$HierarchyChangeListener
+  sample.android-28404 (28404) [001] ...1 1302543.135019: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.135055: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.135264: tracing_mark_write: B|28404|com.google.android.material.appbar.AppBarLayout
+  sample.android-28404 (28404) [001] ...1 1302543.135562: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout
+  sample.android-28404 (28404) [001] ...1 1302543.137539: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.137586: tracing_mark_write: B|28404|VerifyClass com.google.android.material.R$style
+  sample.android-28404 (28404) [001] ...1 1302543.137613: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.137654: tracing_mark_write: B|28404|VerifyClass com.google.android.material.R$attr
+  sample.android-28404 (28404) [001] ...1 1302543.137662: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.137692: tracing_mark_write: B|28404|VerifyClass com.google.android.material.theme.overlay.MaterialThemeOverlay
+  sample.android-28404 (28404) [001] ...1 1302543.137731: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.138795: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.ViewUtilsLollipop
+  sample.android-28404 (28404) [001] ...1 1302543.138971: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.139004: tracing_mark_write: B|28404|VerifyClass com.google.android.material.internal.ThemeEnforcement
+  sample.android-28404 (28404) [001] ...1 1302543.139127: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.139162: tracing_mark_write: B|28404|VerifyClass com.google.android.material.R$styleable
+  sample.android-28404 (28404) [001] ...1 1302543.139339: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.139728: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeDrawable
+  sample.android-28404 (28404) [001] ...1 1302543.140825: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.140906: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapeAppearanceModel
+  sample.android-28404 (28404) [001] ...1 1302543.141212: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141234: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.RelativeCornerSize
+  sample.android-28404 (28404) [001] ...1 1302543.141274: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141291: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeUtils
+  sample.android-28404 (28404) [001] ...1 1302543.141383: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141402: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.CornerTreatment
+  sample.android-28404 (28404) [001] ...1 1302543.141446: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141459: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.RoundedCornerTreatment
+  sample.android-28404 (28404) [001] ...1 1302543.141482: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141498: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.AbsoluteCornerSize
+  sample.android-28404 (28404) [001] ...1 1302543.141524: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141537: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.EdgeTreatment
+  sample.android-28404 (28404) [001] ...1 1302543.141554: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141567: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$MaterialShapeDrawableState
+  sample.android-28404 (28404) [001] ...1 1302543.141622: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141692: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shadow.ShadowRenderer
+  sample.android-28404 (28404) [001] ...1 1302543.141849: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.141893: tracing_mark_write: B|28404|VerifyClass androidx.core.graphics.ColorUtils
+  sample.android-28404 (28404) [001] ...1 1302543.142261: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.142318: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapeAppearancePathProvider
+  sample.android-28404 (28404) [001] ...1 1302543.142619: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.142655: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapePath
+  sample.android-28404 (28404) [001] ...1 1302543.142972: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143068: tracing_mark_write: B|28404|VerifyClass androidx.core.util.ObjectsCompat
+  sample.android-28404 (28404) [001] ...1 1302543.143107: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143116: tracing_mark_write: B|28404|VerifyClass $r8$backportedMethods$utility$Objects$2$equals
+  sample.android-28404 (28404) [001] ...1 1302543.143124: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143132: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$1
+  sample.android-28404 (28404) [001] ...1 1302543.143161: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143207: tracing_mark_write: B|28404|VerifyClass com.google.android.material.elevation.ElevationOverlayProvider
+  sample.android-28404 (28404) [001] ...1 1302543.143305: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143317: tracing_mark_write: B|28404|VerifyClass com.google.android.material.resources.MaterialAttributes
+  sample.android-28404 (28404) [001] ...1 1302543.143387: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143423: tracing_mark_write: B|28404|VerifyClass com.google.android.material.color.MaterialColors
+  sample.android-28404 (28404) [001] ...1 1302543.143465: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143693: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$1
+  sample.android-28404 (28404) [001] ...1 1302543.143738: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143766: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.143789: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams
+  sample.android-28404 (28404) [001] ...1 1302543.144062: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.144255: tracing_mark_write: B|28404|androidx.appcompat.widget.Toolbar
+  sample.android-28404 (28404) [001] ...1 1302543.144308: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.Toolbar
+  sample.android-28404 (28404) [001] ...1 1302543.147975: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.148049: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.R$attr
+  sample.android-28404 (28404) [001] ...1 1302543.148069: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.148482: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.Toolbar$1
+  sample.android-28404 (28404) [001] ...1 1302543.148514: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.148526: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.Toolbar$2
+  sample.android-28404 (28404) [001] ...1 1302543.148536: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.148592: tracing_mark_write: B|28404|VerifyClass androidx.core.view.ViewCompat$Api29Impl
+  sample.android-28404 (28404) [001] ...1 1302543.148627: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.148651: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.RtlSpacingHelper
+  sample.android-28404 (28404) [001] ...1 1302543.148691: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.148702: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.content.res.AppCompatResources
+  sample.android-28404 (28404) [001] ...1 1302543.148859: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.149957: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.149986: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$LayoutParams
+  sample.android-28404 (28404) [001] ...1 1302543.150089: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.150457: tracing_mark_write: B|28404|androidx.constraintlayout.widget.ConstraintLayout
+  sample.android-28404 (28404) [001] ...1 1302543.150756: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout
+  sample.android-28404 (28404) [001] ...1 1302543.153396: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.153720: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget
+  sample.android-28404 (28404) [001] ...1 1302543.158461: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.158488: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.WidgetContainer
+  sample.android-28404 (28404) [001] ...1 1302543.158563: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.158575: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidgetContainer
+  sample.android-28404 (28404) [001] ...1 1302543.159765: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.159810: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintAnchor
+  sample.android-28404 (28404) [001] ...1 1302543.160101: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.160124: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintAnchor$Type
+  sample.android-28404 (28404) [001] ...1 1302543.160168: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.160226: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget$DimensionBehaviour
+  sample.android-28404 (28404) [001] ...1 1302543.160251: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.160295: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.BasicMeasure
+  sample.android-28404 (28404) [001] ...1 1302543.161033: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.161060: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.BasicMeasure$Measure
+  sample.android-28404 (28404) [001] ...1 1302543.161074: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.161083: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.DependencyGraph
+  sample.android-28404 (28404) [001] ...1 1302543.162219: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.162251: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.LinearSystem
+  sample.android-28404 (28404) [001] ...1 1302543.163385: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.163420: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.Cache
+  sample.android-28404 (28404) [001] ...1 1302543.163470: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.163489: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.Pools$SimplePool
+  sample.android-28404 (28404) [001] ...1 1302543.163526: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.163544: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.ArrayRow
+  sample.android-28404 (28404) [001] ...1 1302543.163989: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.164009: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.PriorityGoalRow
+  sample.android-28404 (28404) [001] ...1 1302543.164226: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.164252: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.ArrayLinkedVariables
+  sample.android-28404 (28404) [001] ...1 1302543.164596: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.164617: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.PriorityGoalRow$GoalVariableAccessor
+  sample.android-28404 (28404) [001] ...1 1302543.164736: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.164775: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$Measurer
+  sample.android-28404 (28404) [001] ...1 1302543.165649: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.165697: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.widget.R$styleable
+  sample.android-28404 (28404) [001] ...1 1302543.165838: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.165993: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.166423: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior
+  sample.android-28404 (28404) [001] ...1 1302543.166530: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.166546: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.ViewOffsetBehavior
+  sample.android-28404 (28404) [001] ...1 1302543.166634: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.166650: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.HeaderScrollingViewBehavior
+  sample.android-28404 (28404) [001] ...1 1302543.166878: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.166895: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+  sample.android-28404 (28404) [001] ...1 1302543.167083: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.167260: tracing_mark_write: B|28404|VerifyClass androidx.fragment.R$styleable
+  sample.android-28404 (28404) [001] ...1 1302543.167299: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.167539: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.Fragment
+  sample.android-28404 (28404) [001] ...1 1302543.168817: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.168895: tracing_mark_write: B|28404|VerifyClass androidx.navigation.fragment.NavHostFragment
+  sample.android-28404 (28404) [001] ...1 1302543.169506: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.169670: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.Fragment$1
+  sample.android-28404 (28404) [001] ...1 1302543.169697: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.169707: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.LiveData
+  sample.android-28404 (28404) [001] ...1 1302543.169968: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.169988: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.MutableLiveData
+  sample.android-28404 (28404) [001] ...1 1302543.170001: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.170035: tracing_mark_write: B|28404|VerifyClass androidx.lifecycle.LiveData$1
+  sample.android-28404 (28404) [001] ...1 1302543.170063: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.170098: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.Fragment$2
+  sample.android-28404 (28404) [001] ...1 1302543.170127: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.170188: tracing_mark_write: B|28404|VerifyClass androidx.navigation.R$styleable
+  sample.android-28404 (28404) [001] ...1 1302543.170231: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.170306: tracing_mark_write: B|28404|VerifyClass androidx.navigation.fragment.R$styleable
+  sample.android-28404 (28404) [001] ...1 1302543.170343: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.170384: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentStateManager
+  sample.android-28404 (28404) [001] ...1 1302543.170985: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.171083: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentStateManager$1
+  sample.android-28404 (28404) [001] ...1 1302543.171124: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.171175: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.Fragment$4
+  sample.android-28404 (28404) [001] ...1 1302543.171215: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.171285: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentTransaction
+  sample.android-28404 (28404) [001] ...1 1302543.171576: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.171598: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.BackStackRecord
+  sample.android-28404 (28404) [001] ...1 1302543.172158: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.172190: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentTransaction$Op
+  sample.android-28404 (28404) [001] ...1 1302543.172212: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.172350: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavController
+  sample.android-28404 (28404) [001] ...1 1302543.173756: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.173781: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavHostController
+  sample.android-28404 (28404) [001] ...1 1302543.173809: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.173858: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavigatorProvider
+  sample.android-28404 (28404) [001] ...1 1302543.173953: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.173976: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavController$1
+  sample.android-28404 (28404) [001] ...1 1302543.174001: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.174013: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavController$2
+  sample.android-28404 (28404) [001] ...1 1302543.174029: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.174043: tracing_mark_write: B|28404|VerifyClass androidx.navigation.Navigator
+  sample.android-28404 (28404) [001] ...1 1302543.174059: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.174063: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavGraphNavigator
+  sample.android-28404 (28404) [001] ...1 1302543.174099: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.174593: tracing_mark_write: B|28404|VerifyClass androidx.navigation.ActivityNavigator
+  sample.android-28404 (28404) [001] ...1 1302543.174992: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.175185: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavControllerViewModel
+  sample.android-28404 (28404) [001] ...1 1302543.175290: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.175302: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavControllerViewModel$1
+  sample.android-28404 (28404) [001] ...1 1302543.175313: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.175368: tracing_mark_write: B|28404|VerifyClass androidx.navigation.fragment.DialogFragmentNavigator
+  sample.android-28404 (28404) [001] ...1 1302543.175568: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.175610: tracing_mark_write: B|28404|VerifyClass androidx.navigation.fragment.DialogFragmentNavigator$1
+  sample.android-28404 (28404) [001] ...1 1302543.175637: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.175713: tracing_mark_write: B|28404|VerifyClass androidx.navigation.fragment.FragmentNavigator
+  sample.android-28404 (28404) [001] ...1 1302543.175972: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.176047: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavInflater
+  sample.android-28404 (28404) [001] ...1 1302543.176575: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.176840: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavDestination
+  sample.android-28404 (28404) [001] ...1 1302543.177140: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.177167: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavGraph
+  sample.android-28404 (28404) [001] ...1 1302543.177331: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.177361: tracing_mark_write: B|28404|VerifyClass androidx.navigation.common.R$styleable
+  sample.android-28404 (28404) [001] ...1 1302543.177389: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.177501: tracing_mark_write: B|28404|VerifyClass androidx.navigation.fragment.FragmentNavigator$Destination
+  sample.android-28404 (28404) [001] ...1 1302543.177543: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.177621: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavAction
+  sample.android-28404 (28404) [001] ...1 1302543.177650: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.177660: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavOptions$Builder
+  sample.android-28404 (28404) [001] ...1 1302543.177687: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.177696: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavOptions
+  sample.android-28404 (28404) [001] ...1 1302543.177734: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.178081: tracing_mark_write: B|28404|VerifyClass rhea.sample.android.app.FirstFragment
+  sample.android-28404 (28404) [001] ...1 1302543.178265: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.178593: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavBackStackEntry
+  sample.android-28404 (28404) [001] ...1 1302543.178834: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.179388: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentTransition
+  sample.android-28404 (28404) [001] ...1 1302543.180463: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.180496: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentTransitionImpl
+  sample.android-28404 (28404) [001] ...1 1302543.180738: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.180758: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentTransitionCompat21
+  sample.android-28404 (28404) [001] ...1 1302543.181060: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.181162: tracing_mark_write: B|28404|VerifyClass androidx.transition.FragmentTransitionSupport
+  sample.android-28404 (28404) [001] ...1 1302543.181647: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.181882: tracing_mark_write: B|28404|VerifyClass androidx.navigation.NavBackStackEntry$1
+  sample.android-28404 (28404) [001] ...1 1302543.181936: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.182096: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentViewLifecycleOwner
+  sample.android-28404 (28404) [001] ...1 1302543.182137: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.182160: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentContainerView
+  sample.android-28404 (28404) [001] ...1 1302543.182577: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.182940: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.executor.TaskExecutor
+  sample.android-28404 (28404) [001] ...1 1302543.182997: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183011: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.executor.ArchTaskExecutor
+  sample.android-28404 (28404) [001] ...1 1302543.183135: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183154: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.executor.ArchTaskExecutor$1
+  sample.android-28404 (28404) [001] ...1 1302543.183170: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183184: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.executor.ArchTaskExecutor$2
+  sample.android-28404 (28404) [001] ...1 1302543.183197: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183206: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.executor.DefaultTaskExecutor
+  sample.android-28404 (28404) [001] ...1 1302543.183351: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183371: tracing_mark_write: B|28404|VerifyClass androidx.arch.core.executor.DefaultTaskExecutor$1
+  sample.android-28404 (28404) [001] ...1 1302543.183411: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183555: tracing_mark_write: B|28404|VerifyClass androidx.fragment.R$id
+  sample.android-28404 (28404) [001] ...1 1302543.183576: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183613: tracing_mark_write: B|28404|VerifyClass androidx.navigation.Navigation
+  sample.android-28404 (28404) [001] ...1 1302543.183769: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183788: tracing_mark_write: B|28404|VerifyClass androidx.navigation.R$id
+  sample.android-28404 (28404) [001] ...1 1302543.183800: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.183882: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$LayoutParams
+  sample.android-28404 (28404) [001] ...1 1302543.184421: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.184607: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$LayoutParams$Table
+  sample.android-28404 (28404) [001] ...1 1302543.184694: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.185059: tracing_mark_write: B|28404|com.google.android.material.floatingactionbutton.FloatingActionButton
+  sample.android-28404 (28404) [001] ...1 1302543.185117: tracing_mark_write: B|28404|VerifyClass com.google.android.material.internal.VisibilityAwareImageButton
+  sample.android-28404 (28404) [001] ...1 1302543.185188: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.185196: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton
+  sample.android-28404 (28404) [001] ...1 1302543.186515: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.187135: tracing_mark_write: B|28404|VerifyClass com.google.android.material.resources.MaterialResources
+  sample.android-28404 (28404) [001] ...1 1302543.187247: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.187636: tracing_mark_write: B|28404|VerifyClass com.google.android.material.internal.ViewUtils
+  sample.android-28404 (28404) [001] ...1 1302543.187981: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.188337: tracing_mark_write: B|28404|VerifyClass com.google.android.material.R$dimen
+  sample.android-28404 (28404) [001] ...1 1302543.188364: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.188450: tracing_mark_write: B|28404|VerifyClass com.google.android.material.animation.MotionSpec
+  sample.android-28404 (28404) [001] ...1 1302543.188711: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.189718: tracing_mark_write: B|28404|VerifyClass com.google.android.material.animation.MotionTiming
+  sample.android-28404 (28404) [001] ...1 1302543.189893: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.190714: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapeAppearanceModel$Builder
+  sample.android-28404 (28404) [001] ...1 1302543.190898: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.191038: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatImageHelper
+  sample.android-28404 (28404) [001] ...1 1302543.191276: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.193198: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl
+  sample.android-28404 (28404) [001] ...1 1302543.194623: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.194658: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImplLollipop
+  sample.android-28404 (28404) [001] ...1 1302543.195175: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195213: tracing_mark_write: B|28404|VerifyClass com.google.android.material.animation.AnimationUtils
+  sample.android-28404 (28404) [001] ...1 1302543.195357: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195385: tracing_mark_write: B|28404|VerifyClass androidx.interpolator.view.animation.LookupTableInterpolator
+  sample.android-28404 (28404) [001] ...1 1302543.195417: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195430: tracing_mark_write: B|28404|VerifyClass androidx.interpolator.view.animation.FastOutSlowInInterpolator
+  sample.android-28404 (28404) [001] ...1 1302543.195453: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195472: tracing_mark_write: B|28404|VerifyClass androidx.interpolator.view.animation.FastOutLinearInInterpolator
+  sample.android-28404 (28404) [001] ...1 1302543.195494: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195503: tracing_mark_write: B|28404|VerifyClass androidx.interpolator.view.animation.LinearOutSlowInInterpolator
+  sample.android-28404 (28404) [001] ...1 1302543.195516: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195547: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$ShadowDelegateImpl
+  sample.android-28404 (28404) [001] ...1 1302543.195619: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195665: tracing_mark_write: B|28404|VerifyClass com.google.android.material.internal.StateListAnimator
+  sample.android-28404 (28404) [001] ...1 1302543.195797: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195821: tracing_mark_write: B|28404|VerifyClass com.google.android.material.internal.StateListAnimator$1
+  sample.android-28404 (28404) [001] ...1 1302543.195849: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195860: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ShadowAnimatorImpl
+  sample.android-28404 (28404) [001] ...1 1302543.195898: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.195910: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ElevateToPressedTranslationZAnimation
+  sample.android-28404 (28404) [001] ...1 1302543.195929: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.196007: tracing_mark_write: B|28404|VerifyClass com.google.android.material.internal.StateListAnimator$Tuple
+  sample.android-28404 (28404) [001] ...1 1302543.196027: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.196042: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ElevateToHoveredFocusedTranslationZAnimation
+  sample.android-28404 (28404) [001] ...1 1302543.196064: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.196119: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ResetElevationAnimation
+  sample.android-28404 (28404) [001] ...1 1302543.196142: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.196171: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$DisabledElevationAnimation
+  sample.android-28404 (28404) [001] ...1 1302543.196193: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.196663: tracing_mark_write: B|28404|VerifyClass androidx.core.widget.ImageViewCompat
+  sample.android-28404 (28404) [001] ...1 1302543.196744: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.196867: tracing_mark_write: B|28404|VerifyClass com.google.android.material.expandable.ExpandableWidgetHelper
+  sample.android-28404 (28404) [001] ...1 1302543.196994: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.197026: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImplLollipop$AlwaysStatefulMaterialShapeDrawable
+  sample.android-28404 (28404) [001] ...1 1302543.197046: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.197373: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.BorderDrawable
+  sample.android-28404 (28404) [001] ...1 1302543.197659: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.197748: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.BorderDrawable$BorderState
+  sample.android-28404 (28404) [001] ...1 1302543.197777: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.197818: tracing_mark_write: B|28404|VerifyClass com.google.android.material.R$color
+  sample.android-28404 (28404) [001] ...1 1302543.197835: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.198061: tracing_mark_write: B|28404|VerifyClass com.google.android.material.ripple.RippleUtils
+  sample.android-28404 (28404) [001] ...1 1302543.198184: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.199393: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.199700: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.199770: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.ActionBar
+  sample.android-28404 (28404) [001] ...1 1302543.199882: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.199891: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar
+  sample.android-28404 (28404) [001] ...1 1302543.200581: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.200639: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$1
+  sample.android-28404 (28404) [001] ...1 1302543.200672: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.200680: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$2
+  sample.android-28404 (28404) [001] ...1 1302543.200702: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.200720: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ToolbarWidgetWrapper
+  sample.android-28404 (28404) [001] ...1 1302543.201763: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.201805: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.R$string
+  sample.android-28404 (28404) [001] ...1 1302543.201823: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.202582: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ToolbarWidgetWrapper$1
+  sample.android-28404 (28404) [001] ...1 1302543.202776: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.202800: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.menu.ActionMenuItem
+  sample.android-28404 (28404) [001] ...1 1302543.203077: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.203155: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatImageButton
+  sample.android-28404 (28404) [001] ...1 1302543.203359: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.203401: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.TintContextWrapper
+  sample.android-28404 (28404) [001] ...1 1302543.203610: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.204213: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ThemeUtils
+  sample.android-28404 (28404) [001] ...1 1302543.204357: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.204516: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatBackgroundHelper
+  sample.android-28404 (28404) [001] ...1 1302543.204671: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.204768: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.ActionBar$LayoutParams
+  sample.android-28404 (28404) [001] ...1 1302543.204818: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.204830: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.Toolbar$LayoutParams
+  sample.android-28404 (28404) [001] ...1 1302543.204871: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.204968: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$ToolbarCallbackWrapper
+  sample.android-28404 (28404) [001] ...1 1302543.205010: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.205048: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextView
+  sample.android-28404 (28404) [001] ...1 1302543.205730: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.207117: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextHelper
+  sample.android-28404 (28404) [001] ...1 1302543.207890: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.207924: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper
+  sample.android-28404 (28404) [001] ...1 1302543.208837: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.208899: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl
+  sample.android-28404 (28404) [001] ...1 1302543.208929: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.208935: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl23
+  sample.android-28404 (28404) [001] ...1 1302543.208968: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.208982: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29
+  sample.android-28404 (28404) [001] ...1 1302543.209005: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.209129: tracing_mark_write: B|28404|VerifyClass androidx.core.content.res.ResourcesCompat$FontCallback
+  sample.android-28404 (28404) [001] ...1 1302543.209234: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.209251: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextHelper$1
+  sample.android-28404 (28404) [001] ...1 1302543.209282: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.209305: tracing_mark_write: B|28404|VerifyClass androidx.core.content.res.ResourcesCompat
+  sample.android-28404 (28404) [001] ...1 1302543.209535: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.209615: tracing_mark_write: B|28404|VerifyClass androidx.core.content.res.ResourcesCompat$FontCallback$2
+  sample.android-28404 (28404) [001] ...1 1302543.209688: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.209840: tracing_mark_write: B|28404|VerifyClass androidx.core.widget.AutoSizeableTextView
+  sample.android-28404 (28404) [001] ...1 1302543.209871: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.209909: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextClassifierHelper
+  sample.android-28404 (28404) [001] ...1 1302543.209969: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.210673: tracing_mark_write: B|28404|VerifyClass rhea.sample.android.app.MainActivity$onCreate$1
+  sample.android-28404 (28404) [001] ...1 1302543.210834: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.210877: tracing_mark_write: B|28404|MainActivity$onCreate$1:<clinit>
+  sample.android-28404 (28404) [001] ...1 1302543.210902: tracing_mark_write: E|28404|MainActivity$onCreate$1:<clinit>
+  sample.android-28404 (28404) [001] ...1 1302543.211679: tracing_mark_write: B|28404|transact[android.app.IActivityTaskManager:67]
+  sample.android-28404 (28404) [001] ...1 1302543.211805: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.212824: tracing_mark_write: B|28404|transact[android.app.IActivityTaskManager:111]
+  sample.android-28404 (28404) [001] ...1 1302543.212919: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.212955: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.213042: tracing_mark_write: B|28404|transact[android.app.IActivityTaskManager:67]
+  sample.android-28404 (28404) [001] ...1 1302543.213114: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.213356: tracing_mark_write: B|28404|FirstFragment:onCreateView
+  sample.android-28404 (28404) [001] ...1 1302543.213521: tracing_mark_write: B|28404|inflate
+  sample.android-28404 (28404) [001] ...1 1302543.213538: tracing_mark_write: B|28404|Inflate Message Send
+  sample.android-28404 (28404) [001] ...1 1302543.213557: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.213706: tracing_mark_write: B|28404|androidx.constraintlayout.widget.ConstraintLayout
+  sample.android-28404 (28404) [001] ...1 1302543.214144: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.214259: tracing_mark_write: B|28404|VerifyClass com.google.android.material.textview.MaterialTextView
+  sample.android-28404 (28404) [001] ...1 1302543.214423: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.216171: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatButton
+  sample.android-28404 (28404) [001] ...1 1302543.216617: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.216639: tracing_mark_write: B|28404|VerifyClass com.google.android.material.button.MaterialButton
+  sample.android-28404 (28404) [001] ...1 1302543.217678: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.222098: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.TintInfo
+  sample.android-28404 (28404) [001] ...1 1302543.222143: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.222496: tracing_mark_write: B|28404|VerifyClass com.google.android.material.button.MaterialButtonHelper
+  sample.android-28404 (28404) [001] ...1 1302543.222877: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.223548: tracing_mark_write: B|28404|VerifyClass androidx.core.graphics.drawable.DrawableCompat
+  sample.android-28404 (28404) [001] ...1 1302543.223900: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.225207: tracing_mark_write: B|28404|VerifyClass androidx.core.widget.TextViewCompat
+  sample.android-28404 (28404) [001] ...1 1302543.225959: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.226218: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.226262: tracing_mark_write: E|28404|FirstFragment:onCreateView
+  sample.android-28404 (28404) [001] ...1 1302543.226473: tracing_mark_write: B|28404|FirstFragment:onViewCreated
+  sample.android-28404 (28404) [001] ...1 1302543.226521: tracing_mark_write: B|28404|VerifyClass rhea.sample.android.app.FirstFragment$onViewCreated$1
+  sample.android-28404 (28404) [001] ...1 1302543.226586: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.226663: tracing_mark_write: E|28404|FirstFragment:onViewCreated
+  sample.android-28404 (28404) [001] ...1 1302543.226801: tracing_mark_write: B|28404|VerifyClass androidx.fragment.app.FragmentAnim
+  sample.android-28404 (28404) [001] ...1 1302543.227173: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.227462: tracing_mark_write: B|28404|VerifyClass androidx.activity.OnBackPressedDispatcher$OnBackPressedCancellable
+  sample.android-28404 (28404) [001] ...1 1302543.227500: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.228159: tracing_mark_write: B|28404|transact[android.content.IContentProvider:21]
+  sample.android-28404 (28404) [001] ...1 1302543.228360: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.228840: tracing_mark_write: B|28404|notifyContentCapture(START) for {rhea.sample.android/rhea.sample.android.app.MainActivity}
+  sample.android-28404 (28404) [001] ...1 1302543.228937: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.228968: tracing_mark_write: B|28404|activityResume
+  sample.android-28404 (28404) [001] ...1 1302543.232958: tracing_mark_write: B|28404|notifyContentCapture(RESUME) for {rhea.sample.android/rhea.sample.android.app.MainActivity}
+  sample.android-28404 (28404) [001] ...1 1302543.233015: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.234579: tracing_mark_write: B|28404|transact[com.huawei.android.app.IHwActivityTaskManager:39]
+  sample.android-28404 (28404) [001] ...1 1302543.234724: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.235655: tracing_mark_write: B|28404|transact[:1]
+  sample.android-28404 (28404) [001] ...1 1302543.236431: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.236617: tracing_mark_write: B|28404|transact[android.app.IUiModeManager:3]
+  sample.android-28404 (28404) [001] ...1 1302543.236685: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.236801: tracing_mark_write: B|28404|transact[com.android.internal.view.IInputMethodManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.237243: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.237334: tracing_mark_write: B|28404|transact[android.view.IWindowManager:4]
+  sample.android-28404 (28404) [001] ...1 1302543.237604: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.238500: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.238650: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.239503: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.239672: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.240118: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.240311: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.241092: tracing_mark_write: B|28404|transact[:1]
+  sample.android-28404 (28404) [001] ...1 1302543.241890: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.242404: tracing_mark_write: B|28404|transact[android.pc.IHwPCManager:73]
+  sample.android-28404 (28404) [001] ...1 1302543.242515: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.243059: tracing_mark_write: B|28404|transact[android.app.IActivityManager:184]
+  sample.android-28404 (28404) [001] ...1 1302543.243379: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.243584: tracing_mark_write: B|28404|transact[android.view.IGraphicsStats:1]
+  sample.android-28404 (28404) [001] ...1 1302543.244419: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.245298: tracing_mark_write: B|28404|transact[android.view.IWindowSession:1]
+  sample.android-28404 (28404) [001] ...1 1302543.247406: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.248287: tracing_mark_write: B|28404|transact[android.view.accessibility.IAccessibilityManager:6]
+  sample.android-28404 (28404) [001] ...1 1302543.248717: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.249330: tracing_mark_write: B|28404|transact[:1]
+  sample.android-28404 (28404) [001] ...1 1302543.249468: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.249569: tracing_mark_write: B|28404|transact[android.app.IUiModeManager:7]
+  sample.android-28404 (28404) [001] ...1 1302543.249643: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.249829: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.249880: tracing_mark_write: B|28404|transact[android.app.IActivityTaskManager:18]
+  sample.android-28404 (28404) [001] ...1 1302543.250062: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.250360: tracing_mark_write: B|28404|topResumedActivityChangeItem
+  sample.android-28404 (28404) [001] ...1 1302543.250465: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.256206: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.256529: tracing_mark_write: B|28404|input
+  sample.android-28404 (28404) [001] ...1 1302543.256676: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.256718: tracing_mark_write: B|28404|traversal
+  sample.android-28404 (28404) [001] ...1 1302543.259906: tracing_mark_write: B|28404|transact[:1]
+  sample.android-28404 (28404) [001] ...1 1302543.260666: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.261132: tracing_mark_write: B|28404|transact[android.magicwin.IHwMagicWindow:3]
+  sample.android-28404 (28404) [001] ...1 1302543.261888: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.268184: tracing_mark_write: B|28404|dispatchApplyInsets
+  sample.android-28404 (28404) [001] ...1 1302543.269307: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.269368: tracing_mark_write: B|28404|measure
+  sample.android-28404 (28404) [001] ...1 1302543.269387: tracing_mark_write: B|28404|Measure Message Send
+  sample.android-28404 (28404) [001] ...1 1302543.269402: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.269652: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.HeaderBehavior
+  sample.android-28404 (28404) [001] ...1 1302543.269998: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.270020: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$BaseBehavior
+  sample.android-28404 (28404) [001] ...1 1302543.270786: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.270808: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$Behavior
+  sample.android-28404 (28404) [001] ...1 1302543.270861: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.270921: tracing_mark_write: B|28404|VerifyClass androidx.core.view.GravityCompat
+  sample.android-28404 (28404) [001] ...1 1302543.271001: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.271062: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior
+  sample.android-28404 (28404) [001] ...1 1302543.271457: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.271503: tracing_mark_write: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior
+  sample.android-28404 (28404) [001] ...1 1302543.271527: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.271612: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$OnPreDrawListener
+  sample.android-28404 (28404) [001] ...1 1302543.271636: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.273044: tracing_mark_write: B|28404|VerifyClass androidx.core.view.MarginLayoutParamsCompat
+  sample.android-28404 (28404) [001] ...1 1302543.273118: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.273544: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget$1
+  sample.android-28404 (28404) [001] ...1 1302543.273676: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.273885: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.Optimizer
+  sample.android-28404 (28404) [001] ...1 1302543.273964: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.274014: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.Direct
+  sample.android-28404 (28404) [001] ...1 1302543.274802: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.274912: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$1
+  sample.android-28404 (28404) [001] ...1 1302543.275008: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.275996: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.SolverVariable
+  sample.android-28404 (28404) [001] ...1 1302543.276306: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.276333: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.SolverVariable$Type
+  sample.android-28404 (28404) [001] ...1 1302543.276381: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.276477: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ChainHead
+  sample.android-28404 (28404) [001] ...1 1302543.276652: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.276749: tracing_mark_write: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.Chain
+  sample.android-28404 (28404) [001] ...1 1302543.278177: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.280845: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.281104: tracing_mark_write: B|28404|transact[android.view.IWindowSession:4]
+  sample.android-28404 (28404) [001] ...1 1302543.286342: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.287719: tracing_mark_write: B|28404|transact[com.huawei.android.app.IHwActivityTaskManager:72]
+  sample.android-28404 (28404) [001] ...1 1302543.287843: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.288230: tracing_mark_write: B|28404|transact[android.hardware.display.IDisplayManager:1]
+  sample.android-28404 (28404) [001] ...1 1302543.288380: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.288682: tracing_mark_write: B|28404|measure
+  sample.android-28404 (28404) [001] ...1 1302543.288707: tracing_mark_write: B|28404|Measure Message Send
+  sample.android-28404 (28404) [001] ...1 1302543.288721: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.292170: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.292223: tracing_mark_write: B|28404|layout
+  sample.android-28404 (28404) [001] ...1 1302543.293680: tracing_mark_write: B|28404|VerifyClass com.google.android.material.appbar.ViewOffsetHelper
+  sample.android-28404 (28404) [001] ...1 1302543.293808: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.293870: tracing_mark_write: B|28404|VerifyClass androidx.core.math.MathUtils
+  sample.android-28404 (28404) [001] ...1 1302543.293914: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.294290: tracing_mark_write: B|28404|VerifyClass androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
+  sample.android-28404 (28404) [001] ...1 1302543.294805: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.295089: tracing_mark_write: B|28404|VerifyClass androidx.core.view.ViewCompat$AccessibilityViewProperty
+  sample.android-28404 (28404) [001] ...1 1302543.295185: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.295200: tracing_mark_write: B|28404|VerifyClass androidx.core.view.ViewCompat$4
+  sample.android-28404 (28404) [001] ...1 1302543.295256: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.296181: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.296386: tracing_mark_write: B|28404|transact[android.view.IWindowSession:12]
+  sample.android-28404 (28404) [001] ...1 1302543.296485: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.296818: tracing_mark_write: B|28404|transact[2]
+  sample.android-28404 (28404) [001] ...1 1302543.296848: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.296940: tracing_mark_write: B|28404|VerifyClass androidx.coordinatorlayout.widget.ViewGroupUtils
+  sample.android-28404 (28404) [001] ...1 1302543.297086: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.297443: tracing_mark_write: B|28404|draw
+  sample.android-28404 (28404) [001] ...1 1302543.301838: tracing_mark_write: B|28404|Record View#draw()
+  sample.android-28404 (28404) [001] ...1 1302543.302714: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$2
+  sample.android-28404 (28404) [001] ...1 1302543.302869: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.302923: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.AdjustedCornerSize
+  sample.android-28404 (28404) [001] ...1 1302543.303012: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.303131: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapeAppearancePathProvider$ShapeAppearancePathSpec
+  sample.android-28404 (28404) [001] ...1 1302543.303163: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.303193: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapePath$PathOperation
+  sample.android-28404 (28404) [001] ...1 1302543.303220: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.303236: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapePath$PathArcOperation
+  sample.android-28404 (28404) [001] ...1 1302543.303309: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.303358: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapePath$ShadowCompatOperation
+  sample.android-28404 (28404) [001] ...1 1302543.303388: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.303402: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapePath$ArcShadowOperation
+  sample.android-28404 (28404) [001] ...1 1302543.303430: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.303600: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapePath$PathLineOperation
+  sample.android-28404 (28404) [001] ...1 1302543.303636: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.303657: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapePath$LineShadowOperation
+  sample.android-28404 (28404) [001] ...1 1302543.303695: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.304055: tracing_mark_write: B|28404|VerifyClass com.google.android.material.shape.ShapePath$1
+  sample.android-28404 (28404) [001] ...1 1302543.304101: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.308711: tracing_mark_write: B|28404|computePalette
+  sample.android-28404 (28404) [001] ...1 1302543.308748: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.309583: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.309960: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.410294: tracing_mark_write: B|28404|jank_event_sync: start_ts=288219341907058,end_ts=288219495287267, appid=28404
+  sample.android-28404 (28404) [001] ...1 1302543.410324: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.410486: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.410533: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.410747: tracing_mark_write: B|28404|transact[android.view.IWindowSession:10]
+  sample.android-28404 (28404) [001] ...1 1302543.410942: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.411104: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$ActionMenuPresenterCallback
+  sample.android-28404 (28404) [001] ...1 1302543.411186: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.411201: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$MenuBuilderCallback
+  sample.android-28404 (28404) [001] ...1 1302543.411227: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.411248: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.LinearLayoutCompat
+  sample.android-28404 (28404) [001] ...1 1302543.413925: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.413965: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuView
+  sample.android-28404 (28404) [001] ...1 1302543.415487: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.416494: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.menu.MenuBuilder
+  sample.android-28404 (28404) [001] ...1 1302543.417665: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.417775: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuView$MenuBuilderCallback
+  sample.android-28404 (28404) [001] ...1 1302543.417823: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.417833: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.menu.BaseMenuPresenter
+  sample.android-28404 (28404) [001] ...1 1302543.417998: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.418018: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuPresenter
+  sample.android-28404 (28404) [001] ...1 1302543.419069: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.419186: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$PopupPresenterCallback
+  sample.android-28404 (28404) [001] ...1 1302543.419220: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.419261: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.ActionBarPolicy
+  sample.android-28404 (28404) [001] ...1 1302543.419436: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.419493: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.AppCompatImageView
+  sample.android-28404 (28404) [001] ...1 1302543.419656: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.419678: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton
+  sample.android-28404 (28404) [001] ...1 1302543.420026: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.421438: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.TooltipCompat
+  sample.android-28404 (28404) [001] ...1 1302543.421619: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.421658: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ForwardingListener
+  sample.android-28404 (28404) [001] ...1 1302543.422309: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.422333: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton$1
+  sample.android-28404 (28404) [001] ...1 1302543.422457: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.422740: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.Toolbar$ExpandedActionViewMenuPresenter
+  sample.android-28404 (28404) [001] ...1 1302543.422968: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.423063: tracing_mark_write: B|28404|MainActivity:onCreateOptionsMenu
+  sample.android-28404 (28404) [001] ...1 1302543.423095: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.SupportMenuInflater
+  sample.android-28404 (28404) [001] ...1 1302543.423339: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.423567: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.SupportMenuInflater$MenuState
+  sample.android-28404 (28404) [001] ...1 1302543.424020: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.424139: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.view.menu.MenuItemImpl
+  sample.android-28404 (28404) [001] ...1 1302543.424630: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.424693: tracing_mark_write: B|28404|VerifyClass androidx.core.view.MenuItemCompat
+  sample.android-28404 (28404) [001] ...1 1302543.424842: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.424898: tracing_mark_write: E|28404|MainActivity:onCreateOptionsMenu
+  sample.android-28404 (28404) [001] ...1 1302543.425098: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.LinearLayoutCompat$LayoutParams
+  sample.android-28404 (28404) [001] ...1 1302543.425160: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.425176: tracing_mark_write: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuView$LayoutParams
+  sample.android-28404 (28404) [001] ...1 1302543.425201: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.425601: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.425682: tracing_mark_write: B|28404|input
+  sample.android-28404 (28404) [001] ...1 1302543.425724: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.425745: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.425999: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.426019: tracing_mark_write: B|28404|traversal
+  sample.android-28404 (28404) [001] ...1 1302543.426201: tracing_mark_write: B|28404|measure
+  sample.android-28404 (28404) [001] ...1 1302543.426219: tracing_mark_write: B|28404|Measure Message Send
+  sample.android-28404 (28404) [001] ...1 1302543.426226: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.427409: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.427442: tracing_mark_write: B|28404|layout
+  sample.android-28404 (28404) [001] ...1 1302543.428426: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.428680: tracing_mark_write: B|28404|draw
+  sample.android-28404 (28404) [001] ...1 1302543.428738: tracing_mark_write: B|28404|Record View#draw()
+  sample.android-28404 (28404) [001] ...1 1302543.429383: tracing_mark_write: B|28404|computePalette
+  sample.android-28404 (28404) [001] ...1 1302543.429403: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.429655: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.429900: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.430032: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.430070: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.430345: tracing_mark_write: B|28404|MainActivity:onWindowFocusChanged
+  sample.android-28404 (28404) [001] ...1 1302543.430395: tracing_mark_write: E|28404|MainActivity:onWindowFocusChanged
+  sample.android-28404 (28404) [001] ...1 1302543.431573: tracing_mark_write: B|28404|transact[com.huawei.android.view.IHwWindowManager:78]
+  sample.android-28404 (28404) [001] ...1 1302543.431678: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.431948: tracing_mark_write: B|28404|transact[com.android.internal.view.IInputMethodManager:9]
+  sample.android-28404 (28404) [001] ...1 1302543.433304: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.433775: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.433854: tracing_mark_write: B|28404|input
+  sample.android-28404 (28404) [001] ...1 1302543.433894: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.433915: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.434112: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.434135: tracing_mark_write: B|28404|traversal
+  sample.android-28404 (28404) [001] ...1 1302543.434286: tracing_mark_write: B|28404|measure
+  sample.android-28404 (28404) [001] ...1 1302543.434304: tracing_mark_write: B|28404|Measure Message Send
+  sample.android-28404 (28404) [001] ...1 1302543.434319: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.434338: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.434364: tracing_mark_write: B|28404|layout
+  sample.android-28404 (28404) [001] ...1 1302543.434385: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.434569: tracing_mark_write: B|28404|draw
+  sample.android-28404 (28404) [001] ...1 1302543.434615: tracing_mark_write: B|28404|Record View#draw()
+  sample.android-28404 (28404) [001] ...1 1302543.434796: tracing_mark_write: B|28404|computePalette
+  sample.android-28404 (28404) [001] ...1 1302543.434813: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.435544: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.435867: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.435966: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.436015: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.436925: tracing_mark_write: B|28404|Lock contention on InternTable lock (owner tid: 28428)
+  sample.android-28404 (28404) [001] ...1 1302543.436957: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.437214: tracing_mark_write: B|28404|transact[17]
+  sample.android-28404 (28404) [001] ...1 1302543.437265: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.437385: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.437568: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.449069: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.449225: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.449388: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.449451: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.465019: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.465156: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.465544: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.465642: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.480949: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.481001: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.481150: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.481175: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.496998: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.497046: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.497198: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.497219: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.513113: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.513159: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.513298: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.513321: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.529204: tracing_mark_write: B|28404|Choreographer#doFrame
+  sample.android-28404 (28404) [001] ...1 1302543.529251: tracing_mark_write: B|28404|animation
+  sample.android-28404 (28404) [001] ...1 1302543.529489: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302543.529514: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302545.251059: tracing_mark_write: B|28404|markFrameSchedEnd
+  sample.android-28404 (28404) [001] ...1 1302545.251183: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302547.805949: tracing_mark_write: B|28404|broadcastReceiveComp
+  sample.android-28404 (28404) [001] ...1 1302547.807349: tracing_mark_write: B|28404|VerifyClass com.bytedance.rheatrace.core.TraceReceiver
+  sample.android-28404 (28404) [001] ...1 1302547.808335: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302547.808733: tracing_mark_write: B|28404|VerifyClass com.bytedance.rheatrace.core.TraceReceiver$3
+  sample.android-28404 (28404) [001] ...1 1302547.808881: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302547.809358: tracing_mark_write: B|28404|transact[14]
+  sample.android-28404 (28404) [001] ...1 1302547.809605: tracing_mark_write: E|28404
+  sample.android-28404 (28404) [001] ...1 1302547.809682: tracing_mark_write: E|28404

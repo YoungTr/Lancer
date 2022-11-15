@@ -1,0 +1,999 @@
+512|TRACE_START|1302542970419641|28404|2147483647|2|18316
+1302543.059081: B|28404|monotonic_time: 288219.144114
+1302543.059188: B|28404|VerifyClass com.bytedance.rheatrace.atrace.TraceEnableTagsHelper
+1302543.059326: E|28404
+1302543.059371: B|28404|VerifyClass com.bytedance.rheatrace.common.ReflectUtil
+1302543.059521: E|28404
+1302543.059557: B|28404|VerifyClass kotlin.jvm.internal.Intrinsics
+1302543.059937: E|28404
+1302543.060289: B|28404|open:/proc/self/cmdline
+1302543.060308: E|28404
+1302543.060347: B|28404|VerifyClass com.bytedance.rheatrace.core.TraceStub
+1302543.060400: E|28404
+1302543.060431: B|28404|B:RheaApplication:attachBaseContext
+1302543.060451: B|28404|E:RheaApplication:attachBaseContext
+1302543.060707: E|28404
+1302543.060837: B|28404|B:RheaApplication:onCreate
+1302543.060892: B|28404|B:RheaApplication:printApplicationName[rhea.sample.android.app.RheaApplication]
+1302543.060956: B|28404|E:RheaApplication:printApplicationName[rhea.sample.android.app.RheaApplication]
+1302543.060976: B|28404|E:RheaApplication:onCreate
+1302543.063630: B|28404|transact[android.content.pm.IPackageManager:13]
+1302543.063826: E|28404
+1302543.064068: B|28404|transact[android.app.IActivityManager:199]
+1302543.064354: E|28404
+1302543.064470: E|28404
+1302543.065010: B|28404|activityStart
+1302543.065727: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.065874: E|28404
+1302543.067180: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.067300: E|28404
+1302543.068236: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.068323: E|28404
+1302543.068949: B|28404|transact[android.view.IWindowManager:37]
+1302543.069087: E|28404
+1302543.069130: B|28404|hintActivityLaunch
+1302543.069193: E|28404
+1302543.069415: B|28404|transact[:1]
+1302543.070380: E|28404
+1302543.070566: B|28404|transact[android.app.IActivityTaskManager:47]
+1302543.070669: E|28404
+1302543.071556: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.071673: E|28404
+1302543.071813: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.071911: E|28404
+1302543.072862: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.072953: E|28404
+1302543.074094: B|28404|VerifyClass androidx.core.app.ComponentActivity
+1302543.074442: E|28404
+1302543.074463: B|28404|VerifyClass androidx.activity.ComponentActivity
+1302543.074843: E|28404
+1302543.074864: B|28404|VerifyClass androidx.fragment.app.FragmentActivity
+1302543.075865: E|28404
+1302543.075889: B|28404|VerifyClass androidx.appcompat.app.AppCompatActivity
+1302543.076710: E|28404
+1302543.076733: B|28404|VerifyClass rhea.sample.android.app.MainActivity
+1302543.077239: E|28404
+1302543.077565: B|28404|VerifyClass androidx.collection.SimpleArrayMap
+1302543.077955: E|28404
+1302543.077982: B|28404|VerifyClass androidx.collection.ContainerHelpers
+1302543.078032: E|28404
+1302543.078048: B|28404|VerifyClass androidx.lifecycle.Lifecycle
+1302543.078070: E|28404
+1302543.078075: B|28404|VerifyClass androidx.lifecycle.LifecycleRegistry
+1302543.078436: E|28404
+1302543.078461: B|28404|VerifyClass androidx.arch.core.internal.SafeIterableMap
+1302543.078673: E|28404
+1302543.078690: B|28404|VerifyClass androidx.arch.core.internal.FastSafeIterableMap
+1302543.078736: E|28404
+1302543.078772: B|28404|VerifyClass androidx.lifecycle.Lifecycle$State
+1302543.078819: E|28404
+1302543.078872: B|28404|VerifyClass androidx.savedstate.SavedStateRegistryController
+1302543.078995: E|28404
+1302543.079023: B|28404|VerifyClass androidx.savedstate.SavedStateRegistry
+1302543.079192: E|28404
+1302543.079229: B|28404|VerifyClass androidx.activity.OnBackPressedDispatcher
+1302543.079359: E|28404
+1302543.079369: B|28404|VerifyClass androidx.activity.ComponentActivity$1
+1302543.079381: E|28404
+1302543.079393: B|28404|VerifyClass androidx.activity.ComponentActivity$2
+1302543.079444: E|28404
+1302543.079454: B|28404|VerifyClass androidx.lifecycle.LifecycleRegistry$ObserverWithState
+1302543.079499: E|28404
+1302543.079510: B|28404|VerifyClass androidx.lifecycle.Lifecycling
+1302543.079859: E|28404
+1302543.079884: B|28404|VerifyClass androidx.arch.core.internal.SafeIterableMap$Entry
+1302543.079935: E|28404
+1302543.079968: B|28404|VerifyClass androidx.activity.ComponentActivity$3
+1302543.079994: E|28404
+1302543.080019: B|28404|VerifyClass androidx.fragment.app.FragmentContainer
+1302543.080034: E|28404
+1302543.080040: B|28404|VerifyClass androidx.fragment.app.FragmentHostCallback
+1302543.080180: E|28404
+1302543.080189: B|28404|VerifyClass androidx.fragment.app.FragmentActivity$HostCallbacks
+1302543.080293: E|28404
+1302543.080319: B|28404|VerifyClass androidx.fragment.app.FragmentManager
+1302543.083317: E|28404
+1302543.083350: B|28404|VerifyClass androidx.fragment.app.FragmentManagerImpl
+1302543.083369: E|28404
+1302543.083400: B|28404|VerifyClass androidx.fragment.app.FragmentStore
+1302543.083635: E|28404
+1302543.083654: B|28404|VerifyClass androidx.fragment.app.FragmentLayoutInflaterFactory
+1302543.083863: E|28404
+1302543.083888: B|28404|VerifyClass androidx.activity.OnBackPressedCallback
+1302543.083927: E|28404
+1302543.083946: B|28404|VerifyClass androidx.fragment.app.FragmentManager$1
+1302543.083957: E|28404
+1302543.083970: B|28404|VerifyClass androidx.fragment.app.FragmentManager$2
+1302543.083991: E|28404
+1302543.084004: B|28404|VerifyClass androidx.fragment.app.FragmentLifecycleCallbacksDispatcher
+1302543.084195: E|28404
+1302543.084214: B|28404|VerifyClass androidx.fragment.app.FragmentFactory
+1302543.084322: E|28404
+1302543.084335: B|28404|VerifyClass androidx.fragment.app.FragmentManager$3
+1302543.084356: E|28404
+1302543.084379: B|28404|VerifyClass androidx.fragment.app.FragmentManager$4
+1302543.084390: E|28404
+1302543.084410: B|28404|VerifyClass androidx.core.util.Preconditions
+1302543.084474: E|28404
+1302543.084499: B|28404|VerifyClass androidx.fragment.app.FragmentController
+1302543.084626: E|28404
+1302543.085161: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegate
+1302543.085381: E|28404
+1302543.085408: B|28404|VerifyClass androidx.collection.ArraySet
+1302543.085767: E|28404
+1302543.085809: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl
+1302543.090444: E|28404
+1302543.090513: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$2
+1302543.090543: E|28404
+1302543.090572: B|28404|VerifyClass androidx.appcompat.widget.AppCompatDrawableManager
+1302543.090735: E|28404
+1302543.090764: B|28404|VerifyClass androidx.appcompat.widget.ResourceManagerInternal
+1302543.091421: E|28404
+1302543.091465: B|28404|VerifyClass androidx.collection.LruCache
+1302543.091658: E|28404
+1302543.091675: B|28404|VerifyClass androidx.appcompat.widget.ResourceManagerInternal$ColorFilterLruCache
+1302543.091699: E|28404
+1302543.091734: B|28404|VerifyClass androidx.appcompat.widget.AppCompatDrawableManager$1
+1302543.092039: E|28404
+1302543.092062: B|28404|VerifyClass androidx.appcompat.R$drawable
+1302543.092079: E|28404
+1302543.092295: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi24
+1302543.092340: E|28404
+1302543.092364: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi26
+1302543.092384: E|28404
+1302543.092397: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$ConfigurationImplApi17
+1302543.092411: E|28404
+1302543.092435: B|28404|VerifyClass androidx.appcompat.view.ContextThemeWrapper
+1302543.092544: E|28404
+1302543.092560: B|28404|VerifyClass androidx.appcompat.R$style
+1302543.092573: E|28404
+1302543.092909: B|28404|VerifyClass androidx.appcompat.widget.VectorEnabledTintResources
+1302543.092963: E|28404
+1302543.093808: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.093948: E|28404
+1302543.095464: B|28404|transact[android.app.IActivityManager:20]
+1302543.096020: E|28404
+1302543.096758: B|28404|transact[android.content.IContentProvider:21]
+1302543.097063: E|28404
+1302543.098422: B|28404|transact[android.content.pm.IPackageManager:109]
+1302543.098520: E|28404
+1302543.099575: B|28404|HwResourcesImpl#inflateFwkResForAll
+1302543.099822: E|28404
+1302543.099973: B|28404|transact[android.app.IActivityTaskManager:66]
+1302543.100248: E|28404
+1302543.100387: B|28404|VerifyClass androidx.core.view.LayoutInflaterCompat
+1302543.100621: E|28404
+1302543.100734: B|28404|transact[android.content.pm.IPackageManager:14]
+1302543.100861: E|28404
+1302543.101011: B|28404|VerifyClass androidx.appcompat.view.WindowCallbackWrapper
+1302543.101154: E|28404
+1302543.101169: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback
+1302543.101307: E|28404
+1302543.101338: B|28404|VerifyClass androidx.appcompat.widget.TintTypedArray
+1302543.101566: E|28404
+1302543.101639: B|28404|VerifyClass androidx.appcompat.resources.R$drawable
+1302543.101659: E|28404
+1302543.101725: B|28404|VerifyClass androidx.core.content.ContextCompat
+1302543.101995: E|28404
+1302543.103056: B|28404|VerifyClass androidx.appcompat.widget.DrawableUtils
+1302543.103376: E|28404
+1302543.103605: B|28404|VerifyClass androidx.core.app.NavUtils
+1302543.103817: E|28404
+1302543.103900: B|28404|transact[android.content.pm.IPackageManager:14]
+1302543.104022: E|28404
+1302543.104149: B|28404|VerifyClass androidx.collection.MapCollections
+1302543.104408: E|28404
+1302543.104426: B|28404|VerifyClass androidx.collection.ArraySet$1
+1302543.104470: E|28404
+1302543.104486: B|28404|VerifyClass androidx.collection.MapCollections$KeySet
+1302543.104573: E|28404
+1302543.104599: B|28404|VerifyClass androidx.collection.MapCollections$ArrayIterator
+1302543.104643: E|28404
+1302543.104685: B|28404|VerifyClass androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable
+1302543.104723: E|28404
+1302543.104787: B|28404|VerifyClass androidx.lifecycle.ViewModelStore
+1302543.104835: E|28404
+1302543.104854: B|28404|VerifyClass androidx.lifecycle.ViewModel
+1302543.104915: E|28404
+1302543.104927: B|28404|VerifyClass androidx.fragment.app.FragmentManagerViewModel
+1302543.105158: E|28404
+1302543.105177: B|28404|VerifyClass androidx.fragment.app.FragmentManagerViewModel$1
+1302543.105194: E|28404
+1302543.105208: B|28404|VerifyClass androidx.lifecycle.ViewModelProvider
+1302543.105290: E|28404
+1302543.105352: B|28404|VerifyClass androidx.collection.SparseArrayCompat
+1302543.105552: E|28404
+1302543.105632: B|28404|VerifyClass androidx.lifecycle.ReportFragment
+1302543.105818: E|28404
+1302543.105851: B|28404|VerifyClass androidx.lifecycle.ReportFragment$LifecycleCallbacks
+1302543.105884: E|28404
+1302543.106145: B|28404|VerifyClass androidx.savedstate.Recreator
+1302543.106261: E|28404
+1302543.106314: B|28404|VerifyClass androidx.savedstate.SavedStateRegistry$1
+1302543.106338: E|28404
+1302543.106370: B|28404|VerifyClass androidx.lifecycle.Lifecycle$Event
+1302543.106413: E|28404
+1302543.106458: B|28404|VerifyClass androidx.lifecycle.LifecycleRegistry$1
+1302543.106546: E|28404
+1302543.106575: B|28404|VerifyClass androidx.arch.core.internal.SafeIterableMap$IteratorWithAdditions
+1302543.106612: E|28404
+1302543.106701: B|28404|VerifyClass androidx.appcompat.R$styleable
+1302543.106797: E|28404
+1302543.107734: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.107858: E|28404
+1302543.108063: B|28404|transact[android.view.IWindowManager:65]
+1302543.108160: E|28404
+1302543.108803: B|28404|transact[android.app.IActivityManager:42]
+1302543.108896: E|28404
+1302543.108930: B|28404|transact[android.app.IActivityManager:42]
+1302543.108995: E|28404
+1302543.109189: B|28404|transact[android.view.accessibility.IAccessibilityManager:3]
+1302543.109673: E|28404
+1302543.109718: B|28404|transact[android.view.accessibility.IAccessibilityManager:19]
+1302543.109783: E|28404
+1302543.113705: B|28404|transact[android.app.IActivityTaskManager:158]
+1302543.113903: E|28404
+1302543.114871: B|28404|transact[com.huawei.android.app.IHwActivityTaskManager:40]
+1302543.115075: E|28404
+1302543.115729: B|28404|inflate
+1302543.115762: B|28404|Inflate Message Send
+1302543.115793: E|28404
+1302543.116088: B|28404|VerifyClass androidx.appcompat.app.AppCompatViewInflater
+1302543.118906: E|28404
+1302543.118932: B|28404|VerifyClass com.google.android.material.theme.MaterialComponentsViewInflater
+1302543.119794: E|28404
+1302543.120033: B|28404|LinearLayout
+1302543.120428: E|28404
+1302543.120618: B|28404|ViewStub
+1302543.120861: E|28404
+1302543.120883: B|28404|ViewStub
+1302543.121010: E|28404
+1302543.121029: B|28404|ViewStub
+1302543.121157: E|28404
+1302543.121179: B|28404|ViewStub
+1302543.121324: E|28404
+1302543.121509: B|28404|FrameLayout
+1302543.121725: E|28404
+1302543.121804: E|28404
+1302543.123022: B|28404|VerifyClass androidx.appcompat.R$layout
+1302543.123059: E|28404
+1302543.123167: B|28404|inflate
+1302543.123186: B|28404|Inflate Message Send
+1302543.123205: E|28404
+1302543.123263: B|28404|androidx.appcompat.widget.FitWindowsLinearLayout
+1302543.123536: B|28404|VerifyClass androidx.appcompat.widget.FitWindowsLinearLayout
+1302543.123624: E|28404
+1302543.123840: E|28404
+1302543.123901: B|28404|androidx.appcompat.widget.ViewStubCompat
+1302543.123934: B|28404|VerifyClass androidx.appcompat.widget.ViewStubCompat
+1302543.124212: E|28404
+1302543.124340: E|28404
+1302543.124577: B|28404|androidx.appcompat.widget.ContentFrameLayout
+1302543.124617: B|28404|VerifyClass androidx.appcompat.widget.ContentFrameLayout
+1302543.124894: E|28404
+1302543.125076: E|28404
+1302543.125159: E|28404
+1302543.125180: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$3
+1302543.125218: E|28404
+1302543.125235: B|28404|VerifyClass androidx.core.view.ViewCompat
+1302543.127881: E|28404
+1302543.127952: B|28404|VerifyClass androidx.core.R$id
+1302543.127963: E|28404
+1302543.127976: B|28404|VerifyClass androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager
+1302543.128088: E|28404
+1302543.128114: B|28404|VerifyClass androidx.core.view.ViewCompat$1
+1302543.128130: E|28404
+1302543.128148: B|28404|VerifyClass androidx.appcompat.R$id
+1302543.128156: E|28404
+1302543.128203: B|28404|VerifyClass androidx.appcompat.widget.ViewUtils
+1302543.128268: E|28404
+1302543.129811: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$5
+1302543.129871: E|28404
+1302543.130187: B|28404|VerifyClass androidx.appcompat.app.AppCompatDelegateImpl$PanelFeatureState
+1302543.130508: E|28404
+1302543.130774: B|28404|inflate
+1302543.130793: B|28404|Inflate Message Send
+1302543.130815: E|28404
+1302543.130946: B|28404|androidx.coordinatorlayout.widget.CoordinatorLayout
+1302543.131407: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout
+1302543.134139: E|28404
+1302543.134243: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$ViewElevationComparator
+1302543.134274: E|28404
+1302543.134321: B|28404|VerifyClass androidx.core.util.Pools$SimplePool
+1302543.134363: E|28404
+1302543.134375: B|28404|VerifyClass androidx.core.util.Pools$SynchronizedPool
+1302543.134401: E|28404
+1302543.134422: B|28404|VerifyClass androidx.coordinatorlayout.R$attr
+1302543.134434: E|28404
+1302543.134683: B|28404|VerifyClass androidx.coordinatorlayout.widget.DirectedAcyclicGraph
+1302543.134812: E|28404
+1302543.134838: B|28404|VerifyClass androidx.core.view.NestedScrollingParentHelper
+1302543.134867: E|28404
+1302543.134880: B|28404|VerifyClass androidx.coordinatorlayout.R$styleable
+1302543.134907: E|28404
+1302543.134985: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$HierarchyChangeListener
+1302543.135019: E|28404
+1302543.135055: E|28404
+1302543.135264: B|28404|com.google.android.material.appbar.AppBarLayout
+1302543.135562: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout
+1302543.137539: E|28404
+1302543.137586: B|28404|VerifyClass com.google.android.material.R$style
+1302543.137613: E|28404
+1302543.137654: B|28404|VerifyClass com.google.android.material.R$attr
+1302543.137662: E|28404
+1302543.137692: B|28404|VerifyClass com.google.android.material.theme.overlay.MaterialThemeOverlay
+1302543.137731: E|28404
+1302543.138795: B|28404|VerifyClass com.google.android.material.appbar.ViewUtilsLollipop
+1302543.138971: E|28404
+1302543.139004: B|28404|VerifyClass com.google.android.material.internal.ThemeEnforcement
+1302543.139127: E|28404
+1302543.139162: B|28404|VerifyClass com.google.android.material.R$styleable
+1302543.139339: E|28404
+1302543.139728: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeDrawable
+1302543.140825: E|28404
+1302543.140906: B|28404|VerifyClass com.google.android.material.shape.ShapeAppearanceModel
+1302543.141212: E|28404
+1302543.141234: B|28404|VerifyClass com.google.android.material.shape.RelativeCornerSize
+1302543.141274: E|28404
+1302543.141291: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeUtils
+1302543.141383: E|28404
+1302543.141402: B|28404|VerifyClass com.google.android.material.shape.CornerTreatment
+1302543.141446: E|28404
+1302543.141459: B|28404|VerifyClass com.google.android.material.shape.RoundedCornerTreatment
+1302543.141482: E|28404
+1302543.141498: B|28404|VerifyClass com.google.android.material.shape.AbsoluteCornerSize
+1302543.141524: E|28404
+1302543.141537: B|28404|VerifyClass com.google.android.material.shape.EdgeTreatment
+1302543.141554: E|28404
+1302543.141567: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$MaterialShapeDrawableState
+1302543.141622: E|28404
+1302543.141692: B|28404|VerifyClass com.google.android.material.shadow.ShadowRenderer
+1302543.141849: E|28404
+1302543.141893: B|28404|VerifyClass androidx.core.graphics.ColorUtils
+1302543.142261: E|28404
+1302543.142318: B|28404|VerifyClass com.google.android.material.shape.ShapeAppearancePathProvider
+1302543.142619: E|28404
+1302543.142655: B|28404|VerifyClass com.google.android.material.shape.ShapePath
+1302543.142972: E|28404
+1302543.143068: B|28404|VerifyClass androidx.core.util.ObjectsCompat
+1302543.143107: E|28404
+1302543.143116: B|28404|VerifyClass $r8$backportedMethods$utility$Objects$2$equals
+1302543.143124: E|28404
+1302543.143132: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$1
+1302543.143161: E|28404
+1302543.143207: B|28404|VerifyClass com.google.android.material.elevation.ElevationOverlayProvider
+1302543.143305: E|28404
+1302543.143317: B|28404|VerifyClass com.google.android.material.resources.MaterialAttributes
+1302543.143387: E|28404
+1302543.143423: B|28404|VerifyClass com.google.android.material.color.MaterialColors
+1302543.143465: E|28404
+1302543.143693: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$1
+1302543.143738: E|28404
+1302543.143766: E|28404
+1302543.143789: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams
+1302543.144062: E|28404
+1302543.144255: B|28404|androidx.appcompat.widget.Toolbar
+1302543.144308: B|28404|VerifyClass androidx.appcompat.widget.Toolbar
+1302543.147975: E|28404
+1302543.148049: B|28404|VerifyClass androidx.appcompat.R$attr
+1302543.148069: E|28404
+1302543.148482: B|28404|VerifyClass androidx.appcompat.widget.Toolbar$1
+1302543.148514: E|28404
+1302543.148526: B|28404|VerifyClass androidx.appcompat.widget.Toolbar$2
+1302543.148536: E|28404
+1302543.148592: B|28404|VerifyClass androidx.core.view.ViewCompat$Api29Impl
+1302543.148627: E|28404
+1302543.148651: B|28404|VerifyClass androidx.appcompat.widget.RtlSpacingHelper
+1302543.148691: E|28404
+1302543.148702: B|28404|VerifyClass androidx.appcompat.content.res.AppCompatResources
+1302543.148859: E|28404
+1302543.149957: E|28404
+1302543.149986: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$LayoutParams
+1302543.150089: E|28404
+1302543.150457: B|28404|androidx.constraintlayout.widget.ConstraintLayout
+1302543.150756: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout
+1302543.153396: E|28404
+1302543.153720: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget
+1302543.158461: E|28404
+1302543.158488: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.WidgetContainer
+1302543.158563: E|28404
+1302543.158575: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidgetContainer
+1302543.159765: E|28404
+1302543.159810: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintAnchor
+1302543.160101: E|28404
+1302543.160124: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintAnchor$Type
+1302543.160168: E|28404
+1302543.160226: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget$DimensionBehaviour
+1302543.160251: E|28404
+1302543.160295: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.BasicMeasure
+1302543.161033: E|28404
+1302543.161060: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.BasicMeasure$Measure
+1302543.161074: E|28404
+1302543.161083: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.DependencyGraph
+1302543.162219: E|28404
+1302543.162251: B|28404|VerifyClass androidx.constraintlayout.solver.LinearSystem
+1302543.163385: E|28404
+1302543.163420: B|28404|VerifyClass androidx.constraintlayout.solver.Cache
+1302543.163470: E|28404
+1302543.163489: B|28404|VerifyClass androidx.constraintlayout.solver.Pools$SimplePool
+1302543.163526: E|28404
+1302543.163544: B|28404|VerifyClass androidx.constraintlayout.solver.ArrayRow
+1302543.163989: E|28404
+1302543.164009: B|28404|VerifyClass androidx.constraintlayout.solver.PriorityGoalRow
+1302543.164226: E|28404
+1302543.164252: B|28404|VerifyClass androidx.constraintlayout.solver.ArrayLinkedVariables
+1302543.164596: E|28404
+1302543.164617: B|28404|VerifyClass androidx.constraintlayout.solver.PriorityGoalRow$GoalVariableAccessor
+1302543.164736: E|28404
+1302543.164775: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$Measurer
+1302543.165649: E|28404
+1302543.165697: B|28404|VerifyClass androidx.constraintlayout.widget.R$styleable
+1302543.165838: E|28404
+1302543.165993: E|28404
+1302543.166423: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior
+1302543.166530: E|28404
+1302543.166546: B|28404|VerifyClass com.google.android.material.appbar.ViewOffsetBehavior
+1302543.166634: E|28404
+1302543.166650: B|28404|VerifyClass com.google.android.material.appbar.HeaderScrollingViewBehavior
+1302543.166878: E|28404
+1302543.166895: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+1302543.167083: E|28404
+1302543.167260: B|28404|VerifyClass androidx.fragment.R$styleable
+1302543.167299: E|28404
+1302543.167539: B|28404|VerifyClass androidx.fragment.app.Fragment
+1302543.168817: E|28404
+1302543.168895: B|28404|VerifyClass androidx.navigation.fragment.NavHostFragment
+1302543.169506: E|28404
+1302543.169670: B|28404|VerifyClass androidx.fragment.app.Fragment$1
+1302543.169697: E|28404
+1302543.169707: B|28404|VerifyClass androidx.lifecycle.LiveData
+1302543.169968: E|28404
+1302543.169988: B|28404|VerifyClass androidx.lifecycle.MutableLiveData
+1302543.170001: E|28404
+1302543.170035: B|28404|VerifyClass androidx.lifecycle.LiveData$1
+1302543.170063: E|28404
+1302543.170098: B|28404|VerifyClass androidx.fragment.app.Fragment$2
+1302543.170127: E|28404
+1302543.170188: B|28404|VerifyClass androidx.navigation.R$styleable
+1302543.170231: E|28404
+1302543.170306: B|28404|VerifyClass androidx.navigation.fragment.R$styleable
+1302543.170343: E|28404
+1302543.170384: B|28404|VerifyClass androidx.fragment.app.FragmentStateManager
+1302543.170985: E|28404
+1302543.171083: B|28404|VerifyClass androidx.fragment.app.FragmentStateManager$1
+1302543.171124: E|28404
+1302543.171175: B|28404|VerifyClass androidx.fragment.app.Fragment$4
+1302543.171215: E|28404
+1302543.171285: B|28404|VerifyClass androidx.fragment.app.FragmentTransaction
+1302543.171576: E|28404
+1302543.171598: B|28404|VerifyClass androidx.fragment.app.BackStackRecord
+1302543.172158: E|28404
+1302543.172190: B|28404|VerifyClass androidx.fragment.app.FragmentTransaction$Op
+1302543.172212: E|28404
+1302543.172350: B|28404|VerifyClass androidx.navigation.NavController
+1302543.173756: E|28404
+1302543.173781: B|28404|VerifyClass androidx.navigation.NavHostController
+1302543.173809: E|28404
+1302543.173858: B|28404|VerifyClass androidx.navigation.NavigatorProvider
+1302543.173953: E|28404
+1302543.173976: B|28404|VerifyClass androidx.navigation.NavController$1
+1302543.174001: E|28404
+1302543.174013: B|28404|VerifyClass androidx.navigation.NavController$2
+1302543.174029: E|28404
+1302543.174043: B|28404|VerifyClass androidx.navigation.Navigator
+1302543.174059: E|28404
+1302543.174063: B|28404|VerifyClass androidx.navigation.NavGraphNavigator
+1302543.174099: E|28404
+1302543.174593: B|28404|VerifyClass androidx.navigation.ActivityNavigator
+1302543.174992: E|28404
+1302543.175185: B|28404|VerifyClass androidx.navigation.NavControllerViewModel
+1302543.175290: E|28404
+1302543.175302: B|28404|VerifyClass androidx.navigation.NavControllerViewModel$1
+1302543.175313: E|28404
+1302543.175368: B|28404|VerifyClass androidx.navigation.fragment.DialogFragmentNavigator
+1302543.175568: E|28404
+1302543.175610: B|28404|VerifyClass androidx.navigation.fragment.DialogFragmentNavigator$1
+1302543.175637: E|28404
+1302543.175713: B|28404|VerifyClass androidx.navigation.fragment.FragmentNavigator
+1302543.175972: E|28404
+1302543.176047: B|28404|VerifyClass androidx.navigation.NavInflater
+1302543.176575: E|28404
+1302543.176840: B|28404|VerifyClass androidx.navigation.NavDestination
+1302543.177140: E|28404
+1302543.177167: B|28404|VerifyClass androidx.navigation.NavGraph
+1302543.177331: E|28404
+1302543.177361: B|28404|VerifyClass androidx.navigation.common.R$styleable
+1302543.177389: E|28404
+1302543.177501: B|28404|VerifyClass androidx.navigation.fragment.FragmentNavigator$Destination
+1302543.177543: E|28404
+1302543.177621: B|28404|VerifyClass androidx.navigation.NavAction
+1302543.177650: E|28404
+1302543.177660: B|28404|VerifyClass androidx.navigation.NavOptions$Builder
+1302543.177687: E|28404
+1302543.177696: B|28404|VerifyClass androidx.navigation.NavOptions
+1302543.177734: E|28404
+1302543.178081: B|28404|VerifyClass rhea.sample.android.app.FirstFragment
+1302543.178265: E|28404
+1302543.178593: B|28404|VerifyClass androidx.navigation.NavBackStackEntry
+1302543.178834: E|28404
+1302543.179388: B|28404|VerifyClass androidx.fragment.app.FragmentTransition
+1302543.180463: E|28404
+1302543.180496: B|28404|VerifyClass androidx.fragment.app.FragmentTransitionImpl
+1302543.180738: E|28404
+1302543.180758: B|28404|VerifyClass androidx.fragment.app.FragmentTransitionCompat21
+1302543.181060: E|28404
+1302543.181162: B|28404|VerifyClass androidx.transition.FragmentTransitionSupport
+1302543.181647: E|28404
+1302543.181882: B|28404|VerifyClass androidx.navigation.NavBackStackEntry$1
+1302543.181936: E|28404
+1302543.182096: B|28404|VerifyClass androidx.fragment.app.FragmentViewLifecycleOwner
+1302543.182137: E|28404
+1302543.182160: B|28404|VerifyClass androidx.fragment.app.FragmentContainerView
+1302543.182577: E|28404
+1302543.182940: B|28404|VerifyClass androidx.arch.core.executor.TaskExecutor
+1302543.182997: E|28404
+1302543.183011: B|28404|VerifyClass androidx.arch.core.executor.ArchTaskExecutor
+1302543.183135: E|28404
+1302543.183154: B|28404|VerifyClass androidx.arch.core.executor.ArchTaskExecutor$1
+1302543.183170: E|28404
+1302543.183184: B|28404|VerifyClass androidx.arch.core.executor.ArchTaskExecutor$2
+1302543.183197: E|28404
+1302543.183206: B|28404|VerifyClass androidx.arch.core.executor.DefaultTaskExecutor
+1302543.183351: E|28404
+1302543.183371: B|28404|VerifyClass androidx.arch.core.executor.DefaultTaskExecutor$1
+1302543.183411: E|28404
+1302543.183555: B|28404|VerifyClass androidx.fragment.R$id
+1302543.183576: E|28404
+1302543.183613: B|28404|VerifyClass androidx.navigation.Navigation
+1302543.183769: E|28404
+1302543.183788: B|28404|VerifyClass androidx.navigation.R$id
+1302543.183800: E|28404
+1302543.183882: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$LayoutParams
+1302543.184421: E|28404
+1302543.184607: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$LayoutParams$Table
+1302543.184694: E|28404
+1302543.185059: B|28404|com.google.android.material.floatingactionbutton.FloatingActionButton
+1302543.185117: B|28404|VerifyClass com.google.android.material.internal.VisibilityAwareImageButton
+1302543.185188: E|28404
+1302543.185196: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton
+1302543.186515: E|28404
+1302543.187135: B|28404|VerifyClass com.google.android.material.resources.MaterialResources
+1302543.187247: E|28404
+1302543.187636: B|28404|VerifyClass com.google.android.material.internal.ViewUtils
+1302543.187981: E|28404
+1302543.188337: B|28404|VerifyClass com.google.android.material.R$dimen
+1302543.188364: E|28404
+1302543.188450: B|28404|VerifyClass com.google.android.material.animation.MotionSpec
+1302543.188711: E|28404
+1302543.189718: B|28404|VerifyClass com.google.android.material.animation.MotionTiming
+1302543.189893: E|28404
+1302543.190714: B|28404|VerifyClass com.google.android.material.shape.ShapeAppearanceModel$Builder
+1302543.190898: E|28404
+1302543.191038: B|28404|VerifyClass androidx.appcompat.widget.AppCompatImageHelper
+1302543.191276: E|28404
+1302543.193198: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl
+1302543.194623: E|28404
+1302543.194658: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImplLollipop
+1302543.195175: E|28404
+1302543.195213: B|28404|VerifyClass com.google.android.material.animation.AnimationUtils
+1302543.195357: E|28404
+1302543.195385: B|28404|VerifyClass androidx.interpolator.view.animation.LookupTableInterpolator
+1302543.195417: E|28404
+1302543.195430: B|28404|VerifyClass androidx.interpolator.view.animation.FastOutSlowInInterpolator
+1302543.195453: E|28404
+1302543.195472: B|28404|VerifyClass androidx.interpolator.view.animation.FastOutLinearInInterpolator
+1302543.195494: E|28404
+1302543.195503: B|28404|VerifyClass androidx.interpolator.view.animation.LinearOutSlowInInterpolator
+1302543.195516: E|28404
+1302543.195547: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$ShadowDelegateImpl
+1302543.195619: E|28404
+1302543.195665: B|28404|VerifyClass com.google.android.material.internal.StateListAnimator
+1302543.195797: E|28404
+1302543.195821: B|28404|VerifyClass com.google.android.material.internal.StateListAnimator$1
+1302543.195849: E|28404
+1302543.195860: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ShadowAnimatorImpl
+1302543.195898: E|28404
+1302543.195910: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ElevateToPressedTranslationZAnimation
+1302543.195929: E|28404
+1302543.196007: B|28404|VerifyClass com.google.android.material.internal.StateListAnimator$Tuple
+1302543.196027: E|28404
+1302543.196042: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ElevateToHoveredFocusedTranslationZAnimation
+1302543.196064: E|28404
+1302543.196119: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$ResetElevationAnimation
+1302543.196142: E|28404
+1302543.196171: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$DisabledElevationAnimation
+1302543.196193: E|28404
+1302543.196663: B|28404|VerifyClass androidx.core.widget.ImageViewCompat
+1302543.196744: E|28404
+1302543.196867: B|28404|VerifyClass com.google.android.material.expandable.ExpandableWidgetHelper
+1302543.196994: E|28404
+1302543.197026: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButtonImplLollipop$AlwaysStatefulMaterialShapeDrawable
+1302543.197046: E|28404
+1302543.197373: B|28404|VerifyClass com.google.android.material.floatingactionbutton.BorderDrawable
+1302543.197659: E|28404
+1302543.197748: B|28404|VerifyClass com.google.android.material.floatingactionbutton.BorderDrawable$BorderState
+1302543.197777: E|28404
+1302543.197818: B|28404|VerifyClass com.google.android.material.R$color
+1302543.197835: E|28404
+1302543.198061: B|28404|VerifyClass com.google.android.material.ripple.RippleUtils
+1302543.198184: E|28404
+1302543.199393: E|28404
+1302543.199700: E|28404
+1302543.199770: B|28404|VerifyClass androidx.appcompat.app.ActionBar
+1302543.199882: E|28404
+1302543.199891: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar
+1302543.200581: E|28404
+1302543.200639: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$1
+1302543.200672: E|28404
+1302543.200680: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$2
+1302543.200702: E|28404
+1302543.200720: B|28404|VerifyClass androidx.appcompat.widget.ToolbarWidgetWrapper
+1302543.201763: E|28404
+1302543.201805: B|28404|VerifyClass androidx.appcompat.R$string
+1302543.201823: E|28404
+1302543.202582: B|28404|VerifyClass androidx.appcompat.widget.ToolbarWidgetWrapper$1
+1302543.202776: E|28404
+1302543.202800: B|28404|VerifyClass androidx.appcompat.view.menu.ActionMenuItem
+1302543.203077: E|28404
+1302543.203155: B|28404|VerifyClass androidx.appcompat.widget.AppCompatImageButton
+1302543.203359: E|28404
+1302543.203401: B|28404|VerifyClass androidx.appcompat.widget.TintContextWrapper
+1302543.203610: E|28404
+1302543.204213: B|28404|VerifyClass androidx.appcompat.widget.ThemeUtils
+1302543.204357: E|28404
+1302543.204516: B|28404|VerifyClass androidx.appcompat.widget.AppCompatBackgroundHelper
+1302543.204671: E|28404
+1302543.204768: B|28404|VerifyClass androidx.appcompat.app.ActionBar$LayoutParams
+1302543.204818: E|28404
+1302543.204830: B|28404|VerifyClass androidx.appcompat.widget.Toolbar$LayoutParams
+1302543.204871: E|28404
+1302543.204968: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$ToolbarCallbackWrapper
+1302543.205010: E|28404
+1302543.205048: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextView
+1302543.205730: E|28404
+1302543.207117: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextHelper
+1302543.207890: E|28404
+1302543.207924: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper
+1302543.208837: E|28404
+1302543.208899: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl
+1302543.208929: E|28404
+1302543.208935: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl23
+1302543.208968: E|28404
+1302543.208982: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29
+1302543.209005: E|28404
+1302543.209129: B|28404|VerifyClass androidx.core.content.res.ResourcesCompat$FontCallback
+1302543.209234: E|28404
+1302543.209251: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextHelper$1
+1302543.209282: E|28404
+1302543.209305: B|28404|VerifyClass androidx.core.content.res.ResourcesCompat
+1302543.209535: E|28404
+1302543.209615: B|28404|VerifyClass androidx.core.content.res.ResourcesCompat$FontCallback$2
+1302543.209688: E|28404
+1302543.209840: B|28404|VerifyClass androidx.core.widget.AutoSizeableTextView
+1302543.209871: E|28404
+1302543.209909: B|28404|VerifyClass androidx.appcompat.widget.AppCompatTextClassifierHelper
+1302543.209969: E|28404
+1302543.210673: B|28404|VerifyClass rhea.sample.android.app.MainActivity$onCreate$1
+1302543.210834: E|28404
+1302543.210877: B|28404|B:MainActivity$onCreate$1:<clinit>
+1302543.210902: B|28404|E:MainActivity$onCreate$1:<clinit>
+1302543.211679: B|28404|transact[android.app.IActivityTaskManager:67]
+1302543.211805: E|28404
+1302543.212824: B|28404|transact[android.app.IActivityTaskManager:111]
+1302543.212919: E|28404
+1302543.212955: E|28404
+1302543.213042: B|28404|transact[android.app.IActivityTaskManager:67]
+1302543.213114: E|28404
+1302543.213356: B|28404|B:FirstFragment:onCreateView
+1302543.213521: B|28404|inflate
+1302543.213538: B|28404|Inflate Message Send
+1302543.213557: E|28404
+1302543.213706: B|28404|androidx.constraintlayout.widget.ConstraintLayout
+1302543.214144: E|28404
+1302543.214259: B|28404|VerifyClass com.google.android.material.textview.MaterialTextView
+1302543.214423: E|28404
+1302543.216171: B|28404|VerifyClass androidx.appcompat.widget.AppCompatButton
+1302543.216617: E|28404
+1302543.216639: B|28404|VerifyClass com.google.android.material.button.MaterialButton
+1302543.217678: E|28404
+1302543.222098: B|28404|VerifyClass androidx.appcompat.widget.TintInfo
+1302543.222143: E|28404
+1302543.222496: B|28404|VerifyClass com.google.android.material.button.MaterialButtonHelper
+1302543.222877: E|28404
+1302543.223548: B|28404|VerifyClass androidx.core.graphics.drawable.DrawableCompat
+1302543.223900: E|28404
+1302543.225207: B|28404|VerifyClass androidx.core.widget.TextViewCompat
+1302543.225959: E|28404
+1302543.226218: E|28404
+1302543.226262: B|28404|E:FirstFragment:onCreateView
+1302543.226473: B|28404|B:FirstFragment:onViewCreated
+1302543.226521: B|28404|VerifyClass rhea.sample.android.app.FirstFragment$onViewCreated$1
+1302543.226586: E|28404
+1302543.226663: B|28404|E:FirstFragment:onViewCreated
+1302543.226801: B|28404|VerifyClass androidx.fragment.app.FragmentAnim
+1302543.227173: E|28404
+1302543.227462: B|28404|VerifyClass androidx.activity.OnBackPressedDispatcher$OnBackPressedCancellable
+1302543.227500: E|28404
+1302543.228159: B|28404|transact[android.content.IContentProvider:21]
+1302543.228360: E|28404
+1302543.228840: B|28404|notifyContentCapture(START) for {rhea.sample.android/rhea.sample.android.app.MainActivity}
+1302543.228937: E|28404
+1302543.228968: B|28404|activityResume
+1302543.232958: B|28404|notifyContentCapture(RESUME) for {rhea.sample.android/rhea.sample.android.app.MainActivity}
+1302543.233015: E|28404
+1302543.234579: B|28404|transact[com.huawei.android.app.IHwActivityTaskManager:39]
+1302543.234724: E|28404
+1302543.235655: B|28404|transact[:1]
+1302543.236431: E|28404
+1302543.236617: B|28404|transact[android.app.IUiModeManager:3]
+1302543.236685: E|28404
+1302543.236801: B|28404|transact[com.android.internal.view.IInputMethodManager:1]
+1302543.237243: E|28404
+1302543.237334: B|28404|transact[android.view.IWindowManager:4]
+1302543.237604: E|28404
+1302543.238500: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.238650: E|28404
+1302543.239503: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.239672: E|28404
+1302543.240118: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.240311: E|28404
+1302543.241092: B|28404|transact[:1]
+1302543.241890: E|28404
+1302543.242404: B|28404|transact[android.pc.IHwPCManager:73]
+1302543.242515: E|28404
+1302543.243059: B|28404|transact[android.app.IActivityManager:184]
+1302543.243379: E|28404
+1302543.243584: B|28404|transact[android.view.IGraphicsStats:1]
+1302543.244419: E|28404
+1302543.245298: B|28404|transact[android.view.IWindowSession:1]
+1302543.247406: E|28404
+1302543.248287: B|28404|transact[android.view.accessibility.IAccessibilityManager:6]
+1302543.248717: E|28404
+1302543.249330: B|28404|transact[:1]
+1302543.249468: E|28404
+1302543.249569: B|28404|transact[android.app.IUiModeManager:7]
+1302543.249643: E|28404
+1302543.249829: E|28404
+1302543.249880: B|28404|transact[android.app.IActivityTaskManager:18]
+1302543.250062: E|28404
+1302543.250360: B|28404|topResumedActivityChangeItem
+1302543.250465: E|28404
+1302543.256206: B|28404|Choreographer#doFrame
+1302543.256529: B|28404|input
+1302543.256676: E|28404
+1302543.256718: B|28404|traversal
+1302543.259906: B|28404|transact[:1]
+1302543.260666: E|28404
+1302543.261132: B|28404|transact[android.magicwin.IHwMagicWindow:3]
+1302543.261888: E|28404
+1302543.268184: B|28404|dispatchApplyInsets
+1302543.269307: E|28404
+1302543.269368: B|28404|measure
+1302543.269387: B|28404|Measure Message Send
+1302543.269402: E|28404
+1302543.269652: B|28404|VerifyClass com.google.android.material.appbar.HeaderBehavior
+1302543.269998: E|28404
+1302543.270020: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$BaseBehavior
+1302543.270786: E|28404
+1302543.270808: B|28404|VerifyClass com.google.android.material.appbar.AppBarLayout$Behavior
+1302543.270861: E|28404
+1302543.270921: B|28404|VerifyClass androidx.core.view.GravityCompat
+1302543.271001: E|28404
+1302543.271062: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior
+1302543.271457: E|28404
+1302543.271503: B|28404|VerifyClass com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior
+1302543.271527: E|28404
+1302543.271612: B|28404|VerifyClass androidx.coordinatorlayout.widget.CoordinatorLayout$OnPreDrawListener
+1302543.271636: E|28404
+1302543.273044: B|28404|VerifyClass androidx.core.view.MarginLayoutParamsCompat
+1302543.273118: E|28404
+1302543.273544: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ConstraintWidget$1
+1302543.273676: E|28404
+1302543.273885: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.Optimizer
+1302543.273964: E|28404
+1302543.274014: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.analyzer.Direct
+1302543.274802: E|28404
+1302543.274912: B|28404|VerifyClass androidx.constraintlayout.widget.ConstraintLayout$1
+1302543.275008: E|28404
+1302543.275996: B|28404|VerifyClass androidx.constraintlayout.solver.SolverVariable
+1302543.276306: E|28404
+1302543.276333: B|28404|VerifyClass androidx.constraintlayout.solver.SolverVariable$Type
+1302543.276381: E|28404
+1302543.276477: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.ChainHead
+1302543.276652: E|28404
+1302543.276749: B|28404|VerifyClass androidx.constraintlayout.solver.widgets.Chain
+1302543.278177: E|28404
+1302543.280845: E|28404
+1302543.281104: B|28404|transact[android.view.IWindowSession:4]
+1302543.286342: E|28404
+1302543.287719: B|28404|transact[com.huawei.android.app.IHwActivityTaskManager:72]
+1302543.287843: E|28404
+1302543.288230: B|28404|transact[android.hardware.display.IDisplayManager:1]
+1302543.288380: E|28404
+1302543.288682: B|28404|measure
+1302543.288707: B|28404|Measure Message Send
+1302543.288721: E|28404
+1302543.292170: E|28404
+1302543.292223: B|28404|layout
+1302543.293680: B|28404|VerifyClass com.google.android.material.appbar.ViewOffsetHelper
+1302543.293808: E|28404
+1302543.293870: B|28404|VerifyClass androidx.core.math.MathUtils
+1302543.293914: E|28404
+1302543.294290: B|28404|VerifyClass androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
+1302543.294805: E|28404
+1302543.295089: B|28404|VerifyClass androidx.core.view.ViewCompat$AccessibilityViewProperty
+1302543.295185: E|28404
+1302543.295200: B|28404|VerifyClass androidx.core.view.ViewCompat$4
+1302543.295256: E|28404
+1302543.296181: E|28404
+1302543.296386: B|28404|transact[android.view.IWindowSession:12]
+1302543.296485: E|28404
+1302543.296818: B|28404|transact[2]
+1302543.296848: E|28404
+1302543.296940: B|28404|VerifyClass androidx.coordinatorlayout.widget.ViewGroupUtils
+1302543.297086: E|28404
+1302543.297443: B|28404|draw
+1302543.301838: B|28404|Record View#draw()
+1302543.302714: B|28404|VerifyClass com.google.android.material.shape.MaterialShapeDrawable$2
+1302543.302869: E|28404
+1302543.302923: B|28404|VerifyClass com.google.android.material.shape.AdjustedCornerSize
+1302543.303012: E|28404
+1302543.303131: B|28404|VerifyClass com.google.android.material.shape.ShapeAppearancePathProvider$ShapeAppearancePathSpec
+1302543.303163: E|28404
+1302543.303193: B|28404|VerifyClass com.google.android.material.shape.ShapePath$PathOperation
+1302543.303220: E|28404
+1302543.303236: B|28404|VerifyClass com.google.android.material.shape.ShapePath$PathArcOperation
+1302543.303309: E|28404
+1302543.303358: B|28404|VerifyClass com.google.android.material.shape.ShapePath$ShadowCompatOperation
+1302543.303388: E|28404
+1302543.303402: B|28404|VerifyClass com.google.android.material.shape.ShapePath$ArcShadowOperation
+1302543.303430: E|28404
+1302543.303600: B|28404|VerifyClass com.google.android.material.shape.ShapePath$PathLineOperation
+1302543.303636: E|28404
+1302543.303657: B|28404|VerifyClass com.google.android.material.shape.ShapePath$LineShadowOperation
+1302543.303695: E|28404
+1302543.304055: B|28404|VerifyClass com.google.android.material.shape.ShapePath$1
+1302543.304101: E|28404
+1302543.308711: B|28404|computePalette
+1302543.308748: E|28404
+1302543.309583: E|28404
+1302543.309960: E|28404
+1302543.410294: B|28404|jank_event_sync: start_ts=288219341907058,end_ts=288219495287267, appid=28404
+1302543.410324: E|28404
+1302543.410486: E|28404
+1302543.410533: E|28404
+1302543.410747: B|28404|transact[android.view.IWindowSession:10]
+1302543.410942: E|28404
+1302543.411104: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$ActionMenuPresenterCallback
+1302543.411186: E|28404
+1302543.411201: B|28404|VerifyClass androidx.appcompat.app.ToolbarActionBar$MenuBuilderCallback
+1302543.411227: E|28404
+1302543.411248: B|28404|VerifyClass androidx.appcompat.widget.LinearLayoutCompat
+1302543.413925: E|28404
+1302543.413965: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuView
+1302543.415487: E|28404
+1302543.416494: B|28404|VerifyClass androidx.appcompat.view.menu.MenuBuilder
+1302543.417665: E|28404
+1302543.417775: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuView$MenuBuilderCallback
+1302543.417823: E|28404
+1302543.417833: B|28404|VerifyClass androidx.appcompat.view.menu.BaseMenuPresenter
+1302543.417998: E|28404
+1302543.418018: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuPresenter
+1302543.419069: E|28404
+1302543.419186: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$PopupPresenterCallback
+1302543.419220: E|28404
+1302543.419261: B|28404|VerifyClass androidx.appcompat.view.ActionBarPolicy
+1302543.419436: E|28404
+1302543.419493: B|28404|VerifyClass androidx.appcompat.widget.AppCompatImageView
+1302543.419656: E|28404
+1302543.419678: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton
+1302543.420026: E|28404
+1302543.421438: B|28404|VerifyClass androidx.appcompat.widget.TooltipCompat
+1302543.421619: E|28404
+1302543.421658: B|28404|VerifyClass androidx.appcompat.widget.ForwardingListener
+1302543.422309: E|28404
+1302543.422333: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton$1
+1302543.422457: E|28404
+1302543.422740: B|28404|VerifyClass androidx.appcompat.widget.Toolbar$ExpandedActionViewMenuPresenter
+1302543.422968: E|28404
+1302543.423063: B|28404|B:MainActivity:onCreateOptionsMenu
+1302543.423095: B|28404|VerifyClass androidx.appcompat.view.SupportMenuInflater
+1302543.423339: E|28404
+1302543.423567: B|28404|VerifyClass androidx.appcompat.view.SupportMenuInflater$MenuState
+1302543.424020: E|28404
+1302543.424139: B|28404|VerifyClass androidx.appcompat.view.menu.MenuItemImpl
+1302543.424630: E|28404
+1302543.424693: B|28404|VerifyClass androidx.core.view.MenuItemCompat
+1302543.424842: E|28404
+1302543.424898: B|28404|E:MainActivity:onCreateOptionsMenu
+1302543.425098: B|28404|VerifyClass androidx.appcompat.widget.LinearLayoutCompat$LayoutParams
+1302543.425160: E|28404
+1302543.425176: B|28404|VerifyClass androidx.appcompat.widget.ActionMenuView$LayoutParams
+1302543.425201: E|28404
+1302543.425601: B|28404|Choreographer#doFrame
+1302543.425682: B|28404|input
+1302543.425724: E|28404
+1302543.425745: B|28404|animation
+1302543.425999: E|28404
+1302543.426019: B|28404|traversal
+1302543.426201: B|28404|measure
+1302543.426219: B|28404|Measure Message Send
+1302543.426226: E|28404
+1302543.427409: E|28404
+1302543.427442: B|28404|layout
+1302543.428426: E|28404
+1302543.428680: B|28404|draw
+1302543.428738: B|28404|Record View#draw()
+1302543.429383: B|28404|computePalette
+1302543.429403: E|28404
+1302543.429655: E|28404
+1302543.429900: E|28404
+1302543.430032: E|28404
+1302543.430070: E|28404
+1302543.430345: B|28404|B:MainActivity:onWindowFocusChanged
+1302543.430395: B|28404|E:MainActivity:onWindowFocusChanged
+1302543.431573: B|28404|transact[com.huawei.android.view.IHwWindowManager:78]
+1302543.431678: E|28404
+1302543.431948: B|28404|transact[com.android.internal.view.IInputMethodManager:9]
+1302543.433304: E|28404
+1302543.433775: B|28404|Choreographer#doFrame
+1302543.433854: B|28404|input
+1302543.433894: E|28404
+1302543.433915: B|28404|animation
+1302543.434112: E|28404
+1302543.434135: B|28404|traversal
+1302543.434286: B|28404|measure
+1302543.434304: B|28404|Measure Message Send
+1302543.434319: E|28404
+1302543.434338: E|28404
+1302543.434364: B|28404|layout
+1302543.434385: E|28404
+1302543.434569: B|28404|draw
+1302543.434615: B|28404|Record View#draw()
+1302543.434796: B|28404|computePalette
+1302543.434813: E|28404
+1302543.435544: E|28404
+1302543.435867: E|28404
+1302543.435966: E|28404
+1302543.436015: E|28404
+1302543.436925: B|28404|Lock contention on InternTable lock (owner tid: 28428)
+1302543.436957: E|28404
+1302543.437214: B|28404|transact[17]
+1302543.437265: E|28404
+1302543.437385: B|28404|animation
+1302543.437568: E|28404
+1302543.449069: B|28404|Choreographer#doFrame
+1302543.449225: B|28404|animation
+1302543.449388: E|28404
+1302543.449451: E|28404
+1302543.465019: B|28404|Choreographer#doFrame
+1302543.465156: B|28404|animation
+1302543.465544: E|28404
+1302543.465642: E|28404
+1302543.480949: B|28404|Choreographer#doFrame
+1302543.481001: B|28404|animation
+1302543.481150: E|28404
+1302543.481175: E|28404
+1302543.496998: B|28404|Choreographer#doFrame
+1302543.497046: B|28404|animation
+1302543.497198: E|28404
+1302543.497219: E|28404
+1302543.513113: B|28404|Choreographer#doFrame
+1302543.513159: B|28404|animation
+1302543.513298: E|28404
+1302543.513321: E|28404
+1302543.529204: B|28404|Choreographer#doFrame
+1302543.529251: B|28404|animation
+1302543.529489: E|28404
+1302543.529514: E|28404
+1302545.251059: B|28404|markFrameSchedEnd
+1302545.251183: E|28404
+1302547.805949: B|28404|broadcastReceiveComp
+1302547.807349: B|28404|VerifyClass com.bytedance.rheatrace.core.TraceReceiver
+1302547.808335: E|28404
+1302547.808733: B|28404|VerifyClass com.bytedance.rheatrace.core.TraceReceiver$3
+1302547.808881: E|28404
+1302547.809358: B|28404|transact[14]
+1302547.809605: E|28404
+1302547.809682: E|28404
+1510|TRACE_END|1302547810010265|28404|2147483647|2|18316

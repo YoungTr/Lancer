@@ -56,11 +56,11 @@ namespace lancer {
                        (void **) (&original_write_chk));
 
         if (TraceProvider::Get().IsMainThreadOnly()) {
-            xhook_register(".*\\.so$", "atrace_begin_body", (void *) proxy_atrace_begin_body, (void **) (&original_trace_begin));
-            xhook_register(".*\\.so$", "atrace_end_body", (void *) proxy_atrace_end_body,
+            xhook_register(".*libc\\.so$", "atrace_begin_body", (void *) proxy_atrace_begin_body, (void **) (&original_trace_begin));
+            xhook_register(".*libc\\.so$", "atrace_end_body", (void *) proxy_atrace_end_body,
                            (void **) (&original_atrace_end));
         }
-        xhook_refresh(1);
+        xhook_refresh(0);
     }
 
     void HookBridge::HookForAtrace() {
